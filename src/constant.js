@@ -27,6 +27,11 @@ import gamedevelopmentimage from "./assets/images/services/gamedevelopmentimage.
 import blockchainimage from "./assets/images/services/blockchainimage.jpeg";
 import cloudserviceimage from "./assets/images/services/cloudserviceimage.jpeg";
 import cybersecurityimage from "./assets/images/services/cybersecurityimage.jpeg";
+import aboutpageimageone from "./assets/images/aboutpageimageone.jpeg";
+import companyachievementsimage from "./assets/images/companyachievementsimage.png";
+import aboutpageimagethree from "./assets/images/aboutpageimagethree.jpeg";
+import aboutpageimagefour from "./assets/images/aboutpageimagefour.jpeg";
+import aboutpageimagetwo from "./assets/images/aboutpageimagetwo.png";
 export const images = {
   Logo,
   phonenumbersvg,
@@ -35,6 +40,11 @@ export const images = {
   homepageoverimageone,
   homepageoverimagetwo,
   verticaldivider,
+  aboutpageimageone,
+  companyachievementsimage,
+  aboutpageimagethree,
+  aboutpageimagefour,
+  aboutpageimagetwo,
 };
 export const video = { homepagebackgroundvideo };
 
