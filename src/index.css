@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* input[type="checkbox"] {
+  display: none;
+} */
+
+.EZDrawer .EZDrawer__container {
+  background: #000000 !important;
+  width: 100vw !important;
+  min-height: 100vh !important;
+  overflow-y: scroll;
+  z-index: 20;
+}
+
+@layer utilities {
+  .adjustedwidth {
+    @apply sm:w-[90%] w-[95%] lg:w-[80%];
+  }
+  .wrapper {
+    @apply max-w-7xl mx-auto px-4;
+  }
+  .primary-btn {
+    @apply text-white cursor-pointer font-light tracking-wide bg-primary hover:bg-primary/80  hover:shadow-secondary hover:-translate-y-1 shadow-2xl shadow-transparent px-9 py-5 min-w-[7rem] flex justify-center text-center transition-all duration-300 rounded-full;
+  }
+  .secondary-btn {
+    @apply text-white cursor-pointer font-bold tracking-wide bg-secondary border border-secondary hover:bg-transparent  hover:shadow-white hover:-translate-y-1 shadow-2xl shadow-transparent  px-9 py-5 min-w-fit flex justify-center text-center transition-all duration-300 rounded-full;
+  }
+}

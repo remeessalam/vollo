@@ -1,0 +1,19 @@
+import About from "./HomePageSections/About";
+import Banner from "./HomePageSections/Banner";
+import CompanyApproach from "./HomePageSections/CompanyApproach";
+import MeetCompany from "./HomePageSections/MeetCompany";
+import Services from "./HomePageSections/Services";
+
+const HomePage = () => {
+  return (
+    <>
+      <Banner />
+      <About />
+      <Services />
+      <MeetCompany />
+      <CompanyApproach />
+    </>
+  );
+};
+
+export default HomePage;
