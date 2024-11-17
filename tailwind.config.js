@@ -50,6 +50,12 @@ export default {
           fontWeight: "500",
         },
       ],
+      "7xl": [
+        "20px",
+        {
+          fontWeight: "600",
+        },
+      ],
     },
   },
   plugins: [],
