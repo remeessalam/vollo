@@ -9,10 +9,10 @@ const Banner = () => {
       style={{ backgroundImage: `url(${homepagebanner})` }}
     >
       <div className="flex flex-col items-center  text-center">
-        <h1 className="text-10xl leading-tight">
+        <h1 className="text-8xl sm:text-10xl  leading-tight">
           Innovating Today, Empowering Tomorrow!
         </h1>
-        <h1 className="text-10xl leading-tight bg-gradient-to-r from-[#7186FF] to-[#B9A7CC] text-transparent bg-clip-text">
+        <h1 className="text-8xl sm:text-10xl leading-tight bg-gradient-to-r from-[#7186FF] to-[#B9A7CC] text-transparent bg-clip-text">
           Business Decisions Today
         </h1>
         <p className="text-[#0D0D0D] font-normal max-w-[70%] my-4">

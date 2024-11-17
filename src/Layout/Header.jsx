@@ -15,7 +15,7 @@ const Header = () => {
   };
 
   return (
-    <div className="py-4 fixed top-0 w-full bg-[#000E29]  z-50 text-white text-base font-medium">
+    <div className="py-4 fixed top-0 w-full bg-headerandfooterbg  z-50 text-white text-base font-medium">
       <div className=" flex justify-between items-center gap-10 mx-auto">
         <div className="flex justify-between gap-2  items-center min-w-fit w-full  mx-5">
           <div className="min-w-fit">
