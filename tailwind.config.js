@@ -56,6 +56,12 @@ export default {
           fontWeight: "600",
         },
       ],
+      "6xl": [
+        "24px",
+        {
+          fontWeight: "600",
+        },
+      ],
     },
   },
   plugins: [],
