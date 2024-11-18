@@ -67,44 +67,125 @@ export const companyDetails = {
   link: "🌐Website: volloinc.com",
 };
 export const ourServices = [
-  { id: 1, img: aiimage, title: "Artificial Intelligence (AI)" },
-  { id: 2, img: mobiledevelopmentimage, title: "Mobile App Development" },
-  { id: 3, img: webdevelopmentimage, title: "Website Development" },
-  { id: 4, img: uiuximage, title: "UI/UX Design" },
-  { id: 5, img: customsoftwareimage, title: "Custom Software Development" },
-  { id: 6, img: dataanalyticsimage, title: "Data Analytics" },
-  { id: 7, img: iotimage, title: "Internet of Things (IoT)" },
+  {
+    id: 1,
+    img: aiimage,
+    title: "Artificial Intelligence (AI)",
+    description:
+      "Unlock the limitless potential of AI-driven solutions at Vollo Inc., where we transform your business operations into intelligent, efficient systems that drive success. With our predictive analytics, we empower you to leverage data insights to anticipate market trends, understand customer behavior, and make informed decisions that enhance your competitive edge. Our intelligent automation solutions streamline workflows, reduce operational costs, and eliminate mundane tasks, enabling your team to focus on strategic initiatives.",
+    paragraph:
+      "At Vollo Inc., we provide AI solutions that enhance decision-making, optimize performance, and reduce operational costs through automation, helping you stay ahead in a competitive market.",
+  },
+  {
+    id: 2,
+    img: mobiledevelopmentimage,
+    title: "Mobile App Development",
+    description:
+      "In today’s mobile-first world, having a dynamic and user-friendly app is a necessity for business success. At Vollo Inc., we craft high-performance mobile applications tailored to meet your business needs. From concept to launch, our expert developers ensure that each app is visually stunning and delivers a seamless user experience, with ongoing support to keep your app relevant and engaging.",
+    paragraph:
+      "Transform your business and engage your customers with high-performance mobile apps tailored to your business needs and user expectations.",
+  },
+  {
+    id: 3,
+    img: webdevelopmentimage,
+    title: "Website Development",
+    description:
+      "Your website is the digital face of your business. At Vollo Inc., we specialize in designing responsive, functional websites that captivate visitors and effectively communicate your brand message. With a mobile-first approach, we ensure that your website looks and performs flawlessly across all devices, driving higher engagement and conversions.",
+    paragraph:
+      "Create a memorable online presence with responsive and visually stunning websites that engage visitors and drive conversions.",
+  },
+  {
+    id: 4,
+    img: uiuximage,
+    title: "UI/UX Design",
+    description:
+      "Our design process prioritizes the needs and preferences of your target audience. Through research and collaboration, we create intuitive, visually stunning interfaces that reflect your brand identity and foster user engagement. Our user-centric approach ensures that your interfaces meet expectations and create emotional connections with users.",
+    paragraph:
+      "Craft seamless, engaging experiences through user-centric design that not only meets functional requirements but also fosters emotional connections.",
+  },
+  {
+    id: 5,
+    img: customsoftwareimage,
+    title: "Custom Software Development",
+    description:
+      "We begin with an in-depth analysis of your business goals to create software that drives meaningful change. Our iterative development process ensures that the software aligns perfectly with your needs, while our dedicated QA team guarantees reliability through extensive testing.",
+    paragraph:
+      "Tailored software solutions that meet your unique business needs, designed and tested for performance, reliability, and scalability.",
+  },
+  {
+    id: 6,
+    img: dataanalyticsimage,
+    title: "Data Analytics",
+    description:
+      "We help you harness the power of data to make strategic decisions that drive growth. Our analytics services transform complex data into actionable insights, utilizing techniques like predictive modeling and data visualization to uncover trends that enhance your competitive edge.",
+    paragraph:
+      "Unlock actionable insights from your data, enabling smarter decisions that drive growth and improve operational efficiency.",
+  },
+  {
+    id: 7,
+    img: iotimage,
+    title: "Internet of Things (IoT)",
+    description:
+      "At Vollo Inc., we create IoT solutions that help businesses monitor, control, and improve their processes. From real-time data collection to seamless integration, our IoT technology enhances efficiency across industries like healthcare, manufacturing, and logistics.",
+    paragraph:
+      "Transform your business with IoT solutions that provide real-time insights, streamline operations, and improve decision-making.",
+  },
   {
     id: 8,
     img: roboticautomationimage,
     title: "Robotic Process Automation (RPA)",
+    description:
+      "Our RPA solutions automate repetitive tasks, reducing operational costs and freeing up your team to focus on strategic growth. By streamlining workflows and ensuring consistent, error-free results, we help businesses improve efficiency and performance.",
+    paragraph:
+      "Enhance productivity and reduce costs by automating mundane tasks with our RPA solutions, allowing your team to focus on strategic initiatives.",
   },
   {
     id: 9,
     img: arvrimage,
     title: "Augmented Reality (AR) & Virtual Reality (VR)",
+    description:
+      "We offer cutting-edge AR and VR solutions that redefine customer engagement and training experiences. Whether for marketing, product demos, or immersive learning, our solutions captivate audiences and create lasting impressions.",
+    paragraph:
+      "Elevate customer engagement and training with immersive AR and VR solutions that offer unforgettable, interactive experiences.",
   },
   {
     id: 10,
     img: gamedevelopmentimage,
     title: "Game Development",
+    description:
+      "Our talented team of game developers creates engaging experiences across platforms. From concept to launch, we bring your game ideas to life with captivating narratives and dynamic gameplay that resonate with players.",
+    paragraph:
+      "Craft immersive gaming experiences with our expert team, delivering dynamic and captivating games across multiple platforms.",
   },
   {
     id: 11,
     img: blockchainimage,
     title: "Blockchain Solutions",
+    description:
+      "At Vollo Inc., we specialize in blockchain solutions that enhance security, transparency, and trust. Our decentralized technology enables secure transactions, effective data management, and improved traceability, promoting confidence among stakeholders.",
+    paragraph:
+      "Leverage blockchain technology to enhance security, transparency, and trust in your operations while ensuring secure transactions.",
   },
   {
     id: 12,
     img: cloudserviceimage,
     title: "Cloud Services",
+    description:
+      "Our cloud computing services empower businesses to thrive by facilitating seamless migration and management. With reliable, fast access to applications and data from any device, our solutions enhance efficiency, reduce costs, and provide scalability.",
+    paragraph:
+      "Optimize your business operations with scalable, secure, and efficient cloud services that enhance collaboration and performance.",
   },
   {
     id: 13,
     img: cybersecurityimage,
     title: "Cybersecurity",
+    description:
+      "We provide comprehensive cybersecurity services to protect your business from evolving digital threats. Our proactive approach ensures that your data, networks, and operations remain secure, minimizing risk and ensuring compliance.",
+    paragraph:
+      "Protect your business with robust cybersecurity solutions that safeguard your data, networks, and ensure compliance with industry standards.",
   },
 ];
+
 export const routes = [
   { path: "/", name: "home" },
   { path: "/about-us", name: "about us" },

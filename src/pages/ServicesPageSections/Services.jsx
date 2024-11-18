@@ -1,6 +1,14 @@
 import { ourServices } from "../../constant";
-
+import Drawer from "react-modern-drawer";
+import { IoMdClose } from "react-icons/io";
+import { useState } from "react";
 const Services = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedService, setSelectedService] = useState(ourServices[0]);
+  const handleSelectServiceToShowDetail = (service) => {
+    setSelectedService(service);
+    setIsOpen(true);
+  };
   return (
     <div className="py-20 ">
       <div className="adjustedwidth mx-auto">
@@ -29,17 +37,49 @@ const Services = () => {
                 {obj.title}
               </h2>
               <p className="text-decsriptioncolor text-start">
-                Unlock the power of predictive analytics, intelligent
-                automation, and data-driven insights to accelerate your business
-                and outpace the competition
+                {obj.paragraph}
               </p>
-              <button className="w-full flex justify-between place-items-end mt-6 border-x border-t py-3 px-3 font-bold text-headerandfooterbg hover:bg-sky-400 hover:text-white">
+              <button
+                className="w-full flex justify-between place-items-end mt-6 border-x border-t py-3 px-3 font-bold text-headerandfooterbg hover:bg-sky-400 hover:text-white"
+                onClick={() => handleSelectServiceToShowDetail(obj)}
+              >
                 READ DETAILS <p className="text-6xl font-medium">›</p>
               </button>
             </div>
           ))}
         </div>
       </div>
+      <Drawer
+        open={isOpen}
+        onClose={() => setIsOpen(false)}
+        direction="top"
+        className="p-4 z-10 w-screen"
+        lockBackgroundScroll
+      >
+        <div className="mb-3 flex items-center justify-end pr-[.7rem] py-[.4rem]">
+          <button
+            onClick={() => setIsOpen(false)}
+            className="text-white text-[2.2rem]"
+          >
+            <IoMdClose />
+          </button>
+        </div>
+        <div className="flex flex-col gap-6 items-center text-white pb-[2rem]">
+          {/* Title */}
+          <h1 className="heading-2 text-2xl md:text-4xl">
+            {selectedService.title}
+          </h1>
+          <img
+            src={selectedService.img}
+            alt={selectedService.title}
+            className="w-[50%]  max-h-[65vh] rounded-3xl hover:scale-105 transition-all duration-700"
+          />
+          {/* Description */}
+          <p className="desc whitespace-pre-line text-sm md:text-base text-center max-w-[80%]">
+            {selectedService.description}
+          </p>
+        </div>
+      </Drawer>
     </div>
   );
 };
