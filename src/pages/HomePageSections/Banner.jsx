@@ -15,14 +15,14 @@ const Banner = () => {
         <h1 className="text-8xl sm:text-10xl leading-tight bg-gradient-to-r from-[#7186FF] to-[#B9A7CC] text-transparent bg-clip-text">
           Business Decisions Today
         </h1>
-        <p className="text-[#0D0D0D] font-normal max-w-[70%] my-4">
+        <p className="text-[#0D0D0D] font-normal max-w-[70%] my-4 ">
           Transform your data into actionable intelligence with our AI-driven
           SaaS, designed to optimize efficiency, automate workflows, and provide
           predictive insights for informed decision-making.
         </p>
-        <div className="max-w-[50%] flex md:flex-row flex-col items-center justify-center">
+        <div className="sm:max-w-[50%] max-w-full flex md:flex-row flex-col items-center justify-center">
           <p className="primary-btn">Book a Demo</p>
-          <p className="secondary-btn">Take Product Tour ▶</p>
+          <p className="secondary-btn sm:my-0 my-3">Take Product Tour ▶</p>
         </div>
       </div>
     </div>

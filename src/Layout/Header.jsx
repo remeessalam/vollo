@@ -37,8 +37,8 @@ const Header = () => {
             {routes.map(({ name, path }) => (
               <Link
                 to={`${path}`}
-                className={`link text-sm ${
-                  pathname === `${path}` && "active-link"
+                className={` text-[14px] ${
+                  pathname === `${path}` && "text-primary"
                 }`}
                 key={path}
               >
@@ -48,7 +48,7 @@ const Header = () => {
           </div>
 
           <div className="lg:flex  px-7  min-w-fit gap-16 hidden">
-            <div className="flex min-w-fit items-center  gap-2">
+            <div className="flex min-w-fit items-center text-[14px]  gap-2">
               <img
                 src={phonenumbersvg}
                 alt={phonenumbersvg}
