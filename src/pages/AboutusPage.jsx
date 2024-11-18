@@ -7,14 +7,14 @@ import CompanyTeam from "./AboutPageSections/CompanyTeam";
 import Testimonials from "./AboutPageSections/Testimonials";
 const AboutusPage = () => {
   return (
-    <div>
+    <>
       <CommonBanner video={aboutVideo} title={"About Company"} />
       <Aboutus />
       <CompanyAchievements />
       <CompanyExperience />
       <CompanyTeam />
       <Testimonials />
-    </div>
+    </>
   );
 };
 

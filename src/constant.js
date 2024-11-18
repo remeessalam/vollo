@@ -35,6 +35,7 @@ import aboutpageimagetwo from "./assets/images/aboutpageimagetwo.png";
 import fullstart from "./assets/images/fullstar.png";
 import fourstart from "./assets/images/fourstar.png";
 import testimonialsuserimage from "./assets/images/testimonialsuserimage.png";
+import contactuspagebanner from "./assets/images/contactuspagebanner.jpeg";
 export const images = {
   Logo,
   phonenumbersvg,
@@ -48,6 +49,7 @@ export const images = {
   aboutpageimagethree,
   aboutpageimagefour,
   aboutpageimagetwo,
+  contactuspagebanner,
 };
 export const video = { homepagebackgroundvideo };
 
@@ -107,7 +109,6 @@ export const routes = [
   { path: "/", name: "home" },
   { path: "/about-us", name: "about us" },
   { path: "/services", name: "services" },
-  { path: "/blog", name: "blog" },
   { path: "/contact-us", name: "contact us" },
 ];
 
