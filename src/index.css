@@ -27,6 +27,9 @@
   .secondary-btn {
     @apply text-white cursor-pointer font-bold tracking-wide bg-secondary border border-secondary hover:bg-[#F6F7Fb] hover:text-black   hover:-translate-y-1 shadow-2xl shadow-transparent  px-8 py-5 min-w-fit flex justify-center text-center transition-all duration-300 rounded-full;
   }
+  .secondary-btn-small {
+    @apply text-white cursor-pointer font-bold tracking-wide bg-secondary border border-secondary hover:bg-[#F6F7Fb] hover:text-black   hover:-translate-y-1 shadow-2xl shadow-transparent  px-3 py-3 min-w-fit flex justify-center text-center transition-all duration-300 rounded-full;
+  }
 }
 .react-player video {
   object-fit: fill !important;

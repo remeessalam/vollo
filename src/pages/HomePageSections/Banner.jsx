@@ -20,9 +20,11 @@ const Banner = () => {
           SaaS, designed to optimize efficiency, automate workflows, and provide
           predictive insights for informed decision-making.
         </p>
-        <div className="sm:max-w-[50%] max-w-full flex md:flex-row flex-col items-center justify-center">
+        <div className="sm:max-w-[60%] max-w-full flex md:flex-row flex-col items-center justify-center">
           <p className="primary-btn">Book a Demo</p>
-          <p className="secondary-btn sm:my-0 my-3">Take Product Tour ▶</p>
+          <p className="secondary-btn sm:my-0 my-3  ml-4">
+            Take Product Tour ▶
+          </p>
         </div>
       </div>
     </div>
