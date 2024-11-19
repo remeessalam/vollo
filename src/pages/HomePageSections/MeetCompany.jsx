@@ -9,6 +9,7 @@ const MeetCompany = () => {
         <div className="adjustedwidth sm:gap-5 gap-3 md:gap-8 lg:gap-14 flex flex-col mt-16">
           {meetCompanyDetails.map((obj) => (
             <div
+              data-aos="fade-up"
               key={obj.id}
               className={`flex justify-between items-center  ${
                 obj.id === 2

@@ -7,12 +7,13 @@ const Services = () => {
   const firstNineServices = ourServices.slice(0, 9);
 
   return (
-    <div className="mt-20">
+    <div data-aos="fade-up" className="mt-20">
       <RoundedHeading text="our services" />
       <div className=" flex justify-center w-full">
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 adjustedwidth mt-14">
           {firstNineServices.map((obj) => (
             <div
+              data-aos="fade-up"
               key={obj.id}
               className="relative bg-gradient-to-b from-[#967BB3] to-[#B9A7CC] h-[332px] p-4 rounded overflow-hidden shadow flex justify-center items-center"
             >

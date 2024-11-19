@@ -10,7 +10,10 @@ const CompanyApproach = () => {
     <div className="flex flex-col items-center mt-20">
       <RoundedHeading text="our approach" />
       <div className="adjustedwidth mt-16">
-        <div className="flex flex-col items-center text-center">
+        <div
+          data-aos="fade-up"
+          className="flex flex-col items-center text-center"
+        >
           <h4 className="text-5xl leading-tight bg-gradient-to-r from-[#7186FF] to-[#B9A7CC] text-transparent bg-clip-text">
             Meet our process
           </h4>
@@ -22,7 +25,7 @@ const CompanyApproach = () => {
             strategies with your business goals
           </p>
         </div>
-        <div className="relative mt-16">
+        <div data-aos="fade-right" className="relative mt-16">
           <div className="w-[32%] md:h-[322px] absolute -bottom-[42px] md:bottom-[-56px] rounded-lg overflow-hidden left-0 lg:left-[-64px] opacity-80">
             <img src={homepageoverimagetwo} alt={homepageoverimagetwo} />
           </div>

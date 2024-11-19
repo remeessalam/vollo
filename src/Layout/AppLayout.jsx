@@ -2,8 +2,14 @@ import { Outlet } from "react-router-dom";
 import Footer from "./Footer";
 import Header from "./Header";
 import ScrollToTop from "../components/Scrolltop";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const AppLayout = () => {
+  AOS.init({
+    once: true,
+    duration: 500,
+  });
   return (
     <div>
       <Header />

@@ -9,7 +9,10 @@ const Banner = () => {
       className="flex justify-center items-center  lg:h-bannerheight text-black w-screen bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${homepagebanner})` }}
     >
-      <div className="flex flex-col items-center  text-center">
+      <div
+        data-aos="fade-up"
+        className="flex flex-col items-center  text-center"
+      >
         <h1 className="text-8xl sm:text-10xl  leading-tight">
           Innovating Today, Empowering Tomorrow!
         </h1>
