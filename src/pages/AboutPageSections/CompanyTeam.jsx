@@ -38,7 +38,7 @@ const CompanyTeam = () => {
             <p className="w-[15px] h-[15px] rounded-full bg-[#FCAF3D]"></p>
             Our Experts
           </h5>
-          <h3 className="text-8xl">Meet our team</h3>
+          <h3 className="text-4xl sm:text-8xl">Meet our team</h3>
         </div>
         <div className="mt-4">
           <div className="navigation-wrapper flex  items-center w-full ">

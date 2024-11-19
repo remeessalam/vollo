@@ -13,10 +13,10 @@ const Banner = () => {
         data-aos="fade-up"
         className="flex flex-col items-center  text-center"
       >
-        <h1 className="text-8xl sm:text-10xl  leading-tight">
+        <h1 className="text-4xl sm:text-10xl  leading-tight">
           Innovating Today, Empowering Tomorrow!
         </h1>
-        <h1 className="text-8xl sm:text-10xl leading-tight bg-gradient-to-r from-[#7186FF] to-[#B9A7CC] text-transparent bg-clip-text">
+        <h1 className="text-4xl sm:text-10xl leading-tight bg-gradient-to-r from-[#7186FF] to-[#B9A7CC] text-transparent bg-clip-text">
           Business Decisions Today
         </h1>
         <p className="text-[#0D0D0D] font-normal max-w-[70%] my-4 ">
@@ -29,7 +29,7 @@ const Banner = () => {
             <p className="primary-btn">Book a Demo</p>
           </Link>
           <Link to={"/services"}>
-            <p className="secondary-btn sm:my-0 my-3  ml-4">
+            <p className="secondary-btn sm:my-0 my-3  sm:ml-4">
               Take Product Tour ▶
             </p>
           </Link>

@@ -18,7 +18,7 @@ const ServicesPage = () => {
             data-aos="fade-up"
             className="flex md:flex-row flex-col md:gap-0 gap-5 justify-between mt-8"
           >
-            <h2 className="text-5xl leading-[43px] w-full md:w-[49%] flex items-start gap-10">
+            <h2 className="text-3xl sm:text-5xl leading-[43px] w-full md:w-[49%] flex items-start gap-10">
               Empowering Your Business with Innovative, Tailored Technology
               Solutions
               <div className="h-20 w-[7px] bg-sky-400" />

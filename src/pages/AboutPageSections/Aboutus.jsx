@@ -3,11 +3,11 @@ import { images } from "../../constant";
 const Aboutus = () => {
   const { aboutpageimageone } = images;
   return (
-    <div className="w-full mt-20">
+    <div className="w-full mt-8 sm:mt-20">
       <div className="adjustedwidth mx-auto">
         <div className="flex flex-col gap-5 md:gap-4 md:flex-row justify-between">
           <div data-aos="fade-up" className="w-full md:w-[45%]">
-            <h3 className="text-10xl">About Us</h3>
+            <h3 className="text-5xl sm:text-10xl">About Us</h3>
             <p className="text-decsriptioncolor mt-4">
               At Vollo Inc., we take immense pride in being pioneers at the
               forefront of technological innovation. Our mission is clear and

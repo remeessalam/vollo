@@ -10,7 +10,7 @@ const Services = () => {
     setIsOpen(true);
   };
   return (
-    <div className="py-20 ">
+    <div className="py-10 sm:py-20 ">
       <div className="adjustedwidth mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center">
           {ourServices.map((obj, index) => (
@@ -34,7 +34,7 @@ const Services = () => {
                   className="object-cover h-full"
                 />
               </div>
-              <h2 className="text-6xl text-headerandfooterbg text-start mt-6">
+              <h2 className="text-3xl sm:text-6xl text-headerandfooterbg text-start mt-6">
                 {obj.title}
               </h2>
               <p className="text-decsriptioncolor text-start">

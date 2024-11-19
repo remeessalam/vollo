@@ -49,7 +49,7 @@ const CompanyExperience = () => {
             <p className="w-[15px] h-[15px] rounded-full bg-[#FCAF3D]"></p>
             Meet Vollo Inc.
           </h5>
-          <h2 data-aos="fade-left" className="text-8xl">
+          <h2 data-aos="fade-left" className="text-3xl sm:text-8xl">
             Year of experience in this business field
           </h2>
           <p data-aos="fade-left">
