@@ -12,9 +12,13 @@ const About = () => {
       <div className="flex flex-wrap flex-col items-center lg:flex-row gap-8 adjustedwidth">
         <div
           data-aos="fade-right"
-          className="lg:w-[45%] w-full overflow-hidden rounded-xl"
+          className="lg:w-[45%] flex justify-center lg:justify-start w-full overflow-hidden rounded-xl"
         >
-          <img src={homepageaboutus} alt={homepageaboutus} />
+          <img
+            src={homepageaboutus}
+            alt={homepageaboutus}
+            className="max-h-[500px] object-cover rounded-xl"
+          />
         </div>
         <div className="lg:w-[45%] w-full">
           <p>
