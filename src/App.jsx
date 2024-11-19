@@ -1,29 +1,73 @@
+import { Suspense, lazy } from "react";
 import { createBrowserRouter } from "react-router-dom";
 import AppLayout from "./Layout/AppLayout";
-import HomePage from "./pages/HomePage";
-import AboutusPage from "./pages/AboutusPage";
-import ServicesPage from "./pages/ServicesPage";
-import ContactPage from "./pages/ContactPage";
-import LandingPage from "./landingpage/LandingPage";
+import Loader from "./components/Loader";
+
+const HomePage = lazy(() => import("./pages/HomePage"));
+const AboutusPage = lazy(() => import("./pages/AboutusPage"));
+const ServicesPage = lazy(() => import("./pages/ServicesPage"));
+const ContactPage = lazy(() => import("./pages/ContactPage"));
+const LandingPage = lazy(() => import("./landingpage/LandingPage"));
 
 const AppRouter = createBrowserRouter([
   {
     path: "/",
-    element: <AppLayout />,
+    element: (
+      <Suspense fallback={<Loader />}>
+        <AppLayout />
+      </Suspense>
+    ),
+
     children: [
-      { path: "/", element: <HomePage /> },
-      { path: "/about-us", element: <AboutusPage /> },
-      { path: "/services", element: <ServicesPage /> },
-      { path: "/contact-us", element: <ContactPage /> },
+      {
+        path: "/",
+        element: (
+          // <Suspense fallback={<Loader />}>
+          <HomePage />
+          // </Suspense>
+        ),
+      },
+      {
+        path: "/about-us",
+        element: (
+          // <Suspense fallback={<Loader />}>
+          <AboutusPage />
+          // </Suspense>
+        ),
+      },
+      {
+        path: "/services",
+        element: (
+          // <Suspense fallback={<Loader />}>
+          <ServicesPage />
+          // </Suspense>
+        ),
+      },
+      {
+        path: "/contact-us",
+        element: (
+          // <Suspense fallback={<Loader />}>
+          <ContactPage />
+          // </Suspense>
+        ),
+      },
     ],
   },
   {
     path: "/web-development",
-    element: <LandingPage page={"web"} />,
+    element: (
+      <Suspense fallback={<Loader />}>
+        <LandingPage page={"web"} />
+      </Suspense>
+    ),
   },
   {
     path: "/app-development",
-    element: <LandingPage page={"app"} />,
+    element: (
+      <Suspense fallback={<Loader />}>
+        <LandingPage page={"app"} />
+      </Suspense>
+    ),
   },
 ]);
 
