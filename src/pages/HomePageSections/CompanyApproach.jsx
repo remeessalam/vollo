@@ -1,3 +1,4 @@
+import ReactPlayer from "react-player";
 import RoundedHeading from "../../components/RoundedHeading";
 import { companyProcess, images, video } from "../../constant";
 
@@ -29,7 +30,17 @@ const CompanyApproach = () => {
             <img src={homepageoverimageone} alt={homepageoverimageone} />
           </div>
           <div className="w-[70%] mx-auto rounded-lg overflow-hidden">
-            <video src={homepagebackgroundvideo}></video>
+            <ReactPlayer
+              url={homepagebackgroundvideo}
+              loop={true}
+              playsinline
+              playing={true}
+              width="100%"
+              height="100%"
+              muted
+              className="react-player"
+            />
+            {/* <video src={homepagebackgroundvideo}></video> */}
           </div>
         </div>
       </div>

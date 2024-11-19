@@ -88,7 +88,7 @@ const ContactForm = () => {
                   value={formData.contactNumber}
                   onChange={handleChange}
                   placeholder="Enter number"
-                  className="border border-gray-300 rounded-lg pl-5 py-5 focus:outline-none"
+                  className=" rounded-lg pl-5 py-5 focus:outline-none"
                 />
                 {errors.contactNumber && (
                   <p className="text-red-500 text-sm">{errors.contactNumber}</p>
@@ -105,7 +105,7 @@ const ContactForm = () => {
                 value={formData.email}
                 onChange={handleChange}
                 placeholder="Enter your mail"
-                className="border border-gray-300 rounded-lg pl-5 py-5 focus:outline-none"
+                className="rounded-lg pl-5 py-5 focus:outline-none"
               />
               {errors.email && (
                 <p className="text-red-500 text-sm">{errors.email}</p>
@@ -121,7 +121,7 @@ const ContactForm = () => {
                 value={formData.subject}
                 onChange={handleChange}
                 placeholder="Enter subject"
-                className="border border-gray-300 rounded-lg pl-5 py-5 focus:outline-none"
+                className=" rounded-lg pl-5 py-5 focus:outline-none"
               />
               {errors.subject && (
                 <p className="text-red-500 text-sm">{errors.subject}</p>
@@ -137,7 +137,7 @@ const ContactForm = () => {
                 onChange={handleChange}
                 rows="5"
                 placeholder="Enter your massage"
-                className="border border-gray-300 rounded-lg p-2 focus:outline-none"
+                className=" rounded-lg p-2 focus:outline-none"
               ></textarea>
               {errors.message && (
                 <p className="text-red-500 text-sm">{errors.message}</p>

@@ -36,6 +36,32 @@ import fullstart from "./assets/images/fullstar.png";
 import fourstart from "./assets/images/fourstar.png";
 import testimonialsuserimage from "./assets/images/testimonialsuserimage.png";
 import contactuspagebanner from "./assets/images/contactuspagebanner.jpeg";
+import landingpagebannerapp from "./assets/images/landingpagebannerapp.jpg";
+import landingpagebannerweb from "./assets/images/landingpagebannerweb.jpg";
+import portfoliwebone from "./assets/images/portfolio/1-min.webp";
+import portfoliwebtwo from "./assets/images/portfolio/2-min.webp";
+import portfoliwebthree from "./assets/images/portfolio/3-min.webp";
+import portfoliwebfour from "./assets/images/portfolio/4-min.webp";
+import portfoliwebfive from "./assets/images/portfolio/5-min.webp";
+import portfoliwebseven from "./assets/images/portfolio/6-min.webp";
+import portfoliappone from "./assets/images/portfolio/1-appmin.webp";
+import portfoliapptwo from "./assets/images/portfolio/2-appmin.webp";
+import portfoliappthree from "./assets/images/portfolio/3-appmin.webp";
+import portfoliappfour from "./assets/images/portfolio/4-appmin.webp";
+import portfolisppsfive from "./assets/images/portfolio/5-appmin.webp";
+import whychooseusimg from "./assets/images/whychooseus.png";
+import ecommerce from "./assets/images/landingpage/ecommerce.png";
+import socialmedia from "./assets/images/landingpage/socialmedia.png";
+import landingpage from "./assets/images/landingpage/landingpage.png";
+import custom from "./assets/images/landingpage/custom.png";
+import iosapp from "./assets/images/landingpage/iosapp.png";
+import android from "./assets/images/landingpage/android.png";
+import flutter from "./assets/images/landingpage/flutter.png";
+import hybrid from "./assets/images/landingpage/hybrid.png";
+import mechanical from "./assets/images/landingpage/mechanical.png";
+import expert from "./assets/images/landingpage/expert.png";
+import target from "./assets/images/landingpage/target.png";
+import cogwheel from "./assets/images/landingpage/cogwheel.png";
 export const images = {
   Logo,
   phonenumbersvg,
@@ -50,6 +76,16 @@ export const images = {
   aboutpageimagefour,
   aboutpageimagetwo,
   contactuspagebanner,
+};
+
+export const landingpageimages = {
+  landingpagebannerapp,
+  landingpagebannerweb,
+  whychooseusimg,
+  mechanical,
+  expert,
+  target,
+  cogwheel,
 };
 export const video = { homepagebackgroundvideo };
 
@@ -310,5 +346,174 @@ export const testimonials = [
     name: "Jessica Lee",
     position: "Founder, FitnessHub ",
     says: "Working with Vollo Inc. on our mobile app development was a game-changer. They understood our vision from day one and delivered a top-notch app that not only looks great but functions flawlessly. Our customer engagement has soared since launch, and we’ve received incredible feedback from users. Vollo Inc. truly made our idea a reality",
+  },
+];
+
+export const webDevelopmentServices = [
+  {
+    id: 1,
+    title: "E-commerce Websites",
+    img: ecommerce,
+    description:
+      "Fuel your online business with custom e-commerce solutions. Our platforms are designed to enhance user engagement, optimize operations, and boost revenue, creating a seamless shopping experience for your customers.",
+  },
+  {
+    id: 2,
+    title: "Social Media Platforms",
+    img: socialmedia,
+    description:
+      "Build a dynamic social media platform that fosters community and engagement. We create feature-rich, user-friendly websites that help your brand thrive and foster customer loyalty.",
+  },
+  {
+    id: 3,
+    title: "Landing Pages",
+    img: landingpage,
+    description:
+      "Crafting high-impact landing pages that capture attention and drive results. Our designs emphasize your brand’s message, encouraging action and maximizing conversions.",
+  },
+  {
+    id: 4,
+    title: "Custom Web Solutions",
+    img: custom,
+    description:
+      "Providing custom website development tailored to your unique business objectives. Our solutions combine cutting-edge design with functionality, delivering a powerful and memorable online experience for your audience.",
+  },
+];
+
+// app development services
+export const appDevelopmentServices = [
+  {
+    id: 1,
+    title: "iOS App Development",
+    img: iosapp,
+    description:
+      "Our skilled developers work with both Swift and Objective-C to build robust and efficient apps. We optimize your app for performance, speed, and responsiveness.",
+  },
+  {
+    id: 2,
+    title: "Android App Development",
+    img: android,
+    description:
+      "We design and develop tailor-made Android apps that align with your vision and business goals.Proficient in both Java and Kotlin, we build robust and efficient apps.",
+  },
+  {
+    id: 3,
+    title: "Flutter App Development",
+    img: flutter,
+    description:
+      "Flutter allows you to build apps for both iOS and Android using a single codebase. While Flutter's default web app architecture presents challenges, we can overcome them with smart strategies. ",
+  },
+  {
+    id: 4,
+    title: "Hybrid App Development",
+    img: hybrid,
+    description:
+      "We build feature-rich hybrid apps tailored to your business needs. We create mobile-friendly apps that work seamlessly across iOS and Android devices.",
+  },
+];
+
+export const whyChooseUs = [
+  {
+    id: 1,
+    heading: "Innovation at Our Core: Pioneering the Future",
+    description:
+      "We don't merely follow trends; we lead the charge in shaping the future. By harnessing cutting-edge technology and visionary strategies, we craft solutions that redefine the boundaries of possibility. Our commitment to innovation drives us to explore new frontiers, empowering your business with transformative tools and insights that set you apart in a competitive landscape. Join us as we turn bold ideas into reality, positioning your organization at the forefront of the digital revolution.",
+  },
+  {
+    id: 2,
+    heading: "Customer-Centric Approach: Your Vision, Our Mission",
+    description:
+      "At Vollo Inc., you are not just a client; you are our top priority. We are dedicated to forging strong partnerships that allow us to deeply understand your unique needs and aspirations. Our team collaborates with you every step of the way, ensuring that we deliver tailored solutions that seamlessly integrate with your business. With a focus on personalization and excellence, we empower you to achieve your goals and thrive in today’s dynamic marketplace. Your success is our mission, and we are here to make it happen.",
+  },
+  {
+    id: 3,
+    heading: "Comprehensive Expertise: A Multidisciplinary Powerhouse",
+    description:
+      "Our diverse team of specialists represents a fusion of knowledge and experience across multiple domains, including artificial intelligence, cybersecurity, cloud computing, and more. This multidisciplinary expertise allows us to tackle even the most complex challenges with confidence and precision. By leveraging our collective skills, we develop innovative solutions tailored to your specific needs, ensuring you receive the highest level of service and support. Trust in our comprehensive expertise to propel your business forward and navigate the ever-evolving landscape of technology with assurance and agility.",
+  },
+  {
+    id: 4,
+    heading: "Scalable and Future-Proof Solutions",
+    description:
+      "We don’t just build for today—we build for tomorrow. Our solutions are designed to grow with your business, ensuring long-term success and adaptability in an ever-changing market.",
+  },
+];
+
+export const portfolioDataWeb = [
+  {
+    name: "FE Finance",
+    description:
+      "We collaborated with FE Finance to create a user-friendly platform that offers tailored financial solutions, allowing users to access resources and manage their finances effectively. The site features a responsive design and an intuitive interface to enhance user engagement.",
+    image: portfoliwebone,
+    link: "https://www.fe-finance.de",
+  },
+  {
+    name: "OCXEE",
+    description:
+      "For OCXEE, we developed a global platform that supports students in their international study journey. The website offers a variety of services, from accommodation assistance to banking, providing a seamless experience tailored to users' specific needs.",
+    image: portfoliwebtwo,
+    link: "https://www.ocxee.com",
+  },
+  {
+    name: "Leaderbridge",
+    description:
+      "Leaderbridge connects leaders and professionals across industries, fostering collaboration and knowledge sharing. Our team crafted a dynamic platform that emphasizes seamless networking and user experience.",
+    image: portfoliwebthree,
+    link: "https://www.leaderbridge.com",
+  },
+  {
+    name: "Gigzio",
+    description:
+      "Gigzio is a job search platform we helped bring to life, designed to connect job seekers with employers efficiently. With a focus on user-centered design, the platform simplifies the job search process and enhances accessibility across devices.",
+    image: portfoliwebfour,
+    link: "http://www.gigzio.com",
+  },
+
+  {
+    name: "FE Group",
+    description:
+      "FE Group's platform offers comprehensive solutions in finance and consultancy. We developed a robust website that reflects the company’s professional approach, enhancing client interaction and support.",
+    image: portfoliwebfive,
+    link: "https://www.fe.group",
+  },
+  {
+    name: "VTalks",
+    description:
+      "VTalks provides a platform for virtual talks and webinars. We created a highly responsive website to support interactive sessions, allowing users to join, share, and engage with industry experts worldwide.",
+    image: portfoliwebseven,
+    link: "https://www.vtalkz.com",
+  },
+];
+
+export const portfolioDataApp = [
+  {
+    name: "Partex",
+    description:
+      "We developed the Partex app to streamline logistics operations, ensuring efficient tracking and management of packages. With real-time updates and a user-friendly interface, Partex enhances both operational efficiency and user satisfaction.",
+    image: portfoliappone,
+  },
+  {
+    name: "Find A Driver",
+    description:
+      "Driver is a comprehensive driver management platform that simplifies fleet operations, driver scheduling, and route optimization. The app is designed to maximize productivity and provide seamless navigation features.",
+    image: portfoliapptwo,
+  },
+  {
+    name: "Glowsy",
+    description:
+      "Glowsy is a beauty and wellness app offering personalized beauty care recommendations and virtual consultations. Our team developed this app to provide an engaging, user-centered experience with tailored beauty solutions.",
+    image: portfoliappthree,
+  },
+  {
+    name: "Artisan Express",
+    description:
+      "Artisan Express connects skilled artisans with clients, offering a platform for job booking, ratings, and secure payments. The app enhances user trust and accessibility, creating a dynamic marketplace for craft and trade services.",
+    image: portfoliappfour,
+  },
+  {
+    name: "House of Deliverance",
+    description:
+      "House of Deliverance is a wellness app designed to provide mental health resources, guided meditation, and daily motivational content. The app fosters a supportive community and offers tools for users to improve mental well-being.",
+    image: portfolisppsfive,
   },
 ];

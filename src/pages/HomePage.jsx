@@ -1,3 +1,4 @@
+import WhyChooseUs from "../components/WhyChooseUs";
 import About from "./HomePageSections/About";
 import Banner from "./HomePageSections/Banner";
 import CompanyApproach from "./HomePageSections/CompanyApproach";
@@ -11,6 +12,7 @@ const HomePage = () => {
       <About />
       <Services />
       <MeetCompany />
+      <WhyChooseUs />
       <CompanyApproach />
     </>
   );
