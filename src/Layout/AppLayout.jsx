@@ -11,7 +11,7 @@ const AppLayout = () => {
     duration: 500,
   });
   return (
-    <div>
+    <div className="w-screen overflow-hidden">
       <Header />
       <div className="mt-20 lg:mt-[124px]">
         <ScrollToTop />
