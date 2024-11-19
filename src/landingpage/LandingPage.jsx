@@ -7,6 +7,7 @@ import Portfolio from "./components/Portfolio";
 import Testimonials from "../pages/AboutPageSections/Testimonials";
 import Footer from "../Layout/Footer";
 import PartnerUs from "../components/PartnerUs";
+import LandingAbout from "./components/LandingAbout";
 const LandingPage = ({ page }) => {
   return (
     <div>
@@ -16,7 +17,10 @@ const LandingPage = ({ page }) => {
         <div className="adjustedwidth mx-auto bg-[#DCD3E6] mt-5 sm:mt-20 pt-1 rounded-xl">
           <ContactForm />
         </div>
-        <div className="adjustedwidth mx-auto">
+        <div>
+          <LandingAbout page={page} />
+        </div>
+        <div className="adjustedwidth mx-auto mt-16">
           <LandingServices page={page} />
         </div>
         <div>
@@ -31,7 +35,10 @@ const LandingPage = ({ page }) => {
         <div>
           <Testimonials />
         </div>
-        <div className="adjustedwidth mx-auto bg-[#DCD3E6] mt-5 sm:mt-20 pt-1 rounded-xl">
+        <div
+          id="contact"
+          className="adjustedwidth mx-auto bg-[#DCD3E6] mt-5 sm:mt-20 pt-1 rounded-xl"
+        >
           <ContactForm />
         </div>
         <Footer />

@@ -2,9 +2,9 @@ import Drawer from "react-modern-drawer";
 import { Divide as Hamburger } from "hamburger-react";
 import { IoMdClose } from "react-icons/io";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import "react-modern-drawer/dist/index.css";
-import { images, routes } from "../../constant";
+import { images } from "../../constant";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,12 +13,35 @@ const Header = () => {
     setIsOpen(!isOpen);
   };
 
+  const options = [
+    {
+      name: "Home",
+      path: "banner",
+    },
+    {
+      name: "About Us",
+      path: "about",
+    },
+    {
+      name: "Services",
+      path: "services",
+    },
+    // {
+    //   name: "FAQs",
+    //   path: "faqs",
+    // },
+    {
+      name: "Contact Us",
+      path: "contact",
+    },
+  ];
+
   return (
     <div className="py-4 fixed top-0 w-full bg-headerandfooterbg  z-50 text-white text-base font-medium">
       <div className=" flex justify-between items-center gap-10 mx-auto">
         <div className="flex justify-between gap-2  items-center min-w-fit w-full  mx-5">
           <div className="min-w-fit">
-            <Link to="/">
+            <Link smooth={true} to="banner" className="cursor-pointer">
               <div className="flex justify-center items-center min-w-fit">
                 <img
                   src={Logo}
@@ -33,10 +56,19 @@ const Header = () => {
           </div>
 
           <div className="lg:flex items-center max-w-[662px] justify-around w-full min-w-fit hidden">
-            {routes.map(({ name, path }) => (
-              <div className={` text-[14px] `} key={path}>
-                {name.toUpperCase()}
-              </div>
+            {options.map((option) => (
+              <Link
+                to={`${option.path}`}
+                className="link text-sm"
+                key={option.path}
+                spy={true}
+                smooth={true}
+                offset={-140}
+                duration={1000}
+                activeClass="active-link"
+              >
+                {option.name}
+              </Link>
             ))}
           </div>
 
@@ -51,7 +83,19 @@ const Header = () => {
               />
               <h3 className="min-w-fit">CALL US: +91-34343493493</h3>
             </div>
-            <div className="secondary-btn">GET STARTED</div>
+            <Link
+              to={`contact`}
+              className="secondary-btn text-sm"
+              key={"contact"}
+              spy={true}
+              smooth={true}
+              offset={-140}
+              duration={1000}
+              activeClass="active-link"
+            >
+              GET STARTED
+            </Link>
+            {/* <div className="secondary-btn">GET STARTED</div> */}
           </div>
 
           <div
@@ -83,14 +127,19 @@ const Header = () => {
           </button>
         </div>
         <div className="flex flex-col gap-6">
-          {routes.map(({ name, path }) => (
-            <div
+          {options.map(({ name, path, id }) => (
+            <Link
               onClick={() => setIsOpen(false)}
-              key={path}
+              key={id}
               className="text-3xl text-white font-medium transition-colors duration-300 link"
+              to={path}
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={1000}
             >
               {name}
-            </div>
+            </Link>
           ))}
         </div>
       </Drawer>

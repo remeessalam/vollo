@@ -5,6 +5,7 @@ const LandingBanner = ({ page }) => {
 
   return (
     <div
+      id="banner"
       className="flex justify-center items-center  lg:h-bannerheight text-black w-screen bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage: `url(${

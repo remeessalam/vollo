@@ -13,7 +13,7 @@ const LandingServices = ({ page }) => {
   const { ecommerce } = landingpageimages;
   return (
     <div id="services" className="flex justify-center relative">
-      <div className="wrapper py-10 flex flex-col items-center gap-5 z-10 text-black">
+      <div className="py-10 flex flex-col items-center gap-5 z-10 text-black">
         <div className="w-full ">
           <RoundedHeading
             text={`Our ${page === "web" ? "Web" : "App"} Development Services`}

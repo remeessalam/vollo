@@ -62,6 +62,8 @@ import mechanical from "./assets/images/landingpage/mechanical.png";
 import expert from "./assets/images/landingpage/expert.png";
 import target from "./assets/images/landingpage/target.png";
 import cogwheel from "./assets/images/landingpage/cogwheel.png";
+import webLandingAbout from "./assets/images/webLandingAbout.png";
+import appLandingAbout from "./assets/images/appLandingAbout.png";
 export const images = {
   Logo,
   phonenumbersvg,
@@ -86,6 +88,8 @@ export const landingpageimages = {
   expert,
   target,
   cogwheel,
+  webLandingAbout,
+  appLandingAbout,
 };
 export const video = { homepagebackgroundvideo };
 
