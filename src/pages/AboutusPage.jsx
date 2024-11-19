@@ -2,7 +2,7 @@ import CommonBanner from "../components/CommonBanner";
 import aboutVideo from "../assets/video/aboutpagebanner.mp4";
 import Aboutus from "./AboutPageSections/Aboutus";
 import CompanyAchievements from "../components/CompanyAchievements";
-import CompanyExperience from "./AboutPageSections/companyExperience";
+import CompanyExperience from "./AboutPageSections/CompanyExperience";
 import CompanyTeam from "./AboutPageSections/CompanyTeam";
 import Testimonials from "./AboutPageSections/Testimonials";
 const AboutusPage = () => {
