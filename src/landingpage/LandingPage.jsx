@@ -16,9 +16,9 @@ const LandingPage = ({ page }) => {
     duration: 500,
   });
   return (
-    <div>
+    <div className="w-screen overflow-hidden">
       <Header />
-      <div className="mt-20 lg:mt-[124px]">
+      <div className="mt-20 md:mt-[124px]">
         <LandingBanner page={page} />
         <div className="adjustedwidth mx-auto bg-[#DCD3E6] mt-5 sm:mt-20 pt-1 rounded-xl">
           <ContactForm />
@@ -26,7 +26,7 @@ const LandingPage = ({ page }) => {
         <div>
           <LandingAbout page={page} />
         </div>
-        <div className="adjustedwidth mx-auto mt-16">
+        <div className="adjustedwidth mx-auto mt-4 sm:mt-16">
           <LandingServices page={page} />
         </div>
         <div>

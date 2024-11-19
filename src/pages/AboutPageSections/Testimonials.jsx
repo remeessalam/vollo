@@ -59,16 +59,16 @@ const Testimonials = () => {
     },
   });
   return (
-    <div className="mt-20">
+    <div className="mt-10 sm:mt-20">
       <div className="">
         <div
           data-aos="fade-up"
           className="w-full flex flex-col items-center text-center"
         >
-          <h3 className="text-8xl leading-tight">
+          <h3 className="text-3xl sm:text-8xl leading-tight">
             Clients Feedback <br /> Examples You
           </h3>
-          <p className="text-decsriptioncolor max-w-[50%] text-center mt-7">
+          <p className="text-decsriptioncolor max-w-[95%] sm:max-w-[50%] text-center mt-7">
             At Vollo Inc, we take pride in the success of our clients.
             Here&apos;s what some of them have to say about their experience
             working with us

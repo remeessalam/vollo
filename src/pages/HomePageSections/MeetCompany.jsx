@@ -3,10 +3,10 @@ import { meetCompanyDetails } from "../../constant";
 
 const MeetCompany = () => {
   return (
-    <div className="mt-20">
+    <div className="mt-10 sm:mt-20">
       <RoundedHeading text="meet vollo inc" />
       <div className="flex justify-center">
-        <div className="adjustedwidth sm:gap-5 gap-3 md:gap-8 lg:gap-14 flex flex-col mt-16">
+        <div className="adjustedwidth  flex flex-col mt-2 sm:mt-10">
           {meetCompanyDetails.map((obj) => (
             <div
               data-aos="fade-up"

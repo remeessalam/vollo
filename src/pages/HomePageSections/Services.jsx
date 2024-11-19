@@ -29,7 +29,7 @@ const Services = () => {
           ))}
         </div>
       </div>
-      <div className="flex justify-center mt-14">
+      <div className="flex justify-center mt-10 sm:mt-14">
         <Link to={"/services"}>
           <h3 className="secondary-btn w-[10rem]">View More</h3>
         </Link>

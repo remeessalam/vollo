@@ -50,18 +50,21 @@ const ContactForm = () => {
     setErrors({});
   };
   return (
-    <div className="mt-20 px-5 pb-20">
-      <h2 data-aos="fade-up" className="text-4xl sm:text-5xl text-center">
+    <div className="mt-10 sm:mt-20 sm:px-5  pb-20">
+      <h2
+        data-aos="fade-up"
+        className="text-4xl sm:text-5xl text-center sm:leading-none leading-tight"
+      >
         Fill the form and contact with us
       </h2>
-      <div className="flex justify-around md:gap-0 gap-5 md:flex-row flex-col items-center mt-16">
-        <div data-aos="fade-up" className="w-full md:w-[40%] px-4">
-          <h4 className="text-4xl sm:text-5xl text-center">
+      <div className="flex justify-around md:gap-0 gap-5 md:flex-row flex-col items-center mt-4 sm:mt-16">
+        <div data-aos="fade-up" className="w-full md:w-[40%] sm:px-4">
+          <h4 className="text-3xl sm:text-5xl text-center">
             We&apos;d love to hear from you! Tell us about your project or
             schedule an appointment to discuss in detail.
           </h4>
         </div>
-        <div data-aos="fade-up" className="w-full md:w-1/2">
+        <div data-aos="fade-up" className="w-full sm:px-0 px-3 md:w-1/2">
           <form onSubmit={handleSubmit} className="flex flex-col gap-6">
             <div className="flex flex-col lg:flex-row gap-4">
               <div className="flex flex-col w-full">
@@ -73,7 +76,7 @@ const ContactForm = () => {
                   value={formData.fullName}
                   onChange={handleChange}
                   placeholder="Enter your Full Name"
-                  className="rounded-lg pl-5 py-5 focus:outline-none"
+                  className="rounded-lg pl-5 sm:py-4 py-3 focus:outline-none"
                 />
                 {errors.fullName && (
                   <p className="text-red-500 text-sm">{errors.fullName}</p>
@@ -88,7 +91,7 @@ const ContactForm = () => {
                   value={formData.contactNumber}
                   onChange={handleChange}
                   placeholder="Enter number"
-                  className=" rounded-lg pl-5 py-5 focus:outline-none"
+                  className=" rounded-lg pl-5 m:py-4 py-3 focus:outline-none"
                 />
                 {errors.contactNumber && (
                   <p className="text-red-500 text-sm">{errors.contactNumber}</p>
@@ -105,7 +108,7 @@ const ContactForm = () => {
                 value={formData.email}
                 onChange={handleChange}
                 placeholder="Enter your mail"
-                className="rounded-lg pl-5 py-5 focus:outline-none"
+                className="rounded-lg pl-5 m:py-4 py-3 focus:outline-none"
               />
               {errors.email && (
                 <p className="text-red-500 text-sm">{errors.email}</p>
@@ -121,7 +124,7 @@ const ContactForm = () => {
                 value={formData.subject}
                 onChange={handleChange}
                 placeholder="Enter subject"
-                className=" rounded-lg pl-5 py-5 focus:outline-none"
+                className=" rounded-lg pl-5 m:py-4 py-3 focus:outline-none"
               />
               {errors.subject && (
                 <p className="text-red-500 text-sm">{errors.subject}</p>

@@ -6,7 +6,7 @@ const LandingBanner = ({ page }) => {
   return (
     <div
       id="banner"
-      className="flex justify-center items-center  lg:h-bannerheight text-black w-screen bg-cover bg-center bg-no-repeat"
+      className="pt-6 lg:pt-0 sm:pb-6 lg-pb-0 pb-0 flex justify-center items-center  lg:h-bannerheight text-black w-screen bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage: `url(${
           page === "web" ? landingpagebannerweb : landingpagebannerapp
@@ -14,14 +14,14 @@ const LandingBanner = ({ page }) => {
       }}
     >
       <div className="flex flex-col items-center  text-center">
-        <h1 data-aos="fade-up" className="text-8xl sm:text-10xl leading-tight">
+        <h1 data-aos="fade-up" className="text-4xl sm:text-10xl leading-tight">
           {page === "web"
             ? "Build Scalable, High-Performance Websites"
             : "Mobile Apps that Drive Engagement"}
         </h1>
         <h1
           data-aos="fade-up"
-          className="text-8xl sm:text-10xl text-shadow leading-tight bg-gradient-to-r from-[#7186FF] to-[#B9A7CC] text-transparent bg-clip-text"
+          className="text-4xl sm:text-10xl  leading-tight bg-gradient-to-r from-[#7186FF] to-[#59066e] text-transparent bg-clip-text"
         >
           {page === "web"
             ? "Building Your Web Presence with Precision"

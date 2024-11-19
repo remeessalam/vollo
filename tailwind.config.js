@@ -41,6 +41,12 @@ export default {
           fontWeight: "500",
         },
       ],
+      "3xl": [
+        "26px",
+        {
+          fontWeight: "700",
+        },
+      ],
       "4xl": [
         "34px",
         {
