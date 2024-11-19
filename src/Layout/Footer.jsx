@@ -64,9 +64,9 @@ const Footer = () => {
             <p className=" max-w-[70%]">
               © 2024 AI Website. All Rights Reserved.
             </p>
-            <h4>
+            {/* <h4>
               Scroll Top <span>↑</span>
-            </h4>
+            </h4> */}
           </div>
         </div>
       </div>

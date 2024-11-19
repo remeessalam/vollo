@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { images } from "../../constant";
 
 const Banner = () => {
@@ -21,10 +22,14 @@ const Banner = () => {
           predictive insights for informed decision-making.
         </p>
         <div className="sm:max-w-[60%] max-w-full flex md:flex-row flex-col items-center justify-center">
-          <p className="primary-btn">Book a Demo</p>
-          <p className="secondary-btn sm:my-0 my-3  ml-4">
-            Take Product Tour ▶
-          </p>
+          <Link to={"/contact-us"}>
+            <p className="primary-btn">Book a Demo</p>
+          </Link>
+          <Link to={"/services"}>
+            <p className="secondary-btn sm:my-0 my-3  ml-4">
+              Take Product Tour ▶
+            </p>
+          </Link>
         </div>
       </div>
     </div>

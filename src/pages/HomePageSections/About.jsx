@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import RoundedHeading from "../../components/RoundedHeading";
 import { images } from "../../constant";
 const About = () => {
@@ -38,7 +39,9 @@ const About = () => {
             success for our clients.
           </p>
           <div className="w-[150px] mt-2 sm:mt-5">
-            <h4 className="secondary-btn-small">Lern more</h4>
+            <Link to={"/about-us"}>
+              <h4 className="secondary-btn-small">Lern more</h4>
+            </Link>
           </div>
         </div>
       </div>

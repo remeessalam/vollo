@@ -58,7 +58,9 @@ const Header = () => {
               />
               <h3 className="min-w-fit">CALL US: +91-34343493493</h3>
             </div>
-            <div className="secondary-btn">GET STARTED</div>
+            <Link to={"/contact-us"}>
+              <div className="secondary-btn">GET STARTED</div>
+            </Link>
           </div>
 
           <div

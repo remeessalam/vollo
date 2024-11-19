@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import RoundedHeading from "../../components/RoundedHeading";
 import { images, ourServices } from "../../constant";
 
@@ -28,7 +29,9 @@ const Services = () => {
         </div>
       </div>
       <div className="flex justify-center mt-14">
-        <h3 className="secondary-btn w-[10rem]">View More</h3>
+        <Link to={"/services"}>
+          <h3 className="secondary-btn w-[10rem]">View More</h3>
+        </Link>
       </div>
     </div>
   );
