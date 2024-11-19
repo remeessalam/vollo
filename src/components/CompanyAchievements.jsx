@@ -8,7 +8,7 @@ const CompanyAchievements = () => {
   return (
     <div
       data-aos="fade-up"
-      className="relative w-full h-full  py-10 sm:overflow-hidden mt-20 bg-cover bg-center bg-no-repeat"
+      className="relative w-full h-full  py-10 sm:overflow-hidden mt-10 sm:mt-20 bg-cover bg-center bg-no-repeat"
     >
       <div className="absolute top-0 w-screen -z-10 h-full ">
         <img

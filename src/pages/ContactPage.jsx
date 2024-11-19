@@ -12,7 +12,7 @@ const ContactPage = () => {
         isImage={true}
         title={"Contact us"}
       />
-      <div className="adjustedwidth mx-auto mt-20 bg-[#DCD3E6]">
+      <div className="adjustedwidth mx-auto mt-10 sm:mt-20 bg-[#DCD3E6]">
         <CompanyAddress />
         <ContactForm />
       </div>

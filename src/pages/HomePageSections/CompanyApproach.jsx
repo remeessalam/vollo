@@ -7,9 +7,9 @@ const CompanyApproach = () => {
   const { homepageoverimageone, homepageoverimagetwo, verticaldivider } =
     images;
   return (
-    <div className="flex flex-col items-center mt-20">
+    <div className="flex flex-col items-center mt-10 sm:mt-20">
       <RoundedHeading text="our approach" />
-      <div className="adjustedwidth mt-16">
+      <div className="adjustedwidth mt-6 sm:mt-16">
         <div
           data-aos="fade-up"
           className="flex flex-col items-center text-center"

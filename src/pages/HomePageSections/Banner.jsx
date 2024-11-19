@@ -11,7 +11,7 @@ const Banner = () => {
     >
       <div
         data-aos="fade-up"
-        className="flex flex-col items-center  text-center"
+        className="flex flex-col items-center  text-center sm:mt-0 mt-4"
       >
         <h1 className="text-4xl sm:text-10xl  leading-tight">
           Innovating Today, Empowering Tomorrow!

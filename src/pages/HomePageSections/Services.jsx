@@ -7,7 +7,7 @@ const Services = () => {
   const firstNineServices = ourServices.slice(0, 9);
 
   return (
-    <div data-aos="fade-up" className="mt-20">
+    <div data-aos="fade-up" className="mt-10 sm:mt-20">
       <RoundedHeading text="our services" />
       <div className=" flex justify-center w-full">
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 adjustedwidth mt-14">

@@ -4,7 +4,10 @@ import { images } from "../../constant";
 const About = () => {
   const { homepageaboutus } = images;
   return (
-    <div data-aos="fade-up" className="flex flex-col items-center mt-20 gap-16">
+    <div
+      data-aos="fade-up"
+      className="flex flex-col items-center mt-10 sm:mt-20 gap-10"
+    >
       <RoundedHeading text={"about us"} />
       <div className="flex flex-wrap flex-col items-center lg:flex-row gap-8 adjustedwidth">
         <div

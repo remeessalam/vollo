@@ -3,7 +3,7 @@ import { images } from "../../constant";
 const CompanyExperience = () => {
   const { aboutpageimagethree, aboutpageimagefour, aboutpageimagetwo } = images;
   return (
-    <div className="w-full mt-20">
+    <div className="w-full mt-10 sm:mt-20">
       <div className="adjustedwidth mx-auto flex md:flex-row flex-col-reverse justify-between">
         <div className="w-full md:w-[48%] mt-5 md:mt-0">
           <div

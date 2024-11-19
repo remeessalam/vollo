@@ -6,13 +6,13 @@ const ServicesPage = () => {
   return (
     <div className="bg-gradient-to-b from-[#939393] to-white">
       <CommonBanner video={servicesBanner} title="Our Services" />
-      <div className="mt-20">
+      <div className="mt-10 sm:mt-20">
         <div className="adjustedwidth mx-auto">
           <h4
             data-aos="fade-up"
             className="flex items-center gap-1 font-bold text-[#112675]"
           >
-            <p className="w-5 h-5 rounded-full bg-[#112675]"></p>Our services
+            <p className="w-5 h-5 rounded-full bg-[#112675]"></p>Our Services
           </h4>
           <div
             data-aos="fade-up"
