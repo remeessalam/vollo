@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 // import { images } from "../../constant";
-import homepagebanner from "../../assets/homepagebanner.jpeg";
+import homepagebanner from "../../assets/images/homepagebanner.jpeg";
 const Banner = () => {
   // const { homepagebanner } = images;
 
