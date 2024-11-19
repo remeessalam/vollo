@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import { images } from "../../constant";
-
+// import { images } from "../../constant";
+import homepagebanner from "../../assets/homepagebanner.jpeg";
 const Banner = () => {
-  const { homepagebanner } = images;
+  // const { homepagebanner } = images;
 
   return (
     <div
