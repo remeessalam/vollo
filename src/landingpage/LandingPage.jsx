@@ -10,6 +10,7 @@ import PartnerUs from "../components/PartnerUs";
 import LandingAbout from "./components/LandingAbout";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import LandingForm from "./components/LandingForm";
 const LandingPage = ({ page }) => {
   AOS.init({
     once: true,
@@ -20,8 +21,11 @@ const LandingPage = ({ page }) => {
       <Header />
       <div className="mt-20 md:mt-[124px]">
         <LandingBanner page={page} />
-        <div className="adjustedwidth mx-auto bg-[#DCD3E6] mt-5 sm:mt-20 pt-1 rounded-xl">
-          <ContactForm />
+        <div
+          id="asdf"
+          className="adjustedwidth mx-auto bg-[#DCD3E6] mt-5 sm:mt-20 pt-1 rounded-xl"
+        >
+          <LandingForm />
         </div>
         <div>
           <LandingAbout page={page} />

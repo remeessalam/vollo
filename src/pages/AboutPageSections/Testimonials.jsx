@@ -76,7 +76,8 @@ const Testimonials = () => {
         </div>
         <div className="flex flex-col ">
           <div
-            data-aos="fade-up"
+            id="srd"
+            // data-aos="fade-up"
             ref={sliderRef}
             className="keen-slider flex sm:items-center mt-16 min-h-[400px]"
           >
@@ -106,7 +107,8 @@ const Testimonials = () => {
             ))}
           </div>
           <div
-            data-aos="fade-up"
+            key="dfsf"
+            // data-aos="fade-up"
             ref={sliderRefTwo}
             className="keen-slider flex sm:items-center mt-4 min-h-[400px]"
           >

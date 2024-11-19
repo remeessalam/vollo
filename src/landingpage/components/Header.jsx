@@ -135,7 +135,7 @@ const Header = () => {
               to={path}
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={path === "services" ? -80 : -140}
               duration={1000}
             >
               {name}

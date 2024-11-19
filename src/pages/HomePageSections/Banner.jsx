@@ -6,7 +6,7 @@ const Banner = () => {
 
   return (
     <div
-      className="flex justify-center items-center  lg:h-bannerheight text-black w-screen bg-cover bg-center bg-no-repeat"
+      className="flex justify-center items-center h-bannerheightsm  lg:h-bannerheight text-black w-screen bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${homepagebanner})` }}
     >
       <div

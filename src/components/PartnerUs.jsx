@@ -2,7 +2,7 @@ import RoundedHeading from "./RoundedHeading";
 
 const PartnerUs = () => {
   return (
-    <div className="mt-16">
+    <div className="mt-1 sm:mt-16">
       <div className="adjustedwidth mx-auto">
         <RoundedHeading text={"Partner with us"} />
         <p className="text-decsriptioncolor text-center mt-10">

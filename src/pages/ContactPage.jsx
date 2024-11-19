@@ -14,7 +14,9 @@ const ContactPage = () => {
       />
       <div className="adjustedwidth mx-auto mt-10 sm:mt-20 bg-[#DCD3E6]">
         <CompanyAddress />
-        <ContactForm />
+        <div data-aos="fade-up">
+          <ContactForm />
+        </div>
       </div>
     </>
   );

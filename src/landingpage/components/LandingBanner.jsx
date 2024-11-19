@@ -6,7 +6,7 @@ const LandingBanner = ({ page }) => {
   return (
     <div
       id="banner"
-      className="pt-6 lg:pt-0 sm:pb-6 lg-pb-0 pb-0 flex justify-center items-center  lg:h-bannerheight text-black w-screen bg-cover bg-center bg-no-repeat"
+      className="pt-6 lg:pt-0 sm:pb-6 lg-pb-0 pb-0 flex justify-center items-center h-bannerheightsm  lg:h-bannerheight text-black w-screen bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage: `url(${
           page === "web" ? landingpagebannerweb : landingpagebannerapp

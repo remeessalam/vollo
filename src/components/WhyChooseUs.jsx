@@ -5,7 +5,7 @@ const WhyChooseUs = () => {
   const { whychooseusimg, mechanical, expert, target, cogwheel } =
     landingpageimages;
   return (
-    <div className="mt-16">
+    <div className="mt-1 sm:mt-16">
       <div className="adjustedwidth mx-auto">
         <RoundedHeading text={" Why Choose Us"} />
 
