@@ -6,14 +6,17 @@ const CompanyExperience = () => {
     <div className="w-full mt-20">
       <div className="adjustedwidth mx-auto flex md:flex-row flex-col-reverse justify-between">
         <div className="w-full md:w-[48%] mt-5 md:mt-0">
-          <div className="rounded-lg overflow-hidden h-[450px]">
+          <div
+            data-aos="fade-right"
+            className="rounded-lg overflow-hidden h-[450px]"
+          >
             <img
               src={aboutpageimagethree}
               alt="aboutpageimagethree"
               className="h-full object-cover"
             />
           </div>
-          <p className="my-6">
+          <p data-aos="fade-right" className="my-6">
             At Vollo Inc., our team combines creativity and technical expertise,
             bringing together a group of seasoned professionals with deep
             industry knowledge. We embrace our diverse backgrounds, with each
@@ -27,7 +30,10 @@ const CompanyExperience = () => {
             developing scalable systems, we focus on delivering customized
             solutions that address both current challenges and future demands.
           </p>
-          <div className="rounded-lg overflow-hidden h-[450px]">
+          <div
+            data-aos="fade-right"
+            className="rounded-lg overflow-hidden h-[450px]"
+          >
             <img
               src={aboutpageimagefour}
               alt="aboutpageimagefour"
@@ -36,14 +42,17 @@ const CompanyExperience = () => {
           </div>
         </div>
         <div className="w-full md:w-[48%]">
-          <h5 className="text-[#FCAF3D] flex items-center gap-1">
+          <h5
+            data-aos="fade-left"
+            className="text-[#FCAF3D] flex items-center gap-1"
+          >
             <p className="w-[15px] h-[15px] rounded-full bg-[#FCAF3D]"></p>
             Meet Vollo Inc.
           </h5>
-          <h2 className="text-8xl">
+          <h2 data-aos="fade-left" className="text-8xl">
             Year of experience in this business field
           </h2>
-          <p>
+          <p data-aos="fade-left">
             At Vollo Inc., our team blends creativity with technical expertise,
             bringing together seasoned professionals who possess extensive
             industry knowledge. We celebrate our diverse backgrounds, with each
@@ -55,21 +64,24 @@ const CompanyExperience = () => {
             engagement, our services are designed to adapt to the dynamic
             digital landscape.
           </p>
-          <div className="my-6 rounded-lg overflow-hidden h-[450px]">
+          <div
+            data-aos="fade-left"
+            className="my-6 rounded-lg overflow-hidden h-[450px]"
+          >
             <img
               src={aboutpageimagetwo}
               alt="aboutpageimagetwo"
               className="w-full h-full object-cover"
             />
           </div>
-          <p>
+          <p data-aos="fade-left">
             At Vollo Inc., we combine creativity and technical expertise,
             bringing together a team of seasoned professionals with vast
             industry knowledge. We embrace the diversity of our backgrounds,
             where each member brings unique insights that fuel our innovative
             spirit.
           </p>
-          <p className="mt-6">
+          <p data-aos="fade-left" className="mt-6">
             We specialize in a wide range of technology services designed to
             meet the evolving needs of our clients. From cutting-edge Artificial
             Intelligence solutions that revolutionize decision-making to

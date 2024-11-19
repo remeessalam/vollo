@@ -15,6 +15,7 @@ const Services = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center">
           {ourServices.map((obj, index) => (
             <div
+              data-aos="fade-up"
               key={obj.id}
               className={`
                 flex flex-col justify-between   text-center pt-5 px-5  bg-white h-full shadow-md

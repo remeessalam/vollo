@@ -8,10 +8,16 @@ const ServicesPage = () => {
       <CommonBanner video={servicesBanner} title="Our Services" />
       <div className="mt-20">
         <div className="adjustedwidth mx-auto">
-          <h4 className="flex items-center gap-1 font-bold text-[#112675]">
+          <h4
+            data-aos="fade-up"
+            className="flex items-center gap-1 font-bold text-[#112675]"
+          >
             <p className="w-5 h-5 rounded-full bg-[#112675]"></p>Our services
           </h4>
-          <div className="flex md:flex-row flex-col md:gap-0 gap-5 justify-between mt-8">
+          <div
+            data-aos="fade-up"
+            className="flex md:flex-row flex-col md:gap-0 gap-5 justify-between mt-8"
+          >
             <h2 className="text-5xl leading-[43px] w-full md:w-[49%] flex items-start gap-10">
               Empowering Your Business with Innovative, Tailored Technology
               Solutions

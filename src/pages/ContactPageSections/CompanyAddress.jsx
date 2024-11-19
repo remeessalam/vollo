@@ -6,17 +6,26 @@ const CompanyAddress = () => {
   return (
     <div>
       <div className="grid grid-cols-1 lg:grid-cols-3 w-full">
-        <div className="flex flex-col items-center justify-center py-14 gap-4 bg-[#967BB3]">
+        <div
+          data-aos="fade-up"
+          className="flex flex-col items-center justify-center py-14 gap-4 bg-[#967BB3]"
+        >
           <img src={location} alt="location" width={63} height={63} />
           <h3 className="text-2xl lg:text-6xl">Address line</h3>
           <p>Bowery St, New York, NY 10013, USA</p>
         </div>
-        <div className="flex flex-col items-center justify-center py-14 gap-4 bg-[#B9A7CC]">
+        <div
+          data-aos="fade-up"
+          className="flex flex-col items-center justify-center py-14 gap-4 bg-[#B9A7CC]"
+        >
           <img src={mail} alt="mail" width={63} height={63} />
           <h3 className="text-2xl lg:text-6xl">Phone Number</h3>
           <p>+1255 - 568 - 6523</p>
         </div>
-        <div className="flex flex-col items-center justify-center py-14 gap-4 bg-[#DCD3E6]">
+        <div
+          data-aos="fade-up"
+          className="flex flex-col items-center justify-center py-14 gap-4 bg-[#DCD3E6]"
+        >
           <img src={clock} alt="clock" width={63} height={63} />
           <h3 className="text-2xl lg:text-6xl">Opening Hours</h3>
           <p>

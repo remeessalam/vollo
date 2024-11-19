@@ -31,7 +31,7 @@ const CompanyTeam = () => {
   console.log(currentSlide, "thialkdfjmaslkdfd");
 
   return (
-    <div className="py-20 mt-4  bg-[#F9F9F9]">
+    <div data-aos="fade-up" className="py-20 mt-4 bg-[#F9F9F9]">
       <div className="adjustedwidth mx-auto">
         <div className="flex  flex-col items-center text-center">
           <h5 className="text-[#FCAF3D] flex items-center gap-1">

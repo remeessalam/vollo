@@ -61,7 +61,10 @@ const Testimonials = () => {
   return (
     <div className="mt-20">
       <div className="">
-        <div className="w-full flex flex-col items-center text-center">
+        <div
+          data-aos="fade-up"
+          className="w-full flex flex-col items-center text-center"
+        >
           <h3 className="text-8xl leading-tight">
             Clients Feedback <br /> Examples You
           </h3>
@@ -73,6 +76,7 @@ const Testimonials = () => {
         </div>
         <div className="flex flex-col ">
           <div
+            data-aos="fade-up"
             ref={sliderRef}
             className="keen-slider flex sm:items-center mt-16 min-h-[400px]"
           >
@@ -102,6 +106,7 @@ const Testimonials = () => {
             ))}
           </div>
           <div
+            data-aos="fade-up"
             ref={sliderRefTwo}
             className="keen-slider flex sm:items-center mt-4 min-h-[400px]"
           >

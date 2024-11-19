@@ -6,7 +6,7 @@ const Aboutus = () => {
     <div className="w-full mt-20">
       <div className="adjustedwidth mx-auto">
         <div className="flex flex-col gap-5 md:gap-4 md:flex-row justify-between">
-          <div className="w-full md:w-[45%]">
+          <div data-aos="fade-up" className="w-full md:w-[45%]">
             <h3 className="text-10xl">About Us</h3>
             <p className="text-decsriptioncolor mt-4">
               At Vollo Inc., we take immense pride in being pioneers at the
@@ -29,7 +29,10 @@ const Aboutus = () => {
               achieve heightened operational efficiency and sustainable growth.
             </p>
           </div>
-          <div className="w-full md:w-[50%] object-cover min-h-full rounded-lg overflow-hidden">
+          <div
+            data-aos="fade-left"
+            className="w-full md:w-[50%] object-cover min-h-full rounded-lg overflow-hidden"
+          >
             <img
               src={aboutpageimageone}
               alt={aboutpageimageone}
