@@ -8,7 +8,13 @@ import Testimonials from "../pages/AboutPageSections/Testimonials";
 import Footer from "../Layout/Footer";
 import PartnerUs from "../components/PartnerUs";
 import LandingAbout from "./components/LandingAbout";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const LandingPage = ({ page }) => {
+  AOS.init({
+    once: true,
+    duration: 500,
+  });
   return (
     <div>
       <Header />
