@@ -15,8 +15,11 @@ const Header = () => {
   };
 
   return (
-    <div className="py-4 fixed top-0 w-full bg-headerandfooterbg  z-50 text-white text-base font-medium">
-      <div className=" flex justify-between items-center gap-10 mx-auto">
+    <div
+      data-aos="fade-down"
+      className=" fixed top-0 w-full   z-50 text-black text-base font-medium"
+    >
+      <div className="py-4  border-x border-b backdrop-blur-sm border-customPurple rounded-b-xl  bg-headerandfooterbg bg-opacity-60   w-[90%] flex justify-between items-center gap-10 mx-auto">
         <div className="flex justify-between gap-2  items-center min-w-fit w-full  mx-5">
           <div className="min-w-fit">
             <Link to="/">
@@ -26,7 +29,7 @@ const Header = () => {
                   className="h-[3rem] md:h-[5.75rem] scale-125"
                   alt="logo"
                 />
-                <h1 className="text-[32px] font-bold min-w-[8rem]">
+                <h1 className="text-[16px] sm:text-[32px] text-white font-bold min-w-[8rem]">
                   Vollo Inc
                 </h1>
               </div>
@@ -37,8 +40,8 @@ const Header = () => {
             {routes.map(({ name, path }) => (
               <Link
                 to={`${path}`}
-                className={` text-[14px] ${
-                  pathname === `${path}` && "text-primary"
+                className={` text-[14px]  ${
+                  pathname === `${path}` ? "text-white " : "text-gray-400 "
                 }`}
                 key={path}
               >
@@ -48,7 +51,7 @@ const Header = () => {
           </div>
 
           <div className="lg:flex  px-7  min-w-fit gap-16 hidden">
-            <div className="flex min-w-fit items-center text-[14px]  gap-2">
+            {/* <div className="flex min-w-fit items-center text-[14px]  gap-2">
               <img
                 src={phonenumbersvg}
                 alt={phonenumbersvg}
@@ -57,9 +60,9 @@ const Header = () => {
                 className="pt-[4px]"
               />
               <h3 className="min-w-fit">CALL US: +91-34343493493</h3>
-            </div>
+            </div> */}
             <Link to={"/contact-us"}>
-              <div className="secondary-btn">GET STARTED</div>
+              <div className="primary-btn bg-buttonBackground">GET STARTED</div>
             </Link>
           </div>
 

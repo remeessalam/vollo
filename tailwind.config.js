@@ -16,6 +16,11 @@ export default {
         decsriptioncolor: "#747474",
         headerandfooterbg: "#000E29",
         footerparacolor: "#A3A6AE",
+        customPurple: "rgb(150,123,179)",
+      },
+      backgroundImage: {
+        buttonBackground:
+          "linear-gradient(90deg, rgba(150,123,179,1) 0%, rgba(185,167,204,1) 50%, rgba(220,211,230,1) 100%)",
       },
       height: {
         bannerheight: "calc(100vh - 124px)",

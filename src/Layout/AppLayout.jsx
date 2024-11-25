@@ -13,7 +13,8 @@ const AppLayout = () => {
   return (
     <div className="w-screen overflow-hidden">
       <Header />
-      <div className="mt-20 lg:mt-[124px]">
+      {/* className="mt-20 lg:mt-[124px]" */}
+      <div>
         <ScrollToTop />
         <Outlet />
         <Footer />

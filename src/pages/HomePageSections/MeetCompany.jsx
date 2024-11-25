@@ -1,10 +1,13 @@
-import RoundedHeading from "../../components/RoundedHeading";
+// import RoundedHeading from "../../components/RoundedHeading";
 import { meetCompanyDetails } from "../../constant";
 
 const MeetCompany = () => {
   return (
     <div className="mt-10 sm:mt-20">
-      <RoundedHeading text="meet vollo inc" />
+      <h2 className="text-4xl text-center text-decsriptioncolor leading-tight">
+        meet vollo inc
+      </h2>
+      {/* <RoundedHeading text="meet vollo inc" /> */}
       <div className="flex justify-center">
         <div className="adjustedwidth  flex flex-col mt-2 sm:mt-10">
           {meetCompanyDetails.map((obj) => (

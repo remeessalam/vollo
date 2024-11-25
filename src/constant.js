@@ -64,6 +64,7 @@ import target from "./assets/images/landingpage/target.png";
 import cogwheel from "./assets/images/landingpage/cogwheel.png";
 import webLandingAbout from "./assets/images/webLandingAbout.png";
 import appLandingAbout from "./assets/images/appLandingAbout.png";
+import whychooseusbackground from "./assets/images/whychooseusbackground.jpg";
 export const images = {
   Logo,
   phonenumbersvg,
@@ -78,6 +79,7 @@ export const images = {
   aboutpageimagefour,
   aboutpageimagetwo,
   contactuspagebanner,
+  whychooseusbackground,
 };
 
 export const landingpageimages = {
@@ -419,24 +421,28 @@ export const appDevelopmentServices = [
 export const whyChooseUs = [
   {
     id: 1,
+    icon: mechanical,
     heading: "Innovation at Our Core: Pioneering the Future",
     description:
       "We don't merely follow trends; we lead the charge in shaping the future. By harnessing cutting-edge technology and visionary strategies, we craft solutions that redefine the boundaries of possibility. Our commitment to innovation drives us to explore new frontiers, empowering your business with transformative tools and insights that set you apart in a competitive landscape. Join us as we turn bold ideas into reality, positioning your organization at the forefront of the digital revolution.",
   },
   {
     id: 2,
+    icon: target,
     heading: "Customer-Centric Approach: Your Vision, Our Mission",
     description:
       "At Vollo Inc., you are not just a client; you are our top priority. We are dedicated to forging strong partnerships that allow us to deeply understand your unique needs and aspirations. Our team collaborates with you every step of the way, ensuring that we deliver tailored solutions that seamlessly integrate with your business. With a focus on personalization and excellence, we empower you to achieve your goals and thrive in today’s dynamic marketplace. Your success is our mission, and we are here to make it happen.",
   },
   {
     id: 3,
+    icon: expert,
     heading: "Comprehensive Expertise: A Multidisciplinary Powerhouse",
     description:
       "Our diverse team of specialists represents a fusion of knowledge and experience across multiple domains, including artificial intelligence, cybersecurity, cloud computing, and more. This multidisciplinary expertise allows us to tackle even the most complex challenges with confidence and precision. By leveraging our collective skills, we develop innovative solutions tailored to your specific needs, ensuring you receive the highest level of service and support. Trust in our comprehensive expertise to propel your business forward and navigate the ever-evolving landscape of technology with assurance and agility.",
   },
   {
     id: 4,
+    icon: cogwheel,
     heading: "Scalable and Future-Proof Solutions",
     description:
       "We don’t just build for today—we build for tomorrow. Our solutions are designed to grow with your business, ensuring long-term success and adaptability in an ever-changing market.",

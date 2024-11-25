@@ -26,17 +26,23 @@
     @apply max-w-7xl mx-auto px-4;
   }
   .primary-btn {
-    @apply text-white cursor-pointer font-light tracking-wide bg-primary hover:bg-primary/80  hover:shadow-secondary hover:-translate-y-1 shadow-2xl shadow-transparent px-9 py-5 min-w-[7rem] flex justify-center text-center transition-all duration-300 rounded-full;
+    @apply text-white hover:scale-105 cursor-pointer font-light tracking-wide bg-buttonBackground hover:bg-buttonBackground   hover:shadow-secondary hover:-translate-y-1 shadow-2xl shadow-transparent  px-6 py-3 min-w-[7rem] flex justify-center text-center transition-all duration-300 rounded-lg;
   }
-  .secondary-btn {
-    @apply text-white cursor-pointer font-bold tracking-wide bg-secondary border border-secondary hover:bg-[#F6F7Fb] hover:text-black   hover:-translate-y-1 shadow-2xl shadow-transparent  px-8 py-5 min-w-fit flex justify-center text-center transition-all duration-300 rounded-full;
-  }
+  /* .secondary-btn {
+    @apply text-black cursor-pointer font-normal tracking-wide bg-secondary  border-transparent  hover:bg-[#F6F7Fb] hover:text-black   hover:-translate-y-1 shadow-2xl shadow-transparent  px-6 py-3 min-w-fit flex justify-center text-center transition-all duration-300 rounded-lg;
+  } */
   .secondary-btn-small {
     @apply text-white cursor-pointer font-bold tracking-wide bg-secondary border border-secondary hover:bg-[#F6F7Fb] hover:text-black   hover:-translate-y-1 shadow-2xl shadow-transparent  px-3 py-3 min-w-fit flex justify-center text-center transition-all duration-300 rounded-full;
   }
 }
 .react-player video {
   object-fit: fill !important;
+}
+.blacktextshadow {
+  text-shadow: 0px 0px 42px rgba(0, 0, 0, 0.75);
+}
+.whitetextshadow {
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
 }
 
 .spinner-parent {
