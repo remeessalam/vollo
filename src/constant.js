@@ -65,6 +65,7 @@ import cogwheel from "./assets/images/landingpage/cogwheel.png";
 import webLandingAbout from "./assets/images/webLandingAbout.png";
 import appLandingAbout from "./assets/images/appLandingAbout.png";
 import whychooseusbackground from "./assets/images/whychooseusbackground.jpg";
+import testimonialbackground from "./assets/images/testimonialbackground.jpg";
 export const images = {
   Logo,
   phonenumbersvg,
@@ -80,6 +81,7 @@ export const images = {
   aboutpageimagetwo,
   contactuspagebanner,
   whychooseusbackground,
+  testimonialbackground,
 };
 
 export const landingpageimages = {

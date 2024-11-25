@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import RoundedHeading from "../../components/RoundedHeading";
+// import RoundedHeading from "../../components/RoundedHeading";
 import { appDevelopmentServices, images } from "../../constant";
 const About = () => {
   const { homepageaboutus } = images;
