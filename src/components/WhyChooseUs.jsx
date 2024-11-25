@@ -17,6 +17,7 @@ const WhyChooseUs = () => {
               className="object-contain min-w-full max-h-[20rem] mx-auto"
               alt="why choose ussss"
             />
+            I want to change the image as well.
           </div>
         </div>
         <div className="w-[50%]">
