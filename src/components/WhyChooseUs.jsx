@@ -20,9 +20,9 @@ const WhyChooseUs = () => {
             I want to change the image as well.
           </div>
         </div>
-        <div className="w-[50%]">
+        <div className="w-full  sm:w-[50%]">
           {/* <RoundedHeading text={" Why Choose Us"} /> */}
-          <h2 className="text-4xl text-decsriptioncolor leading-tight">
+          <h2 className="text-4xl text-decsriptioncolor sm:text-start text-center leading-tight">
             Why Choose Us
           </h2>
           <div className="flex flex-col gap-5">

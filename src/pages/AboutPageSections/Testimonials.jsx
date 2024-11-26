@@ -5,97 +5,156 @@ import { images, testimonials } from "../../constant";
 const animation = { duration: 30000, easing: (t) => t };
 
 const Testimonials = () => {
-  const [sliderRef] = useKeenSlider({
-    loop: true,
-    renderMode: "performance",
-    drag: false,
-    slides: {
-      perView: 2,
-      spacing: 20,
-    },
-    breakpoints: {
-      "(max-width: 1024px)": {
-        slides: {
-          perView: 1,
-          spacing: 20,
+  const [sliderRef] = useKeenSlider(
+    {
+      loop: true,
+      renderMode: "performance",
+      drag: false,
+      slides: {
+        perView: 3,
+        spacing: 20,
+      },
+      breakpoints: {
+        "(max-width: 1024px)": {
+          slides: {
+            perView: 1,
+            spacing: 20,
+          },
         },
       },
+
+      // created(s) {
+      //   s.moveToIdx(2, true, animation);
+      // },
+      // updated(s) {
+      //   s.moveToIdx(s.track.details.abs + 2, true, animation);
+      // },
+      // animationEnded(s) {
+      //   s.moveToIdx(s.track.details.abs + 2, true, animation);
+      // },
     },
-    created(s) {
-      s.moveToIdx(2, true, animation);
-    },
-    updated(s) {
-      s.moveToIdx(s.track.details.abs + 2, true, animation);
-    },
-    animationEnded(s) {
-      s.moveToIdx(s.track.details.abs + 2, true, animation);
-    },
-  });
-  const [sliderRefTwo] = useKeenSlider({
-    loop: true,
-    rtl: true,
-    renderMode: "performance",
-    drag: false,
-    slides: {
-      perView: 2,
-      spacing: 20,
-    },
-    breakpoints: {
-      "(max-width: 1024px)": {
-        slides: {
-          perView: 1,
-          spacing: 20,
+    [
+      (slider) => {
+        let timeout;
+        let mouseOver = false;
+        function clearNextTimeout() {
+          clearTimeout(timeout);
+        }
+        function nextTimeout() {
+          clearTimeout(timeout);
+          if (mouseOver) return;
+          timeout = setTimeout(() => {
+            slider.next();
+          }, 2000);
+        }
+        slider.on("created", () => {
+          slider.container.addEventListener("mouseover", () => {
+            mouseOver = true;
+            clearNextTimeout();
+          });
+          slider.container.addEventListener("mouseout", () => {
+            mouseOver = false;
+            nextTimeout();
+          });
+          nextTimeout();
+        });
+        slider.on("dragStarted", clearNextTimeout);
+        slider.on("animationEnded", nextTimeout);
+        slider.on("updated", nextTimeout);
+      },
+    ]
+  );
+  const [sliderRefTwo] = useKeenSlider(
+    {
+      loop: true,
+      rtl: true,
+      renderMode: "performance",
+      drag: false,
+      slides: {
+        perView: 3,
+        spacing: 20,
+      },
+      breakpoints: {
+        "(max-width: 1024px)": {
+          slides: {
+            perView: 1,
+            spacing: 20,
+          },
         },
       },
+      // created(s) {
+      //   s.moveToIdx(2, true, animation);
+      // },
+      // updated(s) {
+      //   s.moveToIdx(s.track.details.abs + 2, true, animation);
+      // },
+      // animationEnded(s) {
+      //   s.moveToIdx(s.track.details.abs + 2, true, animation);
+      // },
     },
-    created(s) {
-      s.moveToIdx(2, true, animation);
-    },
-    updated(s) {
-      s.moveToIdx(s.track.details.abs + 2, true, animation);
-    },
-    animationEnded(s) {
-      s.moveToIdx(s.track.details.abs + 2, true, animation);
-    },
-  });
+    [
+      (slider) => {
+        let timeout;
+        let mouseOver = false;
+        function clearNextTimeout() {
+          clearTimeout(timeout);
+        }
+        function nextTimeout() {
+          clearTimeout(timeout);
+          if (mouseOver) return;
+          timeout = setTimeout(() => {
+            slider.next();
+          }, 2000);
+        }
+        slider.on("created", () => {
+          slider.container.addEventListener("mouseover", () => {
+            mouseOver = true;
+            clearNextTimeout();
+          });
+          slider.container.addEventListener("mouseout", () => {
+            mouseOver = false;
+            nextTimeout();
+          });
+          nextTimeout();
+        });
+        slider.on("dragStarted", clearNextTimeout);
+        slider.on("animationEnded", nextTimeout);
+        slider.on("updated", nextTimeout);
+      },
+    ]
+  );
   let { testimonialbackground } = images;
   return (
     <div
-      className="mt-10 sm:mt-20 bg-cover bg-center bg-no-repeat"
+      className="relative mt-10 py-10 sm:mt-20 bg-cover bg-bottom bg-no-repeat bg-opacity-10"
       style={{ backgroundImage: `url(${testimonialbackground})` }}
     >
+      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
       <div className="">
         <div
           data-aos="fade-up"
-          className="w-full flex flex-col items-center text-center"
+          className="w-full flex flex-col items-center text-center "
         >
-          <h3
-            data-aos="fade-up"
-            className="leading-tight text-4xl text-decsriptioncolor"
-          >
-            Important! I stopped work here and will fix this.
-            <br /> Testimonials
-          </h3>
-          <h3 className="text-3xl sm:text-8xl leading-tight">
+          <h3 className="text-3xl sm:text-8xl leading-tight text-white mt-10">
             Clients Feedback Examples You
           </h3>
-          <p className="text-decsriptioncolor max-w-[95%] sm:max-w-[50%] text-center mt-7">
+          <p className="text-gray-200 max-w-[95%] sm:max-w-[50%] text-center mt-7">
             At <strong>Vollo Inc</strong> , we take pride in the success of our
             clients. Here&apos;s what some of them have to say about their
             experience working with us
           </p>
         </div>
-        <div className="flex flex-col ">
+        <div className="flex flex-col  max-w-[90rem] mx-auto ">
           <div
             id="srd"
             // data-aos="fade-up"
             ref={sliderRef}
-            className="keen-slider flex sm:items-center mt-16 min-h-[400px]"
+            className="keen-slider flex sm:items-center mt-16 min-h-[400px] text-white"
           >
             {testimonials.map((obj) => (
               <div
                 key={obj.id}
-                className="keen-slider__slide sm:h-[330px] shadow-lg w-full rounded-2xl round p-7 border sm:border-none"
+                className="keen-slider__slide sm:h-[357px] h-full min-h-[287px] shadow-lg w-full bg-white/30 rounded-2xl round p-7 border  border-gray-400"
               >
                 <div className="w-full sm:flex-row flex-col gap-3 sm:gap-0 flex justify-between items-center">
                   <div className="flex items-center gap-2">
@@ -104,29 +163,32 @@ const Testimonials = () => {
                       alt={obj.name}
                       className="rounded-full w-[69px] h-[69px] object-cover"
                     />
-                    <h4 className="font-semibold">- {obj.name}</h4>
+                    <div>
+                      <h4 className="font-semibold">- {obj.name}</h4>
+                      <h3 className=" text-[14px] text-center sm:text-start">
+                        {obj.position}
+                      </h3>
+                    </div>
                   </div>
                   <img src={obj.starimg} alt={obj.name} className="h-[31px]" />
                 </div>
                 <div className="my-5">
                   <p className="text-center sm:text-start">{obj.says}</p>
-                  <h3 className="text-decsriptioncolor text-center sm:text-start">
-                    {obj.position}
-                  </h3>
                 </div>
               </div>
             ))}
           </div>
+          {/** SECOND TESTIMONIAL */}
           <div
             key="dfsf"
             // data-aos="fade-up"
             ref={sliderRefTwo}
-            className="keen-slider flex sm:items-center mt-4 min-h-[400px]"
+            className="keen-slider flex sm:items-center  mt-4 min-h-[400px]"
           >
             {testimonials.map((obj) => (
               <div
                 key={obj.id}
-                className="keen-slider__slide min-h-[330px] shadow-lg w-full rounded-2xl round p-7 border sm:border-none"
+                className="keen-slider__slide sm:h-[357px] h-full min-h-[287px]  shadow-lg w-full bg-white/30 rounded-2xl round p-7  border border-gray-400"
               >
                 <div className="w-full sm:flex-row flex-col gap-3 sm:gap-0 flex justify-between items-center">
                   <div className="flex items-center gap-2">
@@ -135,15 +197,19 @@ const Testimonials = () => {
                       alt={obj.name}
                       className="rounded-full w-[69px] h-[69px] object-cover"
                     />
-                    <h4 className="font-semibold">- {obj.name}</h4>
+                    <div>
+                      <h4 className="font-semibold text-white">- {obj.name}</h4>
+                      <h3 className="text-white text-[14px] text-center sm:text-start">
+                        {obj.position}
+                      </h3>
+                    </div>
                   </div>
                   <img src={obj.starimg} alt={obj.name} className="h-[31px]" />
                 </div>
                 <div className="my-5">
-                  <p className="text-center sm:text-start">{obj.says}</p>
-                  <h3 className="text-decsriptioncolor text-center sm:text-start">
-                    {obj.position}
-                  </h3>
+                  <p className="text-center sm:text-start text-white">
+                    {obj.says}
+                  </p>
                 </div>
               </div>
             ))}

@@ -52,7 +52,9 @@ const Footer = () => {
                 className="bg-transparent placeholder-[#475063] pl-5 w-3/4 outline-none focus:outline-none focus:ring-0"
                 placeholder="Enter mail"
               />
-              <p className="secondary-btn "> SUBSCRIBE</p>
+              <p className="secondary-btn py-4 px-5 bg-buttonBackground rounded-full">
+                SUBSCRIBE
+              </p>
             </div>
           </div>
         </div>

@@ -9,7 +9,7 @@ const About = () => {
       className="flex flex-col items-center mt-10 lg:mt-72 gap-10"
     >
       {/* <RoundedHeading text={"about us"} /> */}
-      <div className="flex flex-wrap flex-col items-start justify-between lg:flex-row  adjustedwidth">
+      <div className="flex flex-wrap flex-col-reverse  sm:flex-col items-start justify-between lg:flex-row  adjustedwidth">
         <div className="flex flex-col gap-4 lg:w-[45%] w-full">
           <div className="w-full">
             <h3

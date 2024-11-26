@@ -10,16 +10,19 @@ const CompanyApproach = () => {
     <div className="flex flex-col items-center mt-10 sm:mt-20">
       {/* <RoundedHeading text="our approach" /> */}
       <div className="adjustedwidth mt-6 sm:mt-16">
-        <div data-aos="fade-up" className="flex  items-center lg:items-start ">
-          <div className="w-[50%]">
-            <h2 className="text-4xl text-decsriptioncolor leading-tight">
+        <div
+          data-aos="fade-up"
+          className="grid grid-cols-1 lg:grid-cols-2 gap-4 "
+        >
+          <div className="w-full">
+            <h2 className="text-4xl text-decsriptioncolor sm:text-start text-center leading-tight">
               Our Approach
             </h2>
-            <h4 className="text-5xl leading-tight text-black">
+            <h4 className="text-5xl leading-tight sm:text-start text-center text-black">
               Meet our process
             </h4>
           </div>
-          <p className="max-w-[50%] text-start">
+          <p className="max-w-full text-start">
             At Vollo Inc., we believe that the key to success lies in
             collaboration and understanding. We don’t just offer services; we
             build partnerships. Our holistic approach ensures that we become an

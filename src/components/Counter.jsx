@@ -1,9 +1,34 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 const Counter = ({ targetNumber, suffix = "" }) => {
   const [count, setCount] = useState(0);
+  const [hasStarted, setHasStarted] = useState(false);
+  const counterRef = useRef(null);
 
   useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setHasStarted(true);
+        }
+      },
+      { threshold: 0.1 } // Trigger when 10% of the component is visible
+    );
+
+    if (counterRef.current) {
+      observer.observe(counterRef.current);
+    }
+
+    return () => {
+      if (counterRef.current) {
+        observer.unobserve(counterRef.current);
+      }
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!hasStarted) return;
+
     let currentNumber = 0;
     const increment = Math.ceil(targetNumber / 100);
     const intervalTime = targetNumber === 48 ? 40 : 20;
@@ -19,13 +44,14 @@ const Counter = ({ targetNumber, suffix = "" }) => {
     }, intervalTime);
 
     return () => clearInterval(interval);
-  }, [targetNumber]);
+  }, [hasStarted, targetNumber]);
 
   return (
-    <h1 className="text-10xl">
+    <h1 ref={counterRef} className="text-10xl">
       {count}
       {suffix}
     </h1>
   );
 };
+
 export default Counter;
