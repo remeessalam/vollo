@@ -14,7 +14,7 @@ const Services = () => {
         <h2 className="text-4xl text-decsriptioncolor leading-tight">
           What We Offer
         </h2>
-        <h3 className="text-3xl max-w-[60%] text-center leading-tight">
+        <h3 className="text-3xl sm:max-w-[60%] text-center leading-tight">
           Empowering Your Business with Innovative, Tailored Technology
           Solutions
         </h3>
