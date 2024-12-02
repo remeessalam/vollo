@@ -1,10 +1,16 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { companyDetails, images, socialmediaIcons } from "../constant";
 
 const Footer = () => {
   const { Logo } = images;
+  const { pathname } = useLocation();
+  console.log(pathname, "asfasdf");
   return (
-    <div className="bg-headerandfooterbg w-full mt-32 ">
+    <div
+      className={`bg-headerandfooterbg w-full  ${
+        pathname === "/about-us" || pathname === "/services" ? `mt-0` : `mt-32`
+      } `}
+    >
       <div className="adjustedwidth mx-auto md:pt-10">
         <div className="flex md:gap-0 gap-5 md:flex-row flex-col border-b pb-5 border-[#253450] justify-between items-start md:pt-0 pt-10 md:items-center text-white">
           <Link to="/">
@@ -44,7 +50,7 @@ const Footer = () => {
               </p>
             </div>
           </div>
-          <div className="text-white w-full lg:w-[40%] text-center">
+          {/* <div className="text-white w-full lg:w-[40%] text-center">
             <h3 className="font-bold"> NEWS LETTER</h3>
             <div className="flex justify-between bg-[#132038]  rounded-full">
               <input
@@ -56,14 +62,14 @@ const Footer = () => {
                 SUBSCRIBE
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
         <div>
-          <div className="text-footerparacolor border-b border-[#253450] pb-1">
+          <div className="text-footerparacolor pb-1">
             <p>{companyDetails.link}</p>
           </div>
-          <div className="text-white flex justify-between py-5">
-            <p className=" max-w-[70%]">
+          <div className="text-white text-center flex mt-5 rounded-t-xl justify-between py-5 border-t border-x border-[#253450] ">
+            <p className=" max-w-[70%] text-center mx-auto">
               © 2024 AI Website. All Rights Reserved.
             </p>
             {/* <h4>

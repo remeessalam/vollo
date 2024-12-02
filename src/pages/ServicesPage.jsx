@@ -1,11 +1,20 @@
 import CommonBanner from "../components/CommonBanner";
-import servicesBanner from "../assets/video/servicepagebanner.mp4";
+// import servicesBanner from "../assets/video/servicepagebanner.mp4";
 import Services from "./ServicesPageSections/Services";
 import Testimonials from "./AboutPageSections/Testimonials";
+import { images } from "../constant";
 const ServicesPage = () => {
+  const { servicepagebanner } = images;
   return (
     <div className="bg-gradient-to-b from-[#939393] to-white">
-      <CommonBanner video={servicesBanner} title="Our Services" />
+      <CommonBanner
+        image={servicepagebanner}
+        isImage={true}
+        title="Our Services"
+        page="Services"
+        heading="Tailored Technology for Your Unique Business Needs"
+        description="At Vollo Inc., we recognize that every business is unique. That’s why we deliver innovative, customized technology solutions designed to address your specific challenges and drive success."
+      />
       <div className="mt-10 sm:mt-20">
         <div className="adjustedwidth mx-auto">
           <h4

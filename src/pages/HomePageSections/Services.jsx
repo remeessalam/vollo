@@ -18,7 +18,7 @@ const Services = () => {
           Empowering Your Business with Innovative, Tailored Technology
           Solutions
         </h3>
-        <p className="max-w-[70%] text-center">
+        <p className="max-w-[70%] text-center desc">
           We provide customized, cutting-edge technology solutions designed to
           empower your business, streamline operations, and drive sustainable
           growth in the digital era.
@@ -35,7 +35,7 @@ const Services = () => {
               {/* Add content for each service item here */}
               <div className="flex flex-col justify-between h-full text-center items-center">
                 <h2 className="text-4xl font-bold text-center ">{obj.title}</h2>
-                <p>{obj.paragraph}</p>
+                <p className="">{obj.paragraph}</p>
                 <Link
                   to={"/services"}
                   className="flex items-center border-b text-white w-[6.13rem] "

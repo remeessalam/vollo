@@ -47,7 +47,10 @@ const Counter = ({ targetNumber, suffix = "" }) => {
   }, [hasStarted, targetNumber]);
 
   return (
-    <h1 ref={counterRef} className="text-10xl">
+    <h1
+      ref={counterRef}
+      className="text-[36px] sm:text-10xl text-white text-center"
+    >
       {count}
       {suffix}
     </h1>

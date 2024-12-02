@@ -1,73 +1,89 @@
 import { images } from "../constant";
-import projectdone from "../assets/images/svg/projectsdone.svg";
-import proteam from "../assets/images/svg/proteam.svg";
-import customers from "../assets/images/svg/customers.svg";
-import successrate from "../assets/images/svg/successrate.svg";
+// import projectdone from "../assets/images/svg/projectsdone.svg";
+// import proteam from "../assets/images/svg/proteam.svg";
+// import customers from "../assets/images/svg/customers.svg";
+// import successrate from "../assets/images/svg/successrate.svg";
 import Counter from "./Counter";
+import { Link } from "react-router-dom";
+
+const countDetails = [
+  {
+    id: 1,
+    title: "Projects Done",
+    count: 2600,
+    suffix: "k",
+  },
+  {
+    id: 2,
+    title: "Projects Done",
+    count: 48,
+    suffix: "+",
+  },
+  {
+    id: 3,
+    title: "Satisfied customers",
+    count: 3000,
+    suffix: "k",
+  },
+  {
+    id: 4,
+    title: "Our success rate",
+    count: 100,
+    suffix: "%",
+  },
+];
 const CompanyAchievements = () => {
   const { companyachievementsimage } = images;
   return (
     <div
       data-aos="fade-up"
-      className="relative w-full h-full  py-10 sm:overflow-hidden mt-10 sm:mt-20 bg-cover bg-center bg-no-repeat"
+      className="relative w-full h-full   py-10 sm:overflow-hidden mt-10 sm:mt-20 bg-cover bg-center bg-no-repeat"
+      style={{
+        backgroundImage: `url(${companyachievementsimage})`,
+      }}
     >
-      <div className="absolute top-0 w-screen -z-10 h-full ">
-        <img
-          src={companyachievementsimage}
-          alt="companyachievementsimage"
-          className="w-full opacity-20 h-full object-cover"
-        />
-      </div>
-      <div className="adjustedwidth mx-auto flex justify-center sm:gap-0 gap-7 sm:justify-between  flex-wrap">
-        <div
-          data-aos="fade-right"
-          className="flex flex-col items-center sm:items-start"
-        >
-          <div className="flex h-[64px] w-[64px] bg-white rounded-full shadow-2xl  justify-center items-center">
-            <img src={projectdone} alt="proteam" />
-          </div>
-          <h1 className="text-10xl w-[200px]">
-            <Counter targetNumber={2600} suffix="k" />
-          </h1>
-          <h5 className="text-headerandfooterbg">Projects Done</h5>
+      <div className="adjustedwidth z-20 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5 py-[6rem]">
+        <div className="flex flex-col gap-8 text-white">
+          <h3
+            data-aos="fade-left"
+            className="leading-tight text-4xl text-white"
+          >
+            Our Values
+          </h3>
+          <h3 className="text-4xl sm:text-8xl leading-tight text-white">
+            Empowering Businesses with Tailor-Made Technology Solutions
+          </h3>
+          <p className=" text-white/80 text-[14px] ">
+            At Vollo Inc., we specialize in creating customized technology
+            solutions that drive business success. Our expert team leverages
+            cutting-edge innovation to help companies enhance efficiency,
+            accelerate growth, and stay ahead of the competition.
+          </p>
+          <Link to={"/services"} className="z-50">
+            <h3 className="primary-btn  w-fit">Discover More</h3>
+          </Link>
         </div>
-        <div
-          data-aos="fade-right"
-          className="flex flex-col items-center sm:items-start"
-        >
-          <div className="flex h-[64px] w-[64px] bg-white rounded-full shadow-2xl  justify-center items-center">
-            <img src={proteam} alt="proteam" />
-          </div>
-          <h1 className="text-10xl w-[200px]">
-            <Counter targetNumber={48} suffix="+" />
-          </h1>
-          <h5 className="text-headerandfooterbg">Professional Team</h5>
-        </div>
-        <div
-          data-aos="fade-left"
-          className="flex flex-col items-center sm:items-start"
-        >
-          <div className="flex h-[64px] w-[64px] bg-white rounded-full shadow-2xl  justify-center items-center">
-            <img src={projectdone} alt={customers} />
-          </div>
-          <h1 className="text-10xl w-[200px]">
-            <Counter targetNumber={3000} suffix="k" />
-          </h1>
-          <h5 className="text-headerandfooterbg">Satisfied customers</h5>
-        </div>
-        <div
-          data-aos="fade-left"
-          className="flex flex-col items-center sm:items-start"
-        >
-          <div className="flex h-[64px] w-[64px] bg-white rounded-full shadow-2xl  justify-center items-center">
-            <img src={projectdone} alt={successrate} />
-          </div>
-          <h1 className="text-10xl w-[200px]">
-            <Counter targetNumber={100} suffix="%" />
-          </h1>
-          <h5 className="text-headerandfooterbg">Our success rate</h5>
+        <div className="grid grid-cols-2 sm:grid-cols-2 gap-5">
+          {countDetails.map((obj) => (
+            <div
+              key={obj.id}
+              data-aos="fade-left"
+              className="flex flex-col py-5 items-center justify-center sm:items-start border border-slate-500 bg-white/10 rounded-xl"
+            >
+              {/* <div className="flex h-[64px] w-[64px] bg-white rounded-full shadow-2xl  justify-center items-center">
+              <img src={obj.} alt="proteam" />
+            </div> */}
+              <h1 className="text-10xl w-full">
+                <Counter targetNumber={obj.count} suffix={obj.suffix} />
+              </h1>
+              <h5 className="text-[#0099ff] text-center text-[17px] sm:text-[21px] font-bold w-full">
+                {obj.title}
+              </h5>
+            </div>
+          ))}
         </div>
       </div>
+      <div className="absolute inset-0 w-full h-full bg-black/50 -z-10" />
     </div>
   );
 };

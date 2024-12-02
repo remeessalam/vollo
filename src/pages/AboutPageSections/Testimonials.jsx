@@ -126,7 +126,7 @@ const Testimonials = () => {
   let { testimonialbackground } = images;
   return (
     <div
-      className="relative mt-10 py-10 sm:mt-20 bg-cover bg-bottom bg-no-repeat bg-opacity-10"
+      className="relative mt-10 py-[6rem] sm:mt-20 bg-cover bg-bottom bg-no-repeat bg-opacity-10"
       style={{ backgroundImage: `url(${testimonialbackground})` }}
     >
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>

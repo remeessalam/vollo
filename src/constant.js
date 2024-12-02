@@ -28,7 +28,7 @@ import blockchainimage from "./assets/images/services/blockchainimage.jpeg";
 import cloudserviceimage from "./assets/images/services/cloudserviceimage.jpeg";
 import cybersecurityimage from "./assets/images/services/cybersecurityimage.jpeg";
 import aboutpageimageone from "./assets/images/aboutpageimageone.jpeg";
-import companyachievementsimage from "./assets/images/companyachievementsimage.png";
+import companyachievementsimage from "./assets/images/companyachievementsimage.jpg";
 import aboutpageimagethree from "./assets/images/aboutpageimagethree.jpeg";
 import aboutpageimagefour from "./assets/images/aboutpageimagefour.jpeg";
 import aboutpageimagetwo from "./assets/images/aboutpageimagetwo.png";
@@ -66,6 +66,11 @@ import webLandingAbout from "./assets/images/webLandingAbout.png";
 import appLandingAbout from "./assets/images/appLandingAbout.png";
 import whychooseusbackground from "./assets/images/whychooseusbackground.jpg";
 import testimonialbackground from "./assets/images/testimonialbackground.jpg";
+import Finetunedsolutionimg from "./assets/images/Finetunedsolutionimg.jpg";
+import Innovationfocused from "./assets/images/Innovationfocused.jpg";
+import Scalableframeworks from "./assets/images/Scalableframeworks.jpg";
+import aboutusbanner from "./assets/images/aboutusbanner.jpg";
+import servicepagebanner from "./assets/images/servicepagebanner.jpg";
 export const images = {
   Logo,
   phonenumbersvg,
@@ -82,6 +87,11 @@ export const images = {
   contactuspagebanner,
   whychooseusbackground,
   testimonialbackground,
+  Finetunedsolutionimg,
+  Innovationfocused,
+  Scalableframeworks,
+  aboutusbanner,
+  servicepagebanner,
 };
 
 export const landingpageimages = {
@@ -241,38 +251,44 @@ export const meetCompanyDetails = [
   {
     id: 1,
     img: meetcompanyimageone,
+    heading: "Innovative Technology Solutions",
     description:
-      " At Vollo Inc., we blend creativity with technical expertise, bringing together a team of professionals with deep industry knowledge. Our diverse backgrounds fuel our innovative approach, with each member contributing unique insights that drive us forward. We specialize in a wide range of technology services, from Artificial Intelligence solutions that revolutionize decision-making to user-friendly Mobile Applications that boost engagement. Our services are designed to evolve with the dynamic digital landscape. Our commitment to innovation ensures we stay ahead of industry trends, delivering cutting-edge solutions that are both efficient and impactful. Whether automating business processes or developing scalable systems, we approach each challenge with creativity and precision. We pride ourselves on adapting to our clients’ needs and consistently exceeding expectations. At Vollo Inc., we don’t just build technology—we build lasting partnerships. We work alongside clients to understand their goals, ensuring our solutions align with their business objectives. Our team is dedicated to delivering exceptional value and fostering long-term success. With Vollo Inc., your future is powered by innovation.",
+      "At Vollo Inc., we blend creativity with technical expertise to deliver cutting-edge technology services. From AI-powered tools to user-friendly mobile applications, we craft scalable solutions tailored to your business needs, ensuring efficiency, innovation, and long-term success.",
   },
   {
     id: 2,
     img: meetcompanyimagetwo,
+    heading: "Empowering Businesses with AI",
     description:
-      "Vollo Inc. is a trailblazer in technological innovation, dedicated to empowering businesses with world-class, tailored solutions for the digital age. We pride ourselves on turning challenges into opportunities, delivering bespoke, scalable solutions that not only address current needs but also anticipate future demands. With a team of seasoned experts possessing deep industry knowledge, we specialize in harnessing Artificial Intelligence and cutting-edge technologies to craft solutions that are innovative, efficient, and sustainable. At Vollo Inc., collaboration is at the heart of everything we do. We work closely with our clients, aligning our strategies with their goals to drive success and foster long-term partnerships. Our services range from AI-driven analytics platforms that revolutionize decision-making to intuitive mobile applications designed to elevate user engagement. Every solution is designed to be scalable, ensuring that as your business evolves, your technology keeps pace without limitations. By staying ahead of the ever-changing digital landscape, Vollo Inc. continues to be a catalyst for innovation and growth, helping businesses unlock their full potential and achieve extraordinary outcomes.",
+      "Vollo Inc. transforms challenges into opportunities with AI-driven solutions and tailored strategies. Our scalable platforms and intuitive applications are designed to adapt as your business evolves, driving innovation and growth in the digital age.",
   },
   {
     id: 3,
     img: meetcompanyimagethree,
+    heading: "Driving Success with Collaboration",
     description:
-      "Vollo Inc. stands as a leader in delivering cutting-edge technology solutions designed to drive businesses toward success in the dynamic digital era. We specialize in creating customized, scalable solutions that seamlessly integrate with our clients’ operations, ensuring efficiency, innovation, and sustainable growth. With a focus on Artificial Intelligence and other advanced technologies, we craft tools that empower businesses to stay ahead of the competition and adapt to future challenges. Our team of experienced professionals brings creativity and technical expertise to every project, collaborating closely with clients to align strategies with their unique goals. From transformative AI-driven platforms to user-friendly mobile applications, our services are tailored to meet the diverse needs of modern businesses. At Vollo Inc., we don’t just offer technology; we build partnerships. Our commitment to collaboration and continuous innovation ensures that our clients not only achieve their objectives but also thrive in an ever-evolving digital landscape. Together, we unlock potential, explore new horizons, and shape the future of business success.",
+      "Vollo Inc. specializes in delivering customized, future-ready technology solutions. Our team partners with clients to craft AI-powered tools and mobile applications that enhance operations, foster innovation, and unlock new business potential.",
   },
 ];
 
 export const companyProcess = [
   {
     id: 1,
+    img: Finetunedsolutionimg,
     title: "Fine-tuned solution",
     description:
       "At Vollo Inc., we know that every business is unique. That’s why we take the time to understand your specific needs and challenges. Whether you need a custom software application or an AI-driven analytics platform, we craft solutions that fit seamlessly into your operations",
   },
   {
     id: 2,
+    img: Innovationfocused,
     title: "Innovation-focused",
     description:
       "The digital landscape is always changing, and so are we. Our focus on continuous learning and innovation keeps us ahead of the curve. We leverage the latest technologies and methods to provide you with cutting-edge solutions.",
   },
   {
     id: 3,
+    img: Scalableframeworks,
     title: "Scalable frameworks",
     description:
       "As your business evolves, your technology should too. Our solutions are designed to be scalable, allowing you to grow and adapt without the limitations of outdated systems.",

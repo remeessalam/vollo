@@ -3,28 +3,29 @@ import { meetCompanyDetails } from "../../constant";
 
 const MeetCompany = () => {
   return (
-    <div className="mt-10 sm:mt-20">
-      <h2 className="text-4xl text-center text-decsriptioncolor leading-tight">
+    <div className="mt-10 sm:mt-30">
+      <h2 className="text-4xl mb-10 sm:mb-0 text-center text-decsriptioncolor leading-tight">
         meet vollo inc
       </h2>
       {/* <RoundedHeading text="meet vollo inc" /> */}
       <div className="flex justify-center">
-        <div className="adjustedwidth  flex flex-col mt-2 sm:mt-10">
+        <div className="adjustedwidth  grid grid-cols-1 sm:grid-cole-2 md:grid-cols-3 mt-2 sm:mt-10 mb-10 gap-8">
           {meetCompanyDetails.map((obj) => (
             <div
               data-aos="fade-up"
               key={obj.id}
-              className={`flex justify-between items-center  ${
-                obj.id === 2
-                  ? `md:flex-row flex-col`
-                  : `flex-col md:flex-row-reverse`
-              }`}
+              className={`flex flex-col items-center rounded-xl shadow-xl border border-slate-100`}
             >
-              <div className="md:w-[45%]">
-                <img src={obj.img} alt={obj.img} />
+              <div className=" sm:min-h-[365px] flex items-center">
+                <img
+                  src={obj.img}
+                  alt={obj.img}
+                  className=" object-cover mx-auto rounded-xl"
+                />
               </div>
-              <div className="md:w-[45%]">
-                <p>{obj.description}</p>
+              <div className=" mx-5 py-5">
+                <h4 className="text-7xl">{obj.heading}</h4>
+                <p className="desc text-[16px] mt-2">{obj.description}</p>
               </div>
             </div>
           ))}

@@ -25,6 +25,9 @@
   .wrapper {
     @apply max-w-7xl mx-auto px-4;
   }
+  .desc {
+    @apply text-[14px] text-[#727272];
+  }
   .primary-btn {
     @apply text-white hover:scale-105 cursor-pointer font-light tracking-wide bg-buttonBackground hover:bg-buttonBackground   hover:shadow-secondary hover:-translate-y-1 shadow-2xl shadow-transparent  px-6 py-3 min-w-[7rem] flex justify-center text-center transition-all duration-300 rounded-lg;
   }

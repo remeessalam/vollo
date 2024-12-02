@@ -2,11 +2,20 @@ import ReactPlayer from "react-player";
 import { Link, useLocation } from "react-router-dom";
 // import { Link } from "react-router-dom";
 
-const CommonBanner = ({ video, title, isImage, image }) => {
+const CommonBanner = ({
+  video,
+  title,
+  isImage,
+  image,
+  page,
+  heading,
+  description,
+}) => {
   const { pathname } = useLocation();
   return (
     <div className="flex relative justify-center items-center  w-screen ">
-      <div className=" w-screen md:h-[472px] h-[200px] object-cover overflow-hidden">
+      <div className=" w-screen h-screen object-cover overflow-hidden">
+        <div className="absolute top-0 left-0 w-full h-full bg-black/40" />
         {isImage ? (
           <img
             src={image}
@@ -26,10 +35,21 @@ const CommonBanner = ({ video, title, isImage, image }) => {
           />
         )}
       </div>
-      <h1 className="absolute text-4xl md:text-10xl text-white text-center ">
+      {/* <h1 className="absolute text-4xl md:text-10xl text-white text-center ">
         {title}
-      </h1>
-      {pathname !== "/contact-us" && (
+      </h1> */}
+      <div className="absolute left-0 text-4xl md:text-10xl grid grid-col-1 sm:grid-cols-2 text-white">
+        <div>
+          <h1 className=" text-white underline underline-offset-4 text-[40px] pl-5 sm:pl-10 leading-tight uppercase">
+            {page}
+          </h1>
+          <h1 className=" pl-5 sm:pl-10 leading-tight">{heading}</h1>
+          <p className="text-white/90 text-[16px] pl-5 sm:pl-10 mt-5">
+            {description}
+          </p>
+        </div>
+      </div>
+      {/* {pathname !== "/contact-us" && (
         <Link
           className="absolute right-8 bottom-4 lg:inset-y-auto shadow-xl "
           to={"/contact-us"}
@@ -38,7 +58,7 @@ const CommonBanner = ({ video, title, isImage, image }) => {
             CONTACT US TODAY →
           </button>
         </Link>
-      )}
+      )} */}
     </div>
   );
 };

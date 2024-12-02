@@ -147,7 +147,7 @@ const ContactForm = () => {
 
             <button
               type="submit"
-              className="bg-sky-400 font-semibold w-fit px-8 rounded-full text-white  py-4 hover:bg-sky-600 transition duration-300"
+              className="primary-btn shadow-xl border border-slate-200 bg-sky-400 font-semibold  px-8 rounded-full text-white  py-4 hover:bg-sky-600 transition duration-300"
             >
               SEND
             </button>

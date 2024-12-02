@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
 import homepagebanner from "../../assets/images/homepagebanner.jpeg";
 import { appDevelopmentServices } from "../../constant";
+import AdvancedAISolutions from "../../assets/images/png/AdvancedAISolutions.png";
+import ScalableCloudInfrastructure from "../../assets/images/png/ScalableCloudInfrastructure.png";
+import DataDrivenInsights from "../../assets/images/png/DataDrivenInsights.png";
 const Banner = () => {
   return (
     <div className="relative flex flex-col items-center">
@@ -38,48 +41,41 @@ const Banner = () => {
       </div>
       <div className="relative bottom-0 lg:mt-0 mt-10 border lg:border-none border-gray-300 lg:absolute shadow-lg rounded-lg w-[90%] sm:w-[80%] h-full lg:h-[270px] lg:-bottom-1/4 bg-white grid grid-cols-1 lg:grid-cols-3">
         <div className="w-full h-[270px] border-dashed  border-b lg:border-b-0 flex flex-col p-5 justify-center gap-4 hover:bg-buttonBackground  items-center">
-          <div className="w-[60px] h-[60px]  bg-primary flex justify-center items-center rounded-lg">
-            <img
-              src={appDevelopmentServices[0].img}
-              alt=""
-              width={30}
-              height={30}
-            />
+          <div className="w-[60px] h-[60px]  bg-white flex justify-center items-center rounded-lg">
+            <img src={AdvancedAISolutions} alt="" width={40} height={40} />
           </div>
-          <h4 className="text-2xl">New Technology</h4>
-          <p className="text-center">
-            Bibendum odio natoque ullamcorper nullam pulvinar efficitur. Elit
-            ipsum et natoque vitae feugiat at condimentum neque lacus.
+          <h4 className="text-2xl">Advanced AI Solutions</h4>
+          <p className="text-center desc">
+            Harnessing the power of AI, we craft innovative tools to automate
+            processes, enhance decision-making, and unlock growth opportunities
+            tailored to your business needs.
           </p>
         </div>
         <div className="border-dashed  lg:border-x w-ful h-[270px]l flex flex-col p-5 items-center justify-center gap-4 hover:bg-buttonBackground">
-          <div className="w-[60px] h-[60px] bg-primary flex justify-center items-center rounded-lg">
+          <div className="w-[60px] h-[60px] bg-white flex justify-center items-center rounded-lg">
             <img
-              src={appDevelopmentServices[0].img}
+              src={ScalableCloudInfrastructure}
               alt=""
-              width={30}
-              height={30}
+              width={40}
+              height={40}
             />
           </div>
-          <h4 className="text-2xl">New Technology</h4>
-          <p className="text-center">
-            Bibendum odio natoque ullamcorper nullam pulvinar efficitur. Elit
-            ipsum et natoque vitae feugiat at condimentum neque lacus.
+          <h4 className="text-2xl">Scalable Cloud Infrastructure</h4>
+          <p className="text-center desc">
+            Our cutting-edge cloud solutions ensure seamless operations,
+            offering flexibility, security, and scalability for businesses of
+            all sizes to thrive in a dynamic digital landscape.
           </p>
         </div>
         <div className="w-full h-[270px] border-dashed  border-t lg:border-t-0 flex flex-col p-5 items-center justify-center gap-4 hover:bg-buttonBackground">
-          <div className="w-[60px] h-[60px] bg-primary flex justify-center items-center rounded-lg">
-            <img
-              src={appDevelopmentServices[0].img}
-              alt=""
-              width={30}
-              height={30}
-            />
+          <div className="w-[60px] h-[60px] bg-white flex justify-center items-center rounded-lg">
+            <img src={DataDrivenInsights} alt="" width={40} height={40} />
           </div>
-          <h4 className="text-2xl">New Technology</h4>
-          <p className="text-center">
-            Bibendum odio natoque ullamcorper nullam pulvinar efficitur. Elit
-            ipsum et natoque vitae feugiat at condimentum neque lacus.
+          <h4 className="text-2xl">Data-Driven Insights</h4>
+          <p className="text-center desc">
+            Transform raw data into actionable strategies with our advanced
+            analytics solutions, empowering businesses to make informed
+            decisions and stay ahead in the competitive market.
           </p>
         </div>
       </div>

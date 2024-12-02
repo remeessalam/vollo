@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
 // import RoundedHeading from "../../components/RoundedHeading";
 import { appDevelopmentServices, images } from "../../constant";
+import mission from "../../assets/images/png/mission.png";
+import vission from "../../assets/images/png/vission.png";
+
 const About = () => {
   const { homepageaboutus } = images;
   return (
@@ -23,24 +26,19 @@ const About = () => {
             <h1 className="text-4xl leading-tight">
               Empowering Growth Through Innovative Technology
             </h1>
-            <p>
+            <p className="desc">
               At Vollo Inc., we craft innovative, AI-driven technology solutions
               to help businesses overcome challenges, achieve excellence, and
               unlock sustainable growth in the digital age.
             </p>
           </div>
           <div data-aos="fade-up" className="flex gap-4">
-            <div className="min-w-[60px] h-[60px] bg-primary flex justify-center items-center rounded-lg">
-              <img
-                src={appDevelopmentServices[0].img}
-                alt="icon"
-                width={30}
-                height={30}
-              />
+            <div className="min-w-[60px] h-[60px] bg-white flex justify-center items-center rounded-lg">
+              <img src={mission} alt="icon" width={40} height={40} />
             </div>
             <div className="flex flex-col pt-3">
               <h3 className="text-6xl"> Mission</h3>
-              <p>
+              <p className="desc">
                 To deliver tailored AI-driven solutions that empower businesses
                 to achieve efficiency, sustainable growth, and success in the
                 digital age.
@@ -48,17 +46,12 @@ const About = () => {
             </div>
           </div>
           <div data-aos="fade-up" className="flex gap-4">
-            <div className="min-w-[60px] h-[60px] bg-primary flex justify-center items-center rounded-lg">
-              <img
-                src={appDevelopmentServices[0].img}
-                alt="icon"
-                width={30}
-                height={30}
-              />
+            <div className="min-w-[60px] h-[60px] bg-white flex justify-center items-center rounded-lg">
+              <img src={vission} alt="icon" width={40} height={40} />
             </div>
             <div className="flex flex-col pt-3">
               <h3 className="text-6xl"> Vission</h3>
-              <p>
+              <p className="desc">
                 We strive to drive innovation, empowering businesses with
                 scalable technology solutions for growth, collaboration, and
                 lasting success.

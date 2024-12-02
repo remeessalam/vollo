@@ -1,28 +1,29 @@
-import { images, landingpageimages, whyChooseUs } from "../constant";
+import { images, whyChooseUs } from "../constant";
 // import RoundedHeading from "./RoundedHeading";
 
 const WhyChooseUs = () => {
-  const { whychooseusimg } = landingpageimages;
+  // const { whychooseusimg } = landingpageimages;
   const { whychooseusbackground } = images;
   return (
     <div
-      className="mt-1 sm:mt-16 bg-contain bg-center bg-no-repeat"
+      className="relative mt-1 sm:mt-16 py-[4rem]  w-[100vw] bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${whychooseusbackground})` }}
     >
-      <div className="flex flex-col lg:flex-row adjustedwidth mx-auto items-center">
-        <div className="w-[45%]">
+      <div className="absolute top-0 w-full h-full bg-primary/30"></div>
+      <div className=" grid  grid-cols-1  adjustedwidth mx-auto items-center">
+        {/* <div className="w-[45%]">
           <div className="w-full ">
             <img
               src={whychooseusimg}
               className="object-contain min-w-full max-h-[20rem] mx-auto"
-              alt="why choose ussss"
+              alt="why choose us"
             />
             I want to change the image as well.
           </div>
-        </div>
-        <div className="w-full  sm:w-[50%]">
+        </div> */}
+        <div className="w-full  sm:w-[100%]">
           {/* <RoundedHeading text={" Why Choose Us"} /> */}
-          <h2 className="text-4xl text-decsriptioncolor sm:text-start text-center leading-tight">
+          <h2 className="text-4xl text-black sm:text-start text-center leading-tight">
             Why Choose Us
           </h2>
           <div className="flex flex-col gap-5">
@@ -34,7 +35,7 @@ const WhyChooseUs = () => {
             </h2>
             <p
               data-aos="fade-up"
-              className="desc max-w-[40rem]  sm:text-start text-center"
+              className="text-[14px] text-black max-w-[40rem]  sm:text-start text-center"
             >
               We begin by evaluating your needs to gain a clear understanding of
               your goals, challenges, and requirements.
@@ -49,16 +50,16 @@ const WhyChooseUs = () => {
                     className=" w-full h-full"
                   >
                     <div className="flex w-full text-start items-center  gap-3">
-                      <div className="min-w-[60px] h-[60px] bg-primary flex justify-center items-center rounded-lg">
+                      <div className="min-w-[60px] h-[60px] bg-white flex justify-center items-center rounded-lg">
                         <img
                           src={obj.icon}
                           className="h-[3rem] object-contain "
                           alt=""
                         />
                       </div>
-                      <h5 className="text-7xl">{obj.heading}</h5>
+                      <h5 className="text-7xl text-black">{obj.heading}</h5>
                     </div>
-                    <p className="desc text-black text-start mt-3">
+                    <p className=" text-black text-[14px] text-start mt-3 ">
                       {obj.description}
                     </p>
                   </div>
