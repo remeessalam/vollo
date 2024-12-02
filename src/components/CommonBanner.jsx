@@ -20,7 +20,7 @@ const CommonBanner = ({
           <img
             src={image}
             alt="banner-image"
-            className="object-cover h-full w-full"
+            className="object-cover  h-full w-full"
           />
         ) : (
           <ReactPlayer
