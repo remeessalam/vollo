@@ -51,7 +51,7 @@ const LandingAbout = ({ page }) => {
                 to="services"
                 smooth
                 offset={-120}
-                className="secondary-btn"
+                className="text-black hover:text-white cursor-pointer hover:scale-105 font-light tracking-wide bg-transparent hover:bg-buttonBackground hover:-translate-y-1 shadow-2xl shadow-transparent  px-6 py-3 min-w-[7rem] flex justify-center text-center transition-all duration-300 rounded-lg"
               >
                 Our Services
               </ScrollLink>

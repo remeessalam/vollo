@@ -19,7 +19,7 @@ const LandingPage = ({ page }) => {
   return (
     <div className="w-screen overflow-hidden">
       <Header />
-      <div className="mt-20 md:mt-[124px]">
+      <div className="">
         <LandingBanner page={page} />
         <div
           id="asdf"

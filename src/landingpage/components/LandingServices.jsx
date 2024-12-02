@@ -41,7 +41,7 @@ const LandingServices = ({ page }) => {
           {services.map((item) => (
             <div
               key={item.id}
-              className="shadow-2xl transition-all border-2 border-primary/40 bg-primary/15 hover:-translate-y-1 hover:bg-primary/25 duration-300 rounded-lg"
+              className="shadow-2xl transition-all border-2 border-primary/40 bg-white hover:-translate-y-1 hover:bg-primary/25 duration-300 rounded-lg"
             >
               <div className="flex h-full flex-col gap-2 items-center text-center text-black p-5 rounded-lg">
                 <img

@@ -37,9 +37,12 @@ const Header = () => {
   ];
 
   return (
-    <div className="py-4 fixed top-0 w-full bg-headerandfooterbg  z-50 text-white text-base font-medium">
-      <div className=" flex justify-between items-center gap-10 mx-auto">
-        <div className="flex justify-between gap-2  items-center min-w-fit w-full  mx-5">
+    <div
+      data-aos="fade-down"
+      className=" fixed top-0 w-full   z-50 text-black text-base font-medium"
+    >
+      <div className="py-4  border-x border-b backdrop-blur-sm border-customPurple rounded-b-xl  bg-headerandfooterbg bg-opacity-60   w-[90%] flex justify-between items-center gap-10 mx-auto">
+        <div className="flex justify-between gap-2 text-white  items-center min-w-fit w-full  mx-5">
           <div className="min-w-fit">
             <Link smooth={true} to="banner" className="cursor-pointer">
               <div className="flex justify-center items-center min-w-fit">
@@ -59,7 +62,7 @@ const Header = () => {
             {options.map((option) => (
               <Link
                 to={`${option.path}`}
-                className="link text-sm"
+                className="link text-sm cursor-pointer"
                 key={option.path}
                 spy={true}
                 smooth={true}
@@ -73,7 +76,7 @@ const Header = () => {
           </div>
 
           <div className="lg:flex  px-7  min-w-fit gap-16 hidden">
-            <div className="flex min-w-fit items-center text-[14px]  gap-2">
+            {/* <div className="flex min-w-fit items-center text-[14px]  gap-2">
               <img
                 src={phonenumbersvg}
                 alt={phonenumbersvg}
@@ -82,10 +85,10 @@ const Header = () => {
                 className="pt-[4px]"
               />
               <h3 className="min-w-fit">CALL US: +91-34343493493</h3>
-            </div>
+            </div> */}
             <Link
               to={`contact`}
-              className="secondary-btn text-sm"
+              className="primary-btn text-sm"
               key={"contact"}
               spy={true}
               smooth={true}

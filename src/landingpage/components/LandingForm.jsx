@@ -143,7 +143,7 @@ const LandingForm = () => {
 
             <button
               type="submit"
-              className="bg-sky-400 font-semibold w-fit px-8 rounded-full text-white  py-4 hover:bg-sky-600 transition duration-300"
+              className="primary-btn bg-sky-400 font-semibold border border-slate-100 px-8 rounded-full text-white  py-4 hover:bg-sky-600 transition duration-300"
             >
               SEND
             </button>
