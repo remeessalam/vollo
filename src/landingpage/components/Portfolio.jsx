@@ -1,3 +1,4 @@
+import RoundedHeading from "../../components/RoundedHeading";
 import { portfolioDataApp, portfolioDataWeb } from "../../constant";
 
 const Portfolio = ({ page }) => {
@@ -7,13 +8,16 @@ const Portfolio = ({ page }) => {
     <div className="adjustedwidth mx-auto">
       <div className="wrapper py-[4rem] flex flex-col text-black gap-3">
         <div className="flex flex-col gap-3">
-          <h2
+          {/* <h2
             data-aos="fade-up"
-            className="text-[2rem] md:text-4xl leading-tight font-semibold text-center"
+            className="text-[2rem] md:text-sechead leading-tight font-semibold text-center"
+          > */}
+          <RoundedHeading text=" Our Portfolio" />
+          {/* </h2> */}
+          <p
+            data-aos="fade-up"
+            className="mt-4 mb-3 text-center text-desc max-w-[40rem] mx-auto"
           >
-            Our Portfolio
-          </h2>
-          <p data-aos="fade-up" className="mt-2 mb-3 text-center">
             Explore some of the successful projects we have delivered,
             showcasing our expertise across diverse domains. Here are some of
             our valued clients and the work we've done for them

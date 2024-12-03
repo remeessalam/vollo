@@ -15,18 +15,19 @@ const LandingBanner = ({ page }) => {
       }}
     >
       <div className="absolute top-0 h-full w-full bg-black/50"></div>
-      <div className="flex flex-col items-center  text-center">
+      <div className="flex flex-col items-center  mt-10 sm:mt-0 text-center">
         <h1
           data-aos="fade-up"
-          className="text-4xl sm:text-10xl leading-tight text-white"
+          className="text-landsmallxl sm:text-smallxl sm:1xl leading-tight text-white"
         >
           {page === "web"
             ? "Build Scalable, High-Performance Websites"
             : "Mobile Apps that Drive Engagement"}
         </h1>
+        {/* bg-gradient-to-r drop-shadow-2xl from-[#59066e] to-[#9a80b6] text-transparent bg-clip-text */}
         <h1
           data-aos="fade-up"
-          className="text-4xl sm:text-10xl  leading-tight bg-gradient-to-r drop-shadow-2xl from-[#59066e] to-[#9a80b6] text-transparent bg-clip-text"
+          className="text-landsmallxl sm:text-smallxl  leading-tight text-white "
         >
           {page === "web"
             ? "Building Your Web Presence with Precision"
@@ -35,7 +36,7 @@ const LandingBanner = ({ page }) => {
 
         <p
           data-aos="fade-up"
-          className="text-[#e3e2e2] font-normal max-w-[70%] my-4"
+          className="text-[#e3e2e2] text-desc font-normal max-w-[70%] my-4"
         >
           {page === "web"
             ? "Our expert team creates innovative and responsive websites tailored to your business needs, optimizing user experience and performance across all devices."

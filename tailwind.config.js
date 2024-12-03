@@ -55,6 +55,12 @@ export default {
           fontWeight: "700",
         },
       ],
+      landsmallxl: [
+        "33px",
+        {
+          fontWeight: "700",
+        },
+      ],
       sechead: [
         "44px",
         {

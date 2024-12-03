@@ -53,7 +53,7 @@ const LandingForm = () => {
     <div className="adjustedwidth mx-auto mt-10  sm:mt-20 sm:px-5  pb-20">
       <div className="flex justify-around md:gap-0 gap-5 md:flex-row flex-col items-center mt-4 sm:mt-16">
         <div data-aos="fade-up" className="w-full md:w-[40%] sm:px-4">
-          <h4 className="text-3xl sm:text-5xl text-center">
+          <h4 className="text-head text-center">
             We&apos;d love to hear from you! Tell us about your project or
             schedule an appointment to discuss in detail.
           </h4>
@@ -143,7 +143,7 @@ const LandingForm = () => {
 
             <button
               type="submit"
-              className="primary-btn bg-sky-400 font-semibold border border-slate-100 px-8 rounded-full text-white  py-4 hover:bg-sky-600 transition duration-300"
+              className="primary-btn  font-semibold border  px-8 rounded-full text-white  py-4  transition duration-300"
             >
               SEND
             </button>

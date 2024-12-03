@@ -5,7 +5,10 @@ const PartnerUs = () => {
     <div className="mt-1 sm:mt-16">
       <div className="adjustedwidth mx-auto">
         <RoundedHeading text={"Partner with us"} />
-        <p className="text-decsriptioncolor text-center mt-10">
+        <p
+          data-aos="fade-up"
+          className="text-decsriptioncolor text-center mt-10"
+        >
           At<strong> Vollo Inc.</strong>, we’re committed to being your partner
           in innovation. Whether you’re looking to launch a groundbreaking app,
           develop custom software, harness the power of artificial intelligence,

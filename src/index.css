@@ -31,7 +31,7 @@ body {
     @apply text-[14px] text-[#727272];
   }
   .primary-btn {
-    @apply text-white hover:scale-105 cursor-pointer font-light tracking-wide bg-primary hover:bg-secondary  hover:-translate-y-1 shadow-2xl shadow-transparent  px-6 py-3 min-w-[7rem] flex justify-center text-center transition-all duration-300 rounded-lg;
+    @apply text-white hover:scale-105 cursor-pointer font-light tracking-wide bg-primary hover:bg-secondary  max-w-[40rem] shadow-2xl shadow-transparent  px-6 py-3 min-w-[7rem] flex justify-center text-center transition-all duration-300 rounded-lg;
   }
   /* .secondary-btn {
     @apply text-black cursor-pointer font-normal tracking-wide bg-secondary  border-transparent  hover:bg-[#F6F7Fb] hover:text-black   hover:-translate-y-1 shadow-2xl shadow-transparent  px-6 py-3 min-w-fit flex justify-center text-center transition-all duration-300 rounded-lg;

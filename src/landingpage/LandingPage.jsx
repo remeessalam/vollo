@@ -14,7 +14,7 @@ import LandingForm from "./components/LandingForm";
 const LandingPage = ({ page }) => {
   AOS.init({
     once: true,
-    duration: 500,
+    duration: 1000,
   });
   return (
     <div className="w-screen overflow-hidden">

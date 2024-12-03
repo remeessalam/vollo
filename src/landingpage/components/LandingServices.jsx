@@ -22,13 +22,13 @@ const LandingServices = ({ page }) => {
         {/* <div data-aos="fade-up" className="gradient-rounded-text-box mx-auto">
           Our {page === "web" ? "Web" : "App"} Development Services
         </div> */}
-        <h1 data-aos="fade-up" className="text-2xl text-center max-w-2xl">
+        <h1 data-aos="fade-up" className="text-sechead text-center max-w-2xl">
           {page === "web" &&
             "Exceptional Web Development to Strengthen Your Digital Presence"}
           {page === "app" &&
             "Innovative App Development for Engaging Mobile Experiences"}
         </h1>
-        <p data-aos="fade-up" className="text-center max-w-2xl desc">
+        <p data-aos="fade-up" className="text-center max-w-2xl text-desc">
           {page === "web" &&
             "Professional web development services tailored to create robust, responsive, and visually appealing websites that reflect your brand and drive growth."}
           {page === "app" &&
@@ -49,10 +49,10 @@ const LandingServices = ({ page }) => {
                   alt="icon"
                   className="w-[6rem] grayscale-[65%]"
                 />
-                <h6 className="font-semibold text-2xl font-raleway">
-                  {item.title}
-                </h6>
-                <p className="text-md text-black/70 desc">{item.description}</p>
+                <h6 className=" text-head ">{item.title}</h6>
+                <p className="text-md text-black/70 text-desc">
+                  {item.description}
+                </p>
               </div>
             </div>
           ))}

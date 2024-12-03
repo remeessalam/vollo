@@ -26,12 +26,12 @@ const LandingAbout = ({ page }) => {
             className="flex h-full flex-col gap-7 text-center lg:text-start"
           >
             <div className="flex flex-col gap-7">
-              <h2 className="text-5xl">
+              <h2 className="text-sechead">
                 {isWebDevelopment
                   ? "Innovative Web Development Solutions for Modern Brands"
                   : "Building Apps that Elevate Your Business with Our App Development Services."}
               </h2>
-              <p className="text-decsriptioncolor">
+              <p className="text-desc">
                 {isWebDevelopment
                   ? "At VOLLO INC , we specialize in delivering high-performance websites and digital platforms that help businesses thrive online. From custom web development to responsive design, we build solutions that are both user-friendly and visually stunning. Let's turn your vision into a reality."
                   : "At VOLLO INC , we specialize in creating intuitive, high-performing mobile applications tailored to meet the unique needs of businesses across industries. Our expert team combines technical expertise with creative design to develop apps that drive engagement and growth."}

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useLocation } from "react-router-dom";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -49,9 +50,16 @@ const ContactForm = () => {
     });
     setErrors({});
   };
-
+  const { pathname } = useLocation();
+  console.log(pathname, "aslkdfjaslkdf");
   return (
-    <div className="mt-10 sm:mt-20 sm:px-5  py-20">
+    <div
+      className={`mt-10 sm:mt-20 sm:px-5 ${
+        pathname === `/web-development` || pathname === `/app-development `
+          ? `pb-20`
+          : `py-20`
+      } `}
+    >
       <h2 className="text-sechead sm:text-sechead px-1 text-center sm:leading-none leading-tight">
         Fill the form and contact with us
       </h2>
@@ -144,13 +152,14 @@ const ContactForm = () => {
                 <p className="text-red-500 text-sm">{errors.message}</p>
               )}
             </div>
-
-            <button
-              type="submit"
-              className="primary-btn shadow-xl border border-slate-200 bg-sky-400 font-semibold  px-8 rounded-full text-white  py-4 hover:bg-sky-600 transition duration-300"
-            >
-              SEND
-            </button>
+            <div className="flex justify-center">
+              <button
+                type="submit"
+                className="primary-btn shadow-xl border w-full  font-semibold  px-8 rounded-full text-white  py-4  transition duration-300"
+              >
+                SEND
+              </button>
+            </div>
           </form>
         </div>
       </div>
