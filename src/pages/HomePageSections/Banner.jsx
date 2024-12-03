@@ -9,7 +9,7 @@ const Banner = () => {
     <div className="relative flex flex-col items-center">
       <div
         // h-bannerheightsm  lg:h-bannerheight
-        className=" flex flex-col justify-center items-center h-[120vh]  text-black w-screen bg-cover bg-center bg-no-repeat"
+        className=" flex flex-col justify-center items-center h-screen lg:h-[120vh]  text-black w-screen bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${homepagebanner})` }}
       >
         <div className=" flex flex-col items-center  text-center sm:mt-0 mt-4">
