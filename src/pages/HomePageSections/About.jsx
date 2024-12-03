@@ -17,7 +17,7 @@ const About = () => {
           <div className="w-full">
             <h3
               data-aos="fade-left"
-              className="leading-tight text-smhead uppercase text-decsriptioncolor"
+              className="leading-tight sm:mt-0 mt-4 text-smhead uppercase text-decsriptioncolor"
             >
               About us
             </h3>

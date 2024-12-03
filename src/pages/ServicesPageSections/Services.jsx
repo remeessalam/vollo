@@ -100,12 +100,12 @@ const Services = () => {
             {selectedService.title}
           </h1>
           <img
-            src={selectedService.img}
+            src={selectedService.image}
             alt={selectedService.title}
             className="w-[50%]  max-h-[65vh] rounded-3xl hover:scale-105 transition-all duration-700"
           />
           {/* Description */}
-          <p className="desc whitespace-pre-line text-sm md:text-base text-center max-w-[80%]">
+          <p className="text-desc whitespace-pre-line text-sm md:text-base text-center max-w-[80%]">
             {selectedService.description}
           </p>
         </div>

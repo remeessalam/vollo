@@ -27,6 +27,19 @@ import gamedevelopmentimage from "./assets/images/services/gamedevelopmentimage.
 import blockchainimage from "./assets/images/services/blockchainimage.png";
 import cloudserviceimage from "./assets/images/services/cloudserviceimage.png";
 import cybersecurityimage from "./assets/images/services/cybersecurityimage.png";
+import saiimage from "./assets/images/serviceimage/aiimage.png";
+import smobiledevelopmentimage from "./assets/images/serviceimage/mobiledevelopmentimage.png";
+import swebdevelopmentimage from "./assets/images/serviceimage/webdevelopmentimage.png";
+import suiuximage from "./assets/images/serviceimage/uiuximage.png";
+import scustomsoftwareimage from "./assets/images/serviceimage/customsoftwareimage.png";
+import sdataanalyticsimage from "./assets/images/serviceimage/dataanalyticsimage.png";
+import siotimage from "./assets/images/serviceimage/iotimage.png";
+import sroboticautomationimage from "./assets/images/serviceimage/roboticautomationimage.png";
+import sarvrimage from "./assets/images/serviceimage/arvrimage.png";
+import sgamedevelopmentimage from "./assets/images/serviceimage/gamedevelopmentimage.png";
+import sblockchainimage from "./assets/images/serviceimage/blockchainimage.png";
+import scloudserviceimage from "./assets/images/serviceimage/cloudserviceimage.png";
+import scybersecurityimage from "./assets/images/serviceimage/cybersecurityimage.png";
 import aboutpageimageone from "./assets/images/aboutpageimageone.jpeg";
 import companyachievementsimage from "./assets/images/companyachievementsimage.jpg";
 import aboutpageimagethree from "./assets/images/aboutpageimagethree.jpeg";
@@ -130,6 +143,7 @@ export const ourServices = [
   {
     id: 1,
     img: aiimage,
+    image: saiimage,
     title: "Artificial Intelligence (AI)",
     description:
       "Unlock the limitless potential of AI-driven solutions at Vollo Inc., where we transform your business operations into intelligent, efficient systems that drive success. With our predictive analytics, we empower you to leverage data insights to anticipate market trends, understand customer behavior, and make informed decisions that enhance your competitive edge. Our intelligent automation solutions streamline workflows, reduce operational costs, and eliminate mundane tasks, enabling your team to focus on strategic initiatives.",
@@ -139,6 +153,7 @@ export const ourServices = [
   {
     id: 2,
     img: mobiledevelopmentimage,
+    image: smobiledevelopmentimage,
     title: "Mobile App Development",
     description:
       "In today’s mobile-first world, having a dynamic and user-friendly app is a necessity for business success. At Vollo Inc., we craft high-performance mobile applications tailored to meet your business needs. From concept to launch, our expert developers ensure that each app is visually stunning and delivers a seamless user experience, with ongoing support to keep your app relevant and engaging.",
@@ -148,6 +163,7 @@ export const ourServices = [
   {
     id: 3,
     img: webdevelopmentimage,
+    image: swebdevelopmentimage,
     title: "Website Development",
     description:
       "Your website is the digital face of your business. At Vollo Inc., we specialize in designing responsive, functional websites that captivate visitors and effectively communicate your brand message. With a mobile-first approach, we ensure that your website looks and performs flawlessly across all devices, driving higher engagement and conversions.",
@@ -157,6 +173,7 @@ export const ourServices = [
   {
     id: 4,
     img: uiuximage,
+    image: suiuximage,
     title: "UI/UX Design",
     description:
       "Our design process prioritizes the needs and preferences of your target audience. Through research and collaboration, we create intuitive, visually stunning interfaces that reflect your brand identity and foster user engagement. Our user-centric approach ensures that your interfaces meet expectations and create emotional connections with users.",
@@ -166,6 +183,7 @@ export const ourServices = [
   {
     id: 5,
     img: customsoftwareimage,
+    image: scustomsoftwareimage,
     title: "Custom Software Development",
     description:
       "We begin with an in-depth analysis of your business goals to create software that drives meaningful change. Our iterative development process ensures that the software aligns perfectly with your needs, while our dedicated QA team guarantees reliability through extensive testing.",
@@ -175,6 +193,7 @@ export const ourServices = [
   {
     id: 6,
     img: dataanalyticsimage,
+    image: sdataanalyticsimage,
     title: "Data Analytics",
     description:
       "We help you harness the power of data to make strategic decisions that drive growth. Our analytics services transform complex data into actionable insights, utilizing techniques like predictive modeling and data visualization to uncover trends that enhance your competitive edge.",
@@ -184,6 +203,7 @@ export const ourServices = [
   {
     id: 7,
     img: iotimage,
+    image: siotimage,
     title: "Internet of Things (IoT)",
     description:
       "At Vollo Inc., we create IoT solutions that help businesses monitor, control, and improve their processes. From real-time data collection to seamless integration, our IoT technology enhances efficiency across industries like healthcare, manufacturing, and logistics.",
@@ -193,6 +213,7 @@ export const ourServices = [
   {
     id: 8,
     img: roboticautomationimage,
+    image: sroboticautomationimage,
     title: "Robotic Process Automation (RPA)",
     description:
       "Our RPA solutions automate repetitive tasks, reducing operational costs and freeing up your team to focus on strategic growth. By streamlining workflows and ensuring consistent, error-free results, we help businesses improve efficiency and performance.",
@@ -202,6 +223,7 @@ export const ourServices = [
   {
     id: 9,
     img: arvrimage,
+    image: sarvrimage,
     title: "Augmented Reality (AR) & Virtual Reality (VR)",
     description:
       "We offer cutting-edge AR and VR solutions that redefine customer engagement and training experiences. Whether for marketing, product demos, or immersive learning, our solutions captivate audiences and create lasting impressions.",
@@ -211,6 +233,7 @@ export const ourServices = [
   {
     id: 10,
     img: gamedevelopmentimage,
+    image: sgamedevelopmentimage,
     title: "Game Development",
     description:
       "Our talented team of game developers creates engaging experiences across platforms. From concept to launch, we bring your game ideas to life with captivating narratives and dynamic gameplay that resonate with players.",
@@ -220,6 +243,7 @@ export const ourServices = [
   {
     id: 11,
     img: blockchainimage,
+    image: sblockchainimage,
     title: "Blockchain Solutions",
     description:
       "At Vollo Inc., we specialize in blockchain solutions that enhance security, transparency, and trust. Our decentralized technology enables secure transactions, effective data management, and improved traceability, promoting confidence among stakeholders.",
@@ -229,6 +253,7 @@ export const ourServices = [
   {
     id: 12,
     img: cloudserviceimage,
+    image: scloudserviceimage,
     title: "Cloud Services",
     description:
       "Our cloud computing services empower businesses to thrive by facilitating seamless migration and management. With reliable, fast access to applications and data from any device, our solutions enhance efficiency, reduce costs, and provide scalability.",
@@ -238,6 +263,7 @@ export const ourServices = [
   {
     id: 13,
     img: cybersecurityimage,
+    image: scybersecurityimage,
     title: "Cybersecurity",
     description:
       "We provide comprehensive cybersecurity services to protect your business from evolving digital threats. Our proactive approach ensures that your data, networks, and operations remain secure, minimizing risk and ensuring compliance.",
