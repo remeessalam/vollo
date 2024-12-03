@@ -21,17 +21,17 @@ const Header = () => {
     >
       <div className="py-4  border-x border-b backdrop-blur-sm border-customPurple rounded-b-xl  bg-headerandfooterbg bg-opacity-60   w-[90%] flex justify-between items-center gap-10 mx-auto">
         <div className="flex justify-between gap-2  items-center min-w-fit w-full  mx-5">
-          <div className="min-w-fit">
+          <div className="min-w-fit h-[1rem] md:h-[5.75rem] flex items-center">
             <Link to="/">
               <div className="flex justify-center items-center min-w-fit">
                 <img
                   src={Logo}
-                  className="h-[3rem] md:h-[5.75rem] scale-125"
+                  className="h-[1rem] md:h-[2.75rem] object-cover my-auto"
                   alt="logo"
                 />
-                <h1 className="text-[16px] sm:text-[32px] text-white font-bold min-w-[8rem]">
+                {/* <h1 className="text-[16px] sm:text-[32px] text-white font-bold min-w-[8rem]">
                   Vollo Inc
-                </h1>
+                </h1> */}
               </div>
             </Link>
           </div>
