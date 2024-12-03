@@ -62,7 +62,7 @@ const Header = () => {
               <h3 className="min-w-fit">CALL US: +91-34343493493</h3>
             </div> */}
             <Link to={"/contact-us"}>
-              <div className="primary-btn bg-buttonBackground">GET STARTED</div>
+              <div className="primary-btn">GET STARTED</div>
             </Link>
           </div>
 
