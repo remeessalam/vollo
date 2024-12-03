@@ -7,7 +7,7 @@ const Aboutus = () => {
       <div className="adjustedwidth mx-auto">
         <div className="flex flex-col gap-5 md:gap-4 md:flex-row justify-between">
           <div
-            data-aos="fade-left"
+            data-aos="fade-right"
             className="w-full md:w-[50%] object-cover min-h-full rounded-lg overflow-hidden"
           >
             <img
@@ -16,7 +16,7 @@ const Aboutus = () => {
               className="object-cover w-full min-h-full"
             />
           </div>
-          <div data-aos="fade-up" className="w-full md:w-[45%]">
+          <div data-aos="fade-left" className="w-full md:w-[45%]">
             <h3 className="text-smhead font-medium uppercase leading-tight ">
               About Us
             </h3>
