@@ -1,6 +1,7 @@
 import React from "react";
 import { BiChevronDown } from "react-icons/bi";
 import { images } from "../constant";
+import { Link } from "react-router-dom";
 
 const faqItems = [
   {
@@ -109,7 +110,9 @@ const FAQSection = () => {
                 out to us. We’re here to help and provide the answers you’re
                 looking for.
               </p>
-              <button className="primary-btn">Contact Us</button>
+              <Link to={"/contact-us"}>
+                <button className="primary-btn">Contact Us</button>
+              </Link>
             </div>
           </div>
         </div>
