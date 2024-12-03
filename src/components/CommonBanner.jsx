@@ -84,14 +84,17 @@ const CommonBanner = ({
               {/* <div className="rounded-full border-2 blacktextshadow w-[20px] h-[20px]"> */}
               <FaRegCirclePlay className=" w-5 h-5" />
               {/* </div> */}
-              <h4 className="text-[24px] blacktextshadow font-semibold">
+              <h4 className="text-[24px] text-center blacktextshadow font-semibold">
                 {page}
               </h4>
             </div>
             {/* <h1 className=" text-white underline underline-offset-4 text-[40px] pl-5 sm:pl-10 leading-tight uppercase">
               {page}
             </h1> */}
-            <h1 data-aos="fade-up" className=" text-1xl leading-tight">
+            <h1
+              data-aos="fade-up"
+              className="text-center text-1xl leading-tight"
+            >
               {heading}
             </h1>
           </div>
@@ -109,14 +112,17 @@ const CommonBanner = ({
                 Home
               </Link>
               <FaRegCirclePlay className=" w-5 h-5" />
-              <h4 className="text-[24px] blacktextshadow font-semibold">
+              <h4 className="text-[24px] text-center blacktextshadow font-semibold">
                 {page}
               </h4>
             </div>
             {/* <h1 className=" text-white underline underline-offset-4 text-[40px] pl-5 sm:pl-10 leading-tight uppercase">
               {page}
             </h1> */}
-            <h1 data-aos="fade-up" className="text-1xl leading-tight">
+            <h1
+              data-aos="fade-up"
+              className="text-1xl text-center leading-tight"
+            >
               {heading}
             </h1>
           </div>
