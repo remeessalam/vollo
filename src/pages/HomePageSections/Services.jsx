@@ -42,7 +42,7 @@ const Services = () => {
                 </h2>
                 <p className="text-desc">{obj.paragraph}</p>
                 <Link
-                  // to={"/services"}
+                  to={"/services"}
                   // onClick={() => handleSelectServiceToShowDetail(obj)}
                   className="flex text-[17px] mt-2 items-center border-b border-black text-black w-[6.13rem] "
                 >
