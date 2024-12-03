@@ -17,14 +17,14 @@ const Aboutus = () => {
             />
           </div>
           <div data-aos="fade-up" className="w-full md:w-[45%]">
-            <h3 className="text-[35px] font-medium uppercase leading-tight ">
+            <h3 className="text-smhead font-medium uppercase leading-tight ">
               About Us
             </h3>
 
-            <h2 className="text-[3rem] leading-tight font-semibold">
+            <h2 className="text-sechead leading-tight">
               Innovating Technology, Empowering Businesses
             </h2>
-            <p className="text-decsriptioncolor mt-4">
+            <p className="text-desc mt-4">
               At Vollo Inc., we pride ourselves on being pioneers at the
               forefront of technological innovation. Our mission is to deliver
               world-class, tailor-made technology solutions that empower

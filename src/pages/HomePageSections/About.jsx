@@ -17,16 +17,16 @@ const About = () => {
           <div className="w-full">
             <h3
               data-aos="fade-left"
-              className="leading-tight text-4xl text-decsriptioncolor"
+              className="leading-tight text-smhead uppercase text-decsriptioncolor"
             >
               About us
             </h3>
           </div>
           <div data-aos="fade-up" className="">
-            <h1 className="text-4xl leading-tight">
+            <h1 className="text-head leading-tight">
               Empowering Growth Through Innovative Technology
             </h1>
-            <p className="desc">
+            <p className="text-desc">
               At Vollo Inc., we craft innovative, AI-driven technology solutions
               to help businesses overcome challenges, achieve excellence, and
               unlock sustainable growth in the digital age.
@@ -37,8 +37,8 @@ const About = () => {
               <img src={mission} alt="icon" width={40} height={40} />
             </div>
             <div className="flex flex-col pt-3">
-              <h3 className="text-6xl"> Mission</h3>
-              <p className="desc">
+              <h3 className="text-head"> Mission</h3>
+              <p className="text-desc">
                 To deliver tailored AI-driven solutions that empower businesses
                 to achieve efficiency, sustainable growth, and success in the
                 digital age.
@@ -50,15 +50,15 @@ const About = () => {
               <img src={vission} alt="icon" width={40} height={40} />
             </div>
             <div className="flex flex-col pt-3">
-              <h3 className="text-6xl"> Vission</h3>
-              <p className="desc">
+              <h3 className="text-head"> Vission</h3>
+              <p className="text-desc">
                 We strive to drive innovation, empowering businesses with
                 scalable technology solutions for growth, collaboration, and
                 lasting success.
               </p>
             </div>
           </div>
-          <div className="w-[150px] mt-2 sm:mt-5">
+          <div data-aos="fade-up" className="w-[150px] mt-2 sm:mt-5">
             <Link to={"/about-us"}>
               <h4 className="primary-btn">Lern more</h4>
             </Link>

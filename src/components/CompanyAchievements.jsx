@@ -46,20 +46,23 @@ const CompanyAchievements = () => {
         <div className="flex flex-col gap-8 text-white">
           <h3
             data-aos="fade-left"
-            className="leading-tight text-4xl text-white"
+            className="leading-tight uppercase text-smhead text-white"
           >
             Our Values
           </h3>
-          <h3 className="text-4xl sm:text-8xl leading-tight text-white">
+          <h3
+            data-aos="fade-up"
+            className="text-head sm:text-8xl leading-tight text-white"
+          >
             Empowering Businesses with Tailor-Made Technology Solutions
           </h3>
-          <p className=" text-white/80 text-[14px] ">
+          <p data-aos="fade-up" className=" text-white/80 text-desc ">
             At Vollo Inc., we specialize in creating customized technology
             solutions that drive business success. Our expert team leverages
             cutting-edge innovation to help companies enhance efficiency,
             accelerate growth, and stay ahead of the competition.
           </p>
-          <Link to={"/services"} className="z-50">
+          <Link data-aos="fade-up" to={"/services"} className="z-50">
             <h3 className="primary-btn  w-fit">Discover More</h3>
           </Link>
         </div>
@@ -73,7 +76,7 @@ const CompanyAchievements = () => {
               {/* <div className="flex h-[64px] w-[64px] bg-white rounded-full shadow-2xl  justify-center items-center">
               <img src={obj.} alt="proteam" />
             </div> */}
-              <h1 className="text-10xl w-full">
+              <h1 className="text-[57px] w-full">
                 <Counter targetNumber={obj.count} suffix={obj.suffix} />
               </h1>
               <h5 className="text-[#0099ff] text-center text-[17px] sm:text-[21px] font-bold w-full">

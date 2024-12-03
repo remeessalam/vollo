@@ -51,18 +51,18 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="mt-10 sm:mt-20 sm:px-5  pb-20">
-      <h2 className="text-4xl sm:text-5xl text-center sm:leading-none leading-tight">
+    <div className="mt-10 sm:mt-20 sm:px-5  py-20">
+      <h2 className="text-sechead sm:text-sechead px-1 text-center sm:leading-none leading-tight">
         Fill the form and contact with us
       </h2>
+      <div className="w-full mx-auto sm:max-w-[40%] sm:px-4 mt-5">
+        <h4 className="text-desc px-3 text-center">
+          We&apos;d love to hear from you! Tell us about your project or
+          schedule an appointment to discuss in detail.
+        </h4>
+      </div>
       <div className="flex justify-around md:gap-0 gap-5 md:flex-row flex-col items-center mt-4 sm:mt-16">
-        <div className="w-full md:w-[40%] sm:px-4">
-          <h4 className="text-3xl sm:text-5xl text-center">
-            We&apos;d love to hear from you! Tell us about your project or
-            schedule an appointment to discuss in detail.
-          </h4>
-        </div>
-        <div className="w-full sm:px-0 px-3 md:w-1/2">
+        <div className="w-full sm:px-0 px-3 ">
           <form onSubmit={handleSubmit} className="flex flex-col gap-6">
             <div className="flex flex-col lg:flex-row gap-4">
               <div className="flex flex-col w-full">
@@ -89,7 +89,7 @@ const ContactForm = () => {
                   value={formData.contactNumber}
                   onChange={handleChange}
                   placeholder="Enter number"
-                  className=" rounded-lg pl-5 m:py-4 py-3 focus:outline-none"
+                  className=" rounded-lg pl-5 sm:py-4 py-3 focus:outline-none"
                 />
                 {errors.contactNumber && (
                   <p className="text-red-500 text-sm">{errors.contactNumber}</p>

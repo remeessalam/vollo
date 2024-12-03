@@ -14,19 +14,19 @@ import twitterIcon from "./assets/images/twitter.png";
 import behanceIcon from "./assets/images/behance.png";
 import youtubeIcon from "./assets/images/youtube.png";
 import linkedinIcon from "./assets/images/linkedin.png";
-import aiimage from "./assets/images/services/aiimage.jpeg";
-import mobiledevelopmentimage from "./assets/images/services/mobiledevelopmentimage.jpg";
-import webdevelopmentimage from "./assets/images/services/webdevelopmentimage.jpg";
-import uiuximage from "./assets/images/services/uiuximage.jpeg";
-import customsoftwareimage from "./assets/images/services/customsoftwareimage.jpeg";
-import dataanalyticsimage from "./assets/images/services/dataanalyticsimage.jpeg";
-import iotimage from "./assets/images/services/iotimage.jpeg";
-import roboticautomationimage from "./assets/images/services/roboticautomationimage.jpeg";
-import arvrimage from "./assets/images/services/arvrimage.jpeg";
-import gamedevelopmentimage from "./assets/images/services/gamedevelopmentimage.jpeg";
-import blockchainimage from "./assets/images/services/blockchainimage.jpeg";
-import cloudserviceimage from "./assets/images/services/cloudserviceimage.jpeg";
-import cybersecurityimage from "./assets/images/services/cybersecurityimage.jpeg";
+import aiimage from "./assets/images/services/aiimage.png";
+import mobiledevelopmentimage from "./assets/images/services/mobiledevelopmentimage.png";
+import webdevelopmentimage from "./assets/images/services/webdevelopmentimage.png";
+import uiuximage from "./assets/images/services/uiuximage.png";
+import customsoftwareimage from "./assets/images/services/customsoftwareimage.png";
+import dataanalyticsimage from "./assets/images/services/dataanalyticsimage.png";
+import iotimage from "./assets/images/services/iotimage.png";
+import roboticautomationimage from "./assets/images/services/roboticautomationimage.png";
+import arvrimage from "./assets/images/services/arvrimage.png";
+import gamedevelopmentimage from "./assets/images/services/gamedevelopmentimage.png";
+import blockchainimage from "./assets/images/services/blockchainimage.png";
+import cloudserviceimage from "./assets/images/services/cloudserviceimage.png";
+import cybersecurityimage from "./assets/images/services/cybersecurityimage.png";
 import aboutpageimageone from "./assets/images/aboutpageimageone.jpeg";
 import companyachievementsimage from "./assets/images/companyachievementsimage.jpg";
 import aboutpageimagethree from "./assets/images/aboutpageimagethree.jpeg";
@@ -35,7 +35,7 @@ import aboutpageimagetwo from "./assets/images/aboutpageimagetwo.png";
 import fullstart from "./assets/images/fullstar.png";
 import fourstart from "./assets/images/fourstar.png";
 import testimonialsuserimage from "./assets/images/testimonialsuserimage.png";
-import contactuspagebanner from "./assets/images/contactuspagebanner.jpeg";
+import contactuspagebanner from "./assets/images/contactuspagebanner.png";
 import landingpagebannerapp from "./assets/images/landingpagebannerapp.jpg";
 import landingpagebannerweb from "./assets/images/landingpagebannerweb.jpg";
 import portfoliwebone from "./assets/images/portfolio/1-min.webp";
@@ -64,13 +64,15 @@ import target from "./assets/images/landingpage/target.png";
 import cogwheel from "./assets/images/landingpage/cogwheel.png";
 import webLandingAbout from "./assets/images/webLandingAbout.png";
 import appLandingAbout from "./assets/images/appLandingAbout.png";
-import whychooseusbackground from "./assets/images/whychooseusbackground.jpg";
-import testimonialbackground from "./assets/images/testimonialbackground.jpg";
+import whychooseusbackground from "./assets/images/whychooseusbackground.png";
+import testimonialbackground from "./assets/images/testimonialbackground.png";
 import Finetunedsolutionimg from "./assets/images/Finetunedsolutionimg.jpg";
 import Innovationfocused from "./assets/images/Innovationfocused.jpg";
 import Scalableframeworks from "./assets/images/Scalableframeworks.jpg";
-import aboutusbanner from "./assets/images/aboutusbanner.jpg";
-import servicepagebanner from "./assets/images/servicepagebanner.jpg";
+import aboutusbanner from "./assets/images/aboutusbanner.png";
+import servicepagebanner from "./assets/images/servicepagebanner.png";
+import aiImage from "./assets/images/aiimageforcontact.png";
+import faqbg from "./assets/images/faqbg.png";
 export const images = {
   Logo,
   phonenumbersvg,
@@ -92,6 +94,8 @@ export const images = {
   Scalableframeworks,
   aboutusbanner,
   servicepagebanner,
+  aiImage,
+  faqbg,
 };
 
 export const landingpageimages = {
@@ -116,9 +120,11 @@ export const socialmediaIcons = [
 ];
 
 export const companyDetails = {
-  address: " D No. 3-57, Main Road, Yelurupadu, Andhra Pradesh - 534236",
+  address: "  Andhra Pradesh ,india- 534236",
   phone: "+91-6300021466",
-  link: "🌐Website: volloinc.com",
+  whatsapp: "6300021466",
+  link: "🌐 Website: volloinc.com",
+  email: "example@gmail.com",
 };
 export const ourServices = [
   {

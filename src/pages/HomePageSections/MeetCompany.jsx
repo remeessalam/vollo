@@ -4,7 +4,7 @@ import { meetCompanyDetails } from "../../constant";
 const MeetCompany = () => {
   return (
     <div className="mt-10 sm:mt-30">
-      <h2 className="text-4xl mb-10 sm:mb-0 text-center text-decsriptioncolor leading-tight">
+      <h2 className="text-sechead mb-10 sm:mb-0 text-center text-black leading-tight">
         meet vollo inc
       </h2>
       {/* <RoundedHeading text="meet vollo inc" /> */}
@@ -16,7 +16,7 @@ const MeetCompany = () => {
               key={obj.id}
               className={`flex flex-col items-center rounded-xl shadow-xl border border-slate-100`}
             >
-              <div className=" sm:min-h-[365px] flex items-center">
+              <div className=" sm:min-h-[365px] sm:max-h-[365px] flex items-center">
                 <img
                   src={obj.img}
                   alt={obj.img}
@@ -24,8 +24,8 @@ const MeetCompany = () => {
                 />
               </div>
               <div className=" mx-5 py-5">
-                <h4 className="text-7xl">{obj.heading}</h4>
-                <p className="desc text-[16px] mt-2">{obj.description}</p>
+                <h4 className="text-head">{obj.heading}</h4>
+                <p className="desc text-desc mt-2">{obj.description}</p>
               </div>
             </div>
           ))}

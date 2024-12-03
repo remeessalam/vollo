@@ -8,7 +8,7 @@ import "aos/dist/aos.css";
 const AppLayout = () => {
   AOS.init({
     once: true,
-    duration: 500,
+    duration: 1000,
   });
   return (
     <div className="w-screen overflow-hidden">

@@ -37,16 +37,13 @@ const CompanyTeam = () => {
       <div className="adjustedwidth mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <div className="col-span-1 flex flex-col lg:items-start items-center lg:text-start text-center">
-            <h3
-              data-aos="fade-left"
-              className="leading-tight text-4xl text-decsriptioncolor"
-            >
+            <h3 data-aos="fade-left" className="leading-tight text-smhead">
               {" "}
               {/* <p className="w-[15px] h-[15px] rounded-full bg-[#FCAF3D]"></p> */}
               Our Experts
             </h3>
-            <h3 className="text-4xl sm:text-8xl">Meet our team</h3>
-            <p>
+            <h3 className="text-head sm:text-8xl">Meet our team</h3>
+            <p className="text-desc">
               Meet our team! A dynamic group of professionals dedicated to
               excellence and innovation. Each member brings unique skills and
               expertise, working together to achieve exceptional results.
@@ -83,11 +80,11 @@ const CompanyTeam = () => {
                       </div>
                     </div>
                     <div className="text-center py-4 px-4">
-                      <h3 className="text-7xl">{obj.name}</h3>
+                      <h3 className="text-[21px] font-bold">{obj.name}</h3>
                       <p>{obj.position}</p>
                     </div>
                     <div className="w-full absolute bottom-0">
-                      <div className="w-[6rem]  h-[5px] bg-primary mx-auto" />
+                      <div className="w-[6rem] text-desc  h-[5px] bg-primary mx-auto" />
                     </div>
                   </div>
                 ))}

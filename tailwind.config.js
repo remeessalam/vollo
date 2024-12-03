@@ -3,6 +3,21 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      animation: {
+        bounce: "bounce 1s infinite",
+      },
+      keyframes: {
+        bounce: {
+          "0%, 100%": {
+            transform: "translateY(-25%)",
+            "animation-timing-function": "cubic-bezier(0.8, 0, 1, 1)",
+          },
+          "50%": {
+            transform: "translateY(0)",
+            "animation-timing-function": "cubic-bezier(0, 0, 0.2, 1)",
+          },
+        },
+      },
       boxShadow: {
         custom: "0px 0px 5px 0px rgba(0,0,0,0.75)", // Add your custom box-shadow here
       },
@@ -28,10 +43,40 @@ export default {
       },
     },
     fontSize: {
-      "10xl": [
-        "58px",
+      "1xl": [
+        "73px",
         {
           fontWeight: "700",
+        },
+      ],
+      smallxl: [
+        "53px",
+        {
+          fontWeight: "700",
+        },
+      ],
+      sechead: [
+        "44px",
+        {
+          fontWeight: "700",
+        },
+      ],
+      head: [
+        "28px",
+        {
+          fontWeight: "700",
+        },
+      ],
+      smhead: [
+        "16px",
+        {
+          fontWeight: "600",
+        },
+      ],
+      desc: [
+        "16px",
+        {
+          fontWeight: "400",
         },
       ],
       "8xl": [

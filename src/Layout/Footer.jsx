@@ -1,14 +1,17 @@
 import { Link, useLocation } from "react-router-dom";
 import { companyDetails, images, socialmediaIcons } from "../constant";
+import { BsArrowUp, BsArrowUpCircleFill, BsWhatsapp } from "react-icons/bs";
+import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   const { Logo } = images;
   const { pathname } = useLocation();
   console.log(pathname, "asfasdf");
   return (
+    // || pathname === "/services"
     <div
-      className={`bg-headerandfooterbg w-full  ${
-        pathname === "/about-us" || pathname === "/services" ? `mt-0` : `mt-32`
+      className={`bg-[#967bb3]/50 w-full  ${
+        pathname === "/about-us" ? `mt-0` : `mt-32`
       } `}
     >
       <div className="adjustedwidth mx-auto md:pt-10">
@@ -29,7 +32,7 @@ const Footer = () => {
                 key={_}
                 className="flex justify-center items-center w-[50px] h-[50px] rounded-full bg-[#132038] hover:bg-primary"
               >
-                <img src={obj} alt={obj} />
+                <img src={obj} alt={obj} className={`w-3 h-3`} />
               </div>
             ))}
           </div>
@@ -38,17 +41,45 @@ const Footer = () => {
           <div className="text-white w-full  lg:w-[50%] flex justify-between sm:flex-row flex-col sm:gap-0 gap-5">
             <div>
               <h3 className="font-bold">📍OFFICE ADDRESS:</h3>
-              <p className="max-w-[265px] font-normal text-footerparacolor">
+              <p className="max-w-[265px] font-normal text-white">
                 {" "}
                 {companyDetails.address}
               </p>
             </div>
-            <div>
-              <h3 className="font-bold">📞 CONTACT NO:</h3>
-              <p className="font-normal text-footerparacolor">
+            <Link
+              to={`https://wa.me/${companyDetails.whatsapp}`}
+              target="_blank"
+              aria-label="Contact us on WhatsApp"
+            >
+              <h3 className="flex gap-1 items-center font-bold">
+                <BsWhatsapp />
+                WHATSAPP:
+              </h3>
+              <p className="font-normal text-white">
+                {/* <span>
+                  <img src={BsWhatsapp} alt="" />
+                </span>{" "} */}
                 {companyDetails.phone}
               </p>
+            </Link>
+            <div>
+              <h3 className="flex gap-1 items-center font-bold">
+                <MdEmail />
+                EMAIL
+              </h3>
+              <p className="font-normal text-white">
+                {/* <span>
+                  <img src={BsWhatsapp} alt="" />
+                </span>{" "} */}
+                {companyDetails.email}
+              </p>
             </div>
+          </div>
+          <div
+            className="text-white flex items-center gap-2 font-bold"
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          >
+            Scroll to Top <BsArrowUpCircleFill className="animate-bounce" />
           </div>
           {/* <div className="text-white w-full lg:w-[40%] text-center">
             <h3 className="font-bold"> NEWS LETTER</h3>
@@ -65,11 +96,11 @@ const Footer = () => {
           </div> */}
         </div>
         <div>
-          <div className="text-footerparacolor pb-1">
+          <div className="text-white pb-1">
             <p>{companyDetails.link}</p>
           </div>
           <div className="text-white text-center flex mt-5 rounded-t-xl justify-between py-5 border-t border-x border-[#253450] ">
-            <p className=" max-w-[70%] text-center mx-auto">
+            <p className=" max-w-[70%] text-center mx-auto text-white">
               © 2024 AI Website. All Rights Reserved.
             </p>
             {/* <h4>

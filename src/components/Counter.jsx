@@ -49,7 +49,7 @@ const Counter = ({ targetNumber, suffix = "" }) => {
   return (
     <h1
       ref={counterRef}
-      className="text-[36px] sm:text-10xl text-white text-center"
+      className="text-[37px] font-bold sm:text-[57px] text-white text-center"
     >
       {count}
       {suffix}
