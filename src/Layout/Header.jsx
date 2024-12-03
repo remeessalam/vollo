@@ -26,7 +26,7 @@ const Header = () => {
               <div className="flex justify-center items-center min-w-fit">
                 <img
                   src={Logo}
-                  className="h-[1rem] md:h-[2.75rem] object-cover my-auto"
+                  className="h-[1rem] md:h-[2.75rem] object-cover "
                   alt="logo"
                 />
                 {/* <h1 className="text-[16px] sm:text-[32px] text-white font-bold min-w-[8rem]">
