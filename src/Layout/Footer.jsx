@@ -28,20 +28,20 @@ const Footer = () => {
     // || pathname === "/services"
     <>
       <footer
-        className={`flex flex-col md:flex-row w-full   ${
+        className={`flex flex-col md:flex-row w-full  ${
           pathname === "/about-us" ? `mt-0` : `mt-32`
         }`}
       >
         {/* Logo Section */}
-        <div className="bg-black w-full md:w-1/4 p-8 flex items-center justify-center">
+        <div className="bg-black w-full md:w-1/4 p-8 py-20  flex items-center justify-center">
           <Link href="/" className="text-white text-3xl font-light">
             <img src={Logo} alt="logo" className="max-h-[5rem]" />
           </Link>
         </div>
 
         {/* Content Section */}
-        <div className="bg-[#dcd3e7] w-full md:w-3/4 p-4 sm:p-8">
-          <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+        <div className="bg-[#dcd3e7] w-full md:w-3/4 p-4 sm:p-8 ">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-8  py-10">
             {/* Get in Touch Section */}
             <div className="space-y-4 col-span-2 flex justify-between flex-col">
               <h3 className="font-semibold text-lg">Get in Touch</h3>

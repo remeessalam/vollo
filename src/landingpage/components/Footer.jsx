@@ -65,7 +65,7 @@ const Footer = () => {
 
         {/* Content Section */}
         <div className="bg-[#dcd3e7] w-full md:w-3/4 p-4 sm:p-8">
-          <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 py-10">
             {/* Get in Touch Section */}
             <div className="space-y-4 col-span-2 flex justify-between flex-col">
               <h3 className="font-semibold text-lg">Get in Touch</h3>
