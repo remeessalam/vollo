@@ -67,7 +67,7 @@ const Header = () => {
                 spy={true}
                 smooth={true}
                 offset={-140}
-                duration={1000}
+                duration={3000}
                 activeClass="active-link"
               >
                 {option.name}

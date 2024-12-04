@@ -60,7 +60,7 @@ const About = () => {
           </div>
           <div data-aos="fade-up" className="w-[150px] mt-2 sm:mt-5">
             <Link to={"/about-us"}>
-              <h4 className="primary-btn">Lern more</h4>
+              <h4 className="primary-btn">Learn more</h4>
             </Link>
           </div>
         </div>

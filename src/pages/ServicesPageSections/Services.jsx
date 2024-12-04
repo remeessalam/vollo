@@ -1,16 +1,38 @@
 import { ourServices } from "../../constant";
 import Drawer from "react-modern-drawer";
 import { IoMdClose } from "react-icons/io";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-router-dom";
 const Services = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedService, setSelectedService] = useState(ourServices[0]);
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
+
   const handleSelectServiceToShowDetail = (service) => {
     setSelectedService(service);
     setIsOpen(true);
   };
+
+  useEffect(() => {
+    if (isOpen && selectedService.image) {
+      const img = new Image();
+      img.src = selectedService.image;
+      img.onload = () => setIsImageLoaded(true);
+    }
+  }, [isOpen, selectedService.image]);
+
+  useEffect(() => {
+    let timer;
+    if (isOpen) {
+      setIsImageLoaded(true);
+      timer = setTimeout(() => {
+        setIsImageLoaded(false);
+      }, 1000);
+    }
+
+    return () => clearTimeout(timer);
+  }, [isOpen]);
   return (
     <div className="py-10 sm:py-20 ">
       <div className="adjustedwidth mx-auto">
@@ -76,16 +98,20 @@ const Services = () => {
           </button>
         </div>
         <div className="flex flex-col gap-6 items-center text-white pb-[2rem]">
-          {/* Title */}
           <h1 className="heading-2 text-2xl md:text-4xl">
             {selectedService.title}
           </h1>
+          {isImageLoaded && (
+            <div className="animate-pulse w-[50%] h-[65vh] rounded-3xl bg-gray-200" />
+          )}
           <img
-            src={selectedService.image}
+            src={!isImageLoaded && selectedService.image}
             alt={selectedService.title}
-            className="w-[50%]  max-h-[65vh] rounded-3xl hover:scale-105 transition-all duration-700"
+            className={`w-[50%] max-h-[65vh] rounded-3xl hover:scale-105 transition-all duration-700 ${
+              !isImageLoaded ? "opacity-100" : "opacity-0"
+            }`}
           />
-          {/* Description */}
+
           <p className="text-desc whitespace-pre-line text-sm md:text-base text-center max-w-[80%]">
             {selectedService.description}
           </p>

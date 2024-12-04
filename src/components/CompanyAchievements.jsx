@@ -2,7 +2,7 @@ import { images } from "../constant";
 // import projectdone from "../assets/images/svg/projectsdone.svg";
 // import proteam from "../assets/images/svg/proteam.svg";
 // import customers from "../assets/images/svg/customers.svg";
-// import successrate from "../assets/images/svg/successrate.svg";
+import backgroundimage from "../assets/images/overvaluesbg.png";
 import Counter from "./Counter";
 import { Link } from "react-router-dom";
 
@@ -39,7 +39,7 @@ const CompanyAchievements = () => {
       data-aos="fade-up"
       className="relative w-full h-full   py-10 sm:overflow-hidden mt-10 sm:mt-20 bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: `url(${companyachievementsimage})`,
+        backgroundImage: `url(${backgroundimage})`,
       }}
     >
       <div className="adjustedwidth z-20 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5 py-[6rem]">
@@ -79,7 +79,7 @@ const CompanyAchievements = () => {
               <h1 className="text-[57px] w-full">
                 <Counter targetNumber={obj.count} suffix={obj.suffix} />
               </h1>
-              <h5 className="text-[#0099ff] text-center text-[17px] sm:text-[21px] font-bold w-full">
+              <h5 className="text-[#D3D3D3] text-shadow text-center text-[17px] sm:text-[21px] font-bold w-full">
                 {obj.title}
               </h5>
             </div>

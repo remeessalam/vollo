@@ -1,7 +1,24 @@
 import { Link, useLocation } from "react-router-dom";
-import { companyDetails, images, socialmediaIcons } from "../constant";
-import { BsArrowUp, BsArrowUpCircleFill, BsWhatsapp } from "react-icons/bs";
-import { MdEmail } from "react-icons/md";
+import { companyDetails, images, routes, socialmediaIcons } from "../constant";
+import {
+  BsArrowUpCircleFill,
+  BsInstagram,
+  BsLinkedin,
+  BsTwitterX,
+  BsWhatsapp,
+} from "react-icons/bs";
+// import { MdEmail } from "react-icons/md";
+import { BiMapPin } from "react-icons/bi";
+import { FaBlogger, FaFacebook } from "react-icons/fa";
+
+const socialLinks = [
+  { href: `https://wa.me/${companyDetails.whatsapp}`, Icon: BsWhatsapp },
+  { href: "#", Icon: BsInstagram },
+  { href: "#", Icon: BsTwitterX },
+  { href: "#", Icon: FaFacebook },
+  { href: "#", Icon: BsLinkedin },
+  { href: "#", Icon: FaBlogger },
+];
 
 const Footer = () => {
   const { Logo } = images;
@@ -9,107 +26,77 @@ const Footer = () => {
   console.log(pathname, "asfasdf");
   return (
     // || pathname === "/services"
-    <div
-      className={`bg-[#967bb3]/50 w-full  ${
-        pathname === "/about-us" ? `mt-0` : `mt-32`
-      } `}
-    >
-      <div className="adjustedwidth mx-auto md:pt-10">
-        <div className="flex md:gap-0 gap-5 md:flex-row flex-col border-b pb-5 border-[#253450] justify-between items-start md:pt-0 pt-10 md:items-center text-white">
-          <Link to="/" className="h-[1rem] md:h-[5.75rem] flex items-center">
-            <div className="flex justify-center items-center min-w-fit">
-              <img
-                src={Logo}
-                className=" ml-5 h-[2rem] md:h-[2.75rem] scale-125"
-                alt="logo"
-              />
-              {/* <h1 className="text-[32px] font-bold min-w-[8rem]">Vollo Inc</h1> */}
-            </div>
+    <>
+      <footer
+        className={`flex flex-col md:flex-row w-full   ${
+          pathname === "/about-us" ? `mt-0` : `mt-32`
+        }`}
+      >
+        {/* Logo Section */}
+        <div className="bg-black w-full md:w-1/4 p-8 flex items-center justify-center">
+          <Link href="/" className="text-white text-3xl font-light">
+            <img src={Logo} alt="logo" className="max-h-[5rem]" />
           </Link>
-          <div className="flex gap-2">
-            {socialmediaIcons.map((obj, _) => (
-              <div
-                key={_}
-                className="flex justify-center items-center w-[50px] h-[50px] rounded-full bg-[#132038] hover:bg-primary"
-              >
-                <img src={obj} alt={obj} className={`w-3 h-3`} />
+        </div>
+
+        {/* Content Section */}
+        <div className="bg-[#dcd3e7] w-full md:w-3/4 p-4 sm:p-8">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+            {/* Get in Touch Section */}
+            <div className="space-y-4 col-span-2 flex justify-between flex-col">
+              <h3 className="font-semibold text-lg">Get in Touch</h3>
+              <div className="space-y-2">
+                <h4 className="font-semibold text-lg underline">Email</h4>
+                <p className="text-sm">info@volloinc.com</p>
               </div>
-            ))}
+              {/* Social Icons */}
+              <div className="flex items-center flex-wrap justify-center gap-4 bg-white rounded-full px-2 py-2 sm:w-fit w-full">
+                {socialLinks.map(({ href, Icon }, index) => (
+                  <Link
+                    key={index}
+                    to={href}
+                    className=" hover:opacity-80 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-black flex justify-center items-center"
+                  >
+                    <Icon className="text-white" />
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            {/* Navigation Links */}
+            <div className="space-y-4">
+              {routes.map(({ name, path }) => (
+                <Link
+                  to={path}
+                  className="block font-semibold text-lg hover:underline"
+                  key={path}
+                >
+                  {name}
+                </Link>
+              ))}
+            </div>
+
+            {/* Registered Office */}
+            <div className="flex flex-col h-full justify-between space-y-2">
+              <div>
+                <div className="flex items-center gap-2">
+                  <BiMapPin className="w-5 h-5" />
+                  <h3 className="font-semibold text-lg">Registered office</h3>
+                </div>
+                <p className="text-sm">Andhra Pradesh - IN</p>
+              </div>
+              <div
+                className="text-black flex items-center justify-end gap-2 font-semibold text-lg cursor-pointer"
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              >
+                Scroll to Top{" "}
+                <BsArrowUpCircleFill className="animate-bounce text-black" />
+              </div>
+            </div>
           </div>
         </div>
-        <div className="flex flex-col gap-5 mt-5 py-7 lg:flex-row justify-between items-center lg:items-start">
-          <div className="text-white w-full  lg:w-[50%] flex justify-between sm:flex-row flex-col sm:gap-0 gap-5">
-            <div>
-              <h3 className="font-bold">📍OFFICE ADDRESS:</h3>
-              <p className="max-w-[265px] font-normal text-white">
-                {" "}
-                {companyDetails.address}
-              </p>
-            </div>
-            <Link
-              to={`https://wa.me/${companyDetails.whatsapp}`}
-              target="_blank"
-              aria-label="Contact us on WhatsApp"
-            >
-              <h3 className="flex gap-1 items-center font-bold">
-                <BsWhatsapp />
-                WHATSAPP:
-              </h3>
-              <p className="font-normal text-white">
-                {/* <span>
-                  <img src={BsWhatsapp} alt="" />
-                </span>{" "} */}
-                {companyDetails.phone}
-              </p>
-            </Link>
-            <div>
-              <h3 className="flex gap-1 items-center font-bold">
-                <MdEmail />
-                EMAIL
-              </h3>
-              <p className="font-normal text-white">
-                {/* <span>
-                  <img src={BsWhatsapp} alt="" />
-                </span>{" "} */}
-                {companyDetails.email}
-              </p>
-            </div>
-          </div>
-          <div
-            className="text-white flex items-center gap-2 font-bold"
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          >
-            Scroll to Top <BsArrowUpCircleFill className="animate-bounce" />
-          </div>
-          {/* <div className="text-white w-full lg:w-[40%] text-center">
-            <h3 className="font-bold"> NEWS LETTER</h3>
-            <div className="flex justify-between bg-[#132038]  rounded-full">
-              <input
-                type="text"
-                className="bg-transparent placeholder-[#475063] pl-5 w-3/4 outline-none focus:outline-none focus:ring-0"
-                placeholder="Enter mail"
-              />
-              <p className="secondary-btn py-4 px-5 bg-buttonBackground rounded-full">
-                SUBSCRIBE
-              </p>
-            </div>
-          </div> */}
-        </div>
-        <div>
-          <div className="text-white pb-1">
-            <p>{companyDetails.link}</p>
-          </div>
-          <div className="text-white text-center flex mt-5 rounded-t-xl justify-between py-5 border-t border-x border-[#253450] ">
-            <p className=" max-w-[70%] text-center mx-auto text-white">
-              © 2024 AI Website. All Rights Reserved.
-            </p>
-            {/* <h4>
-              Scroll Top <span>↑</span>
-            </h4> */}
-          </div>
-        </div>
-      </div>
-    </div>
+      </footer>
+    </>
   );
 };
 
