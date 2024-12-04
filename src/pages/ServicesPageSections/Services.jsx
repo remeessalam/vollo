@@ -14,13 +14,13 @@ const Services = () => {
     setIsOpen(true);
   };
 
-  useEffect(() => {
-    if (isOpen && selectedService.image) {
-      const img = new Image();
-      img.src = selectedService.image;
-      img.onload = () => setIsImageLoaded(true);
-    }
-  }, [isOpen, selectedService.image]);
+  // useEffect(() => {
+  //   if (isOpen && selectedService.image) {
+  //     const img = new Image();
+  //     img.src = selectedService.image;
+  //     img.onload = () => setIsImageLoaded(true);
+  //   }
+  // }, [isOpen, selectedService.image]);
 
   useEffect(() => {
     let timer;
