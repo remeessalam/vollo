@@ -9,27 +9,31 @@ import { Link } from "react-router-dom";
 const countDetails = [
   {
     id: 1,
-    title: "Projects Done",
-    count: 2600,
-    suffix: "k",
+    title: "Projects Completed",
+    count: 250,
+    suffix: "+",
+    p: "Demonstrating extensive experience in executing diverse projects across industries",
   },
   {
     id: 2,
-    title: "Projects Done",
-    count: 48,
+    title: "Customer Satisfaction",
+    count: 200,
     suffix: "+",
+    p: "Highlighting our commitment to building enduring partnerships globally",
   },
   {
     id: 3,
-    title: "Satisfied customers",
-    count: 3000,
-    suffix: "k",
+    title: "Global Reach",
+    count: 25,
+    suffix: "+",
+    p: "Showcasing our ability to deliver exceptional result consistently",
   },
   {
     id: 4,
-    title: "Our success rate",
-    count: 100,
+    title: "Success Rate",
+    count: 99,
     suffix: "%",
+    p: "Illustrating our global presence and ability to meet the needs of businesses worldwide.",
   },
 ];
 const CompanyAchievements = () => {
@@ -42,6 +46,7 @@ const CompanyAchievements = () => {
         backgroundImage: `url(${backgroundimage})`,
       }}
     >
+      <div className="absolute w-full top-0 h-full bg-black/50" />
       <div className="adjustedwidth z-20 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5 py-[6rem]">
         <div className="flex flex-col gap-8 text-white">
           <h3
@@ -66,7 +71,7 @@ const CompanyAchievements = () => {
             <h3 className="primary-btn  w-fit">Discover More</h3>
           </Link>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-2 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           {countDetails.map((obj) => (
             <div
               key={obj.id}
@@ -82,6 +87,7 @@ const CompanyAchievements = () => {
               <h5 className="text-[#D3D3D3] text-shadow text-center text-[17px] sm:text-[21px] font-bold w-full">
                 {obj.title}
               </h5>
+              <p className="text-center text-white">{obj.p} </p>
             </div>
           ))}
         </div>

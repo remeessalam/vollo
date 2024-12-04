@@ -31,7 +31,7 @@ const Counter = ({ targetNumber, suffix = "" }) => {
 
     let currentNumber = 0;
     const increment = Math.ceil(targetNumber / 100);
-    const intervalTime = targetNumber === 48 ? 40 : 20;
+    const intervalTime = targetNumber === 25 ? 70 : 20;
 
     const interval = setInterval(() => {
       currentNumber += increment;
@@ -49,10 +49,15 @@ const Counter = ({ targetNumber, suffix = "" }) => {
   return (
     <h1
       ref={counterRef}
-      className="text-[37px] font-bold sm:text-[57px] text-white text-center"
+      className="text-[37px] font-bold sm:text-[57px] min-w-[10rem] text-white text-center "
     >
       {count}
       {suffix}
+      {targetNumber === 25 && (
+        <span className="text-[14px] sm:text-[16px] font-semibold mb-1">
+          Countries
+        </span>
+      )}
     </h1>
   );
 };
