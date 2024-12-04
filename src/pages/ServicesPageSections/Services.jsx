@@ -28,11 +28,13 @@ const Services = () => {
       setIsImageLoaded(true);
       timer = setTimeout(() => {
         setIsImageLoaded(false);
-      }, 1000);
+        console.log(isImageLoaded, "asdfasdfasd");
+      }, 2000);
     }
 
     return () => clearTimeout(timer);
   }, [isOpen]);
+  console.log(isImageLoaded, "asdfasdfasd");
   return (
     <div className="py-10 sm:py-20 ">
       <div className="adjustedwidth mx-auto">
@@ -101,17 +103,24 @@ const Services = () => {
           <h1 className="heading-2 text-2xl md:text-4xl">
             {selectedService.title}
           </h1>
-          {isImageLoaded && (
+          {/* {isImageLoaded && (
             <div className="animate-pulse w-[50%] h-[65vh] rounded-3xl bg-gray-200" />
-          )}
-          <img
-            loading="lazy"
-            src={!isImageLoaded && selectedService.image}
-            alt={selectedService.title}
-            className={`w-[50%] max-h-[65vh] rounded-3xl hover:scale-105 transition-all duration-700 ${
-              !isImageLoaded ? "opacity-100" : "opacity-0"
-            }`}
-          />
+          )} */}
+          <div
+            className={`${
+              isImageLoaded ? `animate-pulse bg-gray-200` : ` bg-transparent`
+            } w-[50%] h-[65vh] rounded-3xl `}
+          >
+            <img
+              loading="lazy"
+              src={!isImageLoaded && selectedService.image}
+              alt={selectedService.title}
+              className={`w-full max-h-[65vh] rounded-3xl hover:scale-105 transition-all duration-700 ${
+                !isImageLoaded ? "opacity-100" : "opacity-0"
+              }`}
+              onLoad={() => setIsImageLoaded(false)}
+            />
+          </div>
 
           <p className="text-desc whitespace-pre-line text-sm md:text-base text-center max-w-[80%]">
             {selectedService.description}
