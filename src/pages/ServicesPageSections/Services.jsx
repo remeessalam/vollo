@@ -105,6 +105,7 @@ const Services = () => {
             <div className="animate-pulse w-[50%] h-[65vh] rounded-3xl bg-gray-200" />
           )}
           <img
+            loading="lazy"
             src={!isImageLoaded && selectedService.image}
             alt={selectedService.title}
             className={`w-[50%] max-h-[65vh] rounded-3xl hover:scale-105 transition-all duration-700 ${
