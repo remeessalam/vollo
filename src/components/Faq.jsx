@@ -1,35 +1,8 @@
 import React from "react";
 import { BiChevronDown } from "react-icons/bi";
-import { images } from "../constant";
+import { faqItems, images } from "../constant";
 import { Link } from "react-router-dom";
 
-const faqItems = [
-  {
-    question: "Where Can I Find Information?",
-    answer:
-      "Velit sociosqu purus enim pharetra sed sem at iaculis. Felis ridiculus adipiscing dignissim eros pellentesque mus vitae litora. Felis nullam tortor phasellus viverra ut arcu. Euismod magnis ante convallis vulputate odio augue sit pretium dapibus.",
-  },
-  {
-    question: "What Are Your Terms And Conditions?",
-    answer:
-      "Our terms and conditions outline the rules and guidelines for using our services. Please review them carefully.",
-  },
-  {
-    question: "Can I Buy Directly From The Factory?",
-    answer:
-      "Yes, you can purchase our products directly from our factory. Contact our sales team for more information.",
-  },
-  {
-    question: "What Kinds of Payment Do You Accept?",
-    answer:
-      "We accept various payment methods including credit cards, PayPal, and bank transfers.",
-  },
-  {
-    question: "When do I receive my order?",
-    answer:
-      "Delivery times vary depending on your location. Typically orders are delivered within 3-5 business days.",
-  },
-];
 const { aiImage } = images;
 const FAQSection = () => {
   const [openIndex, setOpenIndex] = React.useState(null);
@@ -47,14 +20,14 @@ const FAQSection = () => {
             <div></div>
             <div className="space-y-2">
               <h2
-                data-aos-offset="-400"
+                data-aos-offset="-800"
                 data-aos="fade-up"
                 className="text-smhead uppercase tracking-wide text-muted-foreground"
               >
                 F.A.Q
               </h2>
               <h1
-                data-aos-offset="-400"
+                data-aos-offset="-800"
                 data-aos="fade-up"
                 className="text-sechead font-bold tracking-tight "
               >
@@ -65,9 +38,9 @@ const FAQSection = () => {
             <div className="w-full space-y-4">
               {faqItems.map((item, index) => (
                 <div
-                  data-aos-offset="-400"
+                  data-aos-offset="-800"
                   data-aos="fade-up"
-                  key={index}
+                  key={item.id}
                   className="border"
                 >
                   <AccordionItem
@@ -86,7 +59,7 @@ const FAQSection = () => {
           {/* Right Column */}
           <div className="space-y-8">
             <div
-              data-aos-offset="-400"
+              data-aos-offset="-800"
               data-aos="fade-up"
               className="relative aspect-[4/3] w-full overflow-hidden rounded-lg"
             >
@@ -98,7 +71,7 @@ const FAQSection = () => {
               />
             </div>
             <div
-              data-aos-offset="-400"
+              data-aos-offset="-800"
               data-aos="fade-up"
               className="rounded-lg bg-gray-200 p-6"
             >
@@ -145,7 +118,23 @@ const AccordionItem = ({ question, answer, index, isOpen, setIsOpen }) => {
       </button>
       {isOpen === index && (
         <div className="px-3 overflow-hidden text-sm transition-all">
-          <div className="pb-4 text-desc mt-5">{answer}</div>
+          <div className="pb-4 text-desc mt-5">
+            <ul>
+              {answer.split("\n").map((text, idx) => (
+                <li key={idx}>
+                  {/* Bold the email and phone number within the answer */}
+                  {text}
+                  {/* {text.includes("info@volloinc.com") ? (
+                    <span className="font-bold">{text}</span>
+                  ) : text.includes("+91-6300021466") ? (
+                    <span className="font-bold">{text}</span>
+                  ) : (
+                    text
+                  )} */}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       )}
     </div>

@@ -161,6 +161,7 @@ const Testimonials = () => {
                   <img src={obj.starimg} alt={obj.name} className="h-[31px]" />
                 </div>
                 <div className="my-5">
+                  <h3 className="text-head">{obj.about}</h3>
                   <p className="text-center sm:text-start text-desc">
                     {obj.says}
                   </p>

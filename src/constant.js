@@ -337,71 +337,206 @@ export const teamMembers = [
   { id: 3, name: "jhon dani", position: "Developer" },
   { id: 4, name: "Brooklyn Simmons", position: "Developer" },
 ];
+export const faqItems = [
+  {
+    id: 1,
+    question: "How can I get in touch with Vollo Inc.?",
+    answer: `You can reach out to us through the contact form on this page, or by emailing us directly at info@volloinc.com. Alternatively, you can also call us at +91-6300021466 for immediate assistance.`,
+  },
+  {
+    id: 2,
+    question: "How long will it take for someone to respond to my inquiry?",
+    answer: `We aim to respond to all inquiries within 24–48 hours on business days. If you need urgent assistance, please indicate so in your message, and we’ll prioritize your request.`,
+  },
+  {
+    id: 3,
+    question: "What types of services does Vollo Inc. offer?",
+    answer: `Vollo Inc. offers a wide range of services including:
+      - Artificial Intelligence (AI)
+      - Mobile App Development
+      - Website Development
+      - UI/UX Design
+      - Custom Software Development
+      - Data Analytics
+      - Internet of Things (IoT)
+      - Robotic Process Automation (RPA)
+      - Augmented Reality (AR) & Virtual Reality (VR)
+      - Game Development
+      - Blockchain Solutions
+      - Cloud Services
+      - Cybersecurity
+    For more detailed information, please visit our Services page.`,
+  },
+  {
+    id: 4,
+    question: "How do I schedule a consultation or meeting with Vollo Inc.?",
+    answer: `You can schedule a meeting by filling out the contact form on this page or by sending us an email at <strong>info@volloinc.com</strong>. We’ll get back to you with available time slots.`,
+  },
+  {
+    id: 5,
+    question: "Do you offer support for ongoing projects?",
+    answer: `Yes, we provide support for all ongoing projects. Whether you need help with updates, maintenance, or troubleshooting, our team is ready to assist you.`,
+  },
+  {
+    id: 6,
+    question: "Can I request a quote for a specific service?",
+    answer: `Yes, we provide custom quotes based on your requirements. Please fill out the contact form with details about the service you need, and we’ll send you an estimate as soon as possible.`,
+  },
+  {
+    id: 7,
+    question: "Do you offer free consultations?",
+    answer: `Yes, we offer a free initial consultation to better understand your needs and discuss potential solutions. Reach out to schedule your consultation!`,
+  },
+  {
+    id: 8,
+    question: "Where is Vollo Inc. located?",
+    answer: `Vollo Inc. operates remotely, and our team works from various locations around the world. We’re fully capable of supporting clients globally.`,
+  },
+  {
+    id: 9,
+    question: "What industries do you specialize in?",
+    answer: `Vollo Inc. has worked with clients across multiple industries, including:
+      - Tech
+      - Healthcare
+      - Finance
+      - Retail
+      - Entertainment
+    We tailor our solutions to fit the unique needs of each industry.`,
+  },
+  {
+    id: 10,
+    question: "Can I work with Vollo Inc. from any country?",
+    answer: `Absolutely! Vollo Inc. works with clients globally. Thanks to our remote setup, we are able to serve businesses in different time zones and regions efficiently.`,
+  },
+  {
+    id: 11,
+    question: "How do I track the progress of my project with Vollo Inc.?",
+    answer: `We provide regular project updates through email, meetings, or our project management platform. You will have access to track the status and milestones of your project.`,
+  },
+  {
+    id: 12,
+    question: "What makes Vollo Inc. different from other companies?",
+    answer: `At Vollo Inc., we focus on delivering cutting-edge, custom solutions tailored to your business needs. Our approach combines deep industry expertise with a focus on innovation and customer satisfaction, ensuring we always exceed expectations.`,
+  },
+];
 
 export const testimonials = [
   {
     id: 1,
     img: testimonialsuserimage,
-    starimg: fourstart,
-    name: "Aman Sharma",
-    position: "CEO, TechPro Solutions",
-    says: "Vollo Inc. helped us transform our operations with their AI-driven solutions. Their team not only understood our unique challenges but also delivered a custom solution that seamlessly integrated with our existing systems. We&apos;ve seen a significant boost in efficiency and decision-making since implementing their AI tools. Their expertise and hands-on approach made all the difference!",
+    starimg: fullstart,
+    name: "Rachel B.",
+    position: "CTO",
+    says: "Vollo Inc.'s AI solutions have been revolutionary for our business. Their deep understanding of AI and machine learning helped us optimize our processes and make smarter decisions, saving both time and resources. The impact has been immediate and measurable!",
+    about: "Artificial Intelligence (AI)",
   },
   {
     id: 2,
     img: testimonialsuserimage,
     starimg: fullstart,
-    name: "Jessica Lee",
-    position: "Founder, FitnessHub ",
-    says: "Working with Vollo Inc. on our mobile app development was a game-changer. They understood our vision from day one and delivered a top-notch app that not only looks great but functions flawlessly. Our customer engagement has soared since launch, and we’ve received incredible feedback from users. Vollo Inc. truly made our idea a reality",
+    name: "James T.",
+    position: "Founder",
+    says: "We were impressed with how quickly Vollo Inc. understood our vision and transformed it into a user-friendly mobile app. Their team was collaborative and responsive, and the end result has truly enhanced our customer engagement.",
+    about: "Mobile App Development",
   },
   {
-    id: 1,
-    img: testimonialsuserimage,
-    starimg: fourstart,
-    name: "Aman Sharma",
-    position: "CEO, TechPro Solutions",
-    says: "Vollo Inc. helped us transform our operations with their AI-driven solutions. Their team not only understood our unique challenges but also delivered a custom solution that seamlessly integrated with our existing systems. We&apos;ve seen a significant boost in efficiency and decision-making since implementing their AI tools. Their expertise and hands-on approach made all the difference!",
-  },
-  {
-    id: 2,
+    id: 3,
     img: testimonialsuserimage,
     starimg: fullstart,
-    name: "Jessica Lee",
-    position: "Founder, FitnessHub ",
-    says: "Working with Vollo Inc. on our mobile app development was a game-changer. They understood our vision from day one and delivered a top-notch app that not only looks great but functions flawlessly. Our customer engagement has soared since launch, and we’ve received incredible feedback from users. Vollo Inc. truly made our idea a reality",
+    name: "Linda P.",
+    position: "Marketing Director",
+    says: "Our website went from basic to outstanding thanks to Vollo Inc. The team not only delivered a stunning and functional design, but they also ensured it was mobile-friendly and optimized for SEO. It has significantly boosted our online traffic.",
+    about: "Website Development",
   },
   {
-    id: 1,
-    img: testimonialsuserimage,
-    starimg: fourstart,
-    name: "Aman Sharma",
-    position: "CEO, TechPro Solutions",
-    says: "Vollo Inc. helped us transform our operations with their AI-driven solutions. Their team not only understood our unique challenges but also delivered a custom solution that seamlessly integrated with our existing systems. We&apos;ve seen a significant boost in efficiency and decision-making since implementing their AI tools. Their expertise and hands-on approach made all the difference!",
-  },
-  {
-    id: 2,
+    id: 4,
     img: testimonialsuserimage,
     starimg: fullstart,
-    name: "Jessica Lee",
-    position: "Founder, FitnessHub ",
-    says: "Working with Vollo Inc. on our mobile app development was a game-changer. They understood our vision from day one and delivered a top-notch app that not only looks great but functions flawlessly. Our customer engagement has soared since launch, and we’ve received incredible feedback from users. Vollo Inc. truly made our idea a reality",
+    name: "David F.",
+    position: "Head of Product Design",
+    says: "Working with Vollo Inc. on UI/UX design was an amazing experience. They really listened to our needs and created a beautiful, intuitive design that’s easy for our users to navigate. The result speaks for itself—our customer satisfaction scores have skyrocketed!",
+    about: "UI/UX Design",
   },
   {
-    id: 1,
-    img: testimonialsuserimage,
-    starimg: fourstart,
-    name: "Aman Sharma",
-    position: "CEO, TechPro Solutions",
-    says: "Vollo Inc. helped us transform our operations with their AI-driven solutions. Their team not only understood our unique challenges but also delivered a custom solution that seamlessly integrated with our existing systems. We&apos;ve seen a significant boost in efficiency and decision-making since implementing their AI tools. Their expertise and hands-on approach made all the difference!",
-  },
-  {
-    id: 2,
+    id: 5,
     img: testimonialsuserimage,
     starimg: fullstart,
-    name: "Jessica Lee",
-    position: "Founder, FitnessHub ",
-    says: "Working with Vollo Inc. on our mobile app development was a game-changer. They understood our vision from day one and delivered a top-notch app that not only looks great but functions flawlessly. Our customer engagement has soared since launch, and we’ve received incredible feedback from users. Vollo Inc. truly made our idea a reality",
+    name: "Priya M.",
+    position: "Operations Manager",
+    says: "Vollo Inc. delivered custom software that was precisely what we needed to run our business efficiently. The team worked closely with us to understand our unique challenges and created a solution that fits perfectly into our workflow.",
+    about: "Custom Software Development",
+  },
+  {
+    id: 6,
+    img: testimonialsuserimage,
+    starimg: fullstart,
+    name: "Oscar L.",
+    position: "CEO",
+    says: "The data analytics services from Vollo Inc. were invaluable. Their team helped us turn our raw data into actionable insights, enabling us to improve our marketing efforts and operational efficiency. The results speak for themselves!",
+    about: "Data Analytics",
+  },
+  {
+    id: 7,
+    img: testimonialsuserimage,
+    starimg: fullstart,
+    name: "Sophia J.",
+    position: "VP of Operations",
+    says: "Vollo Inc. helped us implement IoT solutions that transformed how we monitor and manage our equipment. The real-time data and improved visibility into our operations have made a huge difference in our efficiency and decision-making.",
+    about: "Internet of Things (IoT)",
+  },
+  {
+    id: 8,
+    img: testimonialsuserimage,
+    starimg: fullstart,
+    name: "Chris D.",
+    position: "Head of Business Operations",
+    says: "Thanks to Vollo Inc., we’ve automated several time-consuming processes, freeing up our team to focus on strategic work. Their RPA solution is seamless and highly effective—everything runs more smoothly now.",
+    about: "Robotic Process Automation (RPA)",
+  },
+  {
+    id: 9,
+    img: testimonialsuserimage,
+    starimg: fullstart,
+    name: "Zara N.",
+    position: "Marketing Executive",
+    says: "Vollo Inc.’s AR and VR solutions were a game-changer for our marketing strategy. The interactive experiences they created have not only boosted customer engagement but also helped us educate our clients in a whole new way.",
+    about: "Augmented Reality (AR) & Virtual Reality (VR)",
+  },
+  {
+    id: 10,
+    img: testimonialsuserimage,
+    starimg: fullstart,
+    name: "Toby H.",
+    position: "Co-Founder",
+    says: "The game development team at Vollo Inc. brought our vision to life with incredible creativity and technical expertise. Our game is now one of the top downloads in our category, and we’ve received fantastic feedback from players.",
+    about: "Game Development",
+  },
+  {
+    id: 11,
+    img: testimonialsuserimage,
+    starimg: fullstart,
+    name: "Liam W.",
+    position: "Founder",
+    says: "Vollo Inc. introduced us to blockchain solutions that enhanced the security and transparency of our transactions. Their expertise in the space helped us develop a system that is both efficient and highly secure.",
+    about: "Blockchain Solutions",
+  },
+  {
+    id: 12,
+    img: testimonialsuserimage,
+    starimg: fullstart,
+    name: "Alicia M.",
+    position: "CIO",
+    says: "We’ve been using Vollo Inc.’s cloud services for months now, and the difference is incredible. Our operations are smoother, collaboration has improved, and the scalability of the platform ensures that we’re ready for whatever comes next.",
+    about: "Cloud Services",
+  },
+  {
+    id: 13,
+    img: testimonialsuserimage,
+    starimg: fullstart,
+    name: "Frank L.",
+    position: "IT Manager",
+    says: "Vollo Inc. has provided us with robust cybersecurity solutions that keep our data safe and secure. We now have peace of mind knowing that our systems are protected against emerging threats, and their proactive approach to security is invaluable.",
+    about: "Cybersecurity",
   },
 ];
 

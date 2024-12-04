@@ -99,3 +99,70 @@
           </div>
         </div>
       </div>
+
+export const testimonials = [
+{
+id: 1,
+img: testimonialsuserimage,
+starimg: fourstart,
+name: "Aman Sharma",
+position: "CEO, TechPro Solutions",
+says: "Vollo Inc. helped us transform our operations with their AI-driven solutions. Their team not only understood our unique challenges but also delivered a custom solution that seamlessly integrated with our existing systems. We&apos;ve seen a significant boost in efficiency and decision-making since implementing their AI tools. Their expertise and hands-on approach made all the difference!",
+},
+{
+id: 2,
+img: testimonialsuserimage,
+starimg: fullstart,
+name: "Jessica Lee",
+position: "Founder, FitnessHub ",
+says: "Working with Vollo Inc. on our mobile app development was a game-changer. They understood our vision from day one and delivered a top-notch app that not only looks great but functions flawlessly. Our customer engagement has soared since launch, and we’ve received incredible feedback from users. Vollo Inc. truly made our idea a reality",
+},
+{
+id: 1,
+img: testimonialsuserimage,
+starimg: fourstart,
+name: "Aman Sharma",
+position: "CEO, TechPro Solutions",
+says: "Vollo Inc. helped us transform our operations with their AI-driven solutions. Their team not only understood our unique challenges but also delivered a custom solution that seamlessly integrated with our existing systems. We&apos;ve seen a significant boost in efficiency and decision-making since implementing their AI tools. Their expertise and hands-on approach made all the difference!",
+},
+{
+id: 2,
+img: testimonialsuserimage,
+starimg: fullstart,
+name: "Jessica Lee",
+position: "Founder, FitnessHub ",
+says: "Working with Vollo Inc. on our mobile app development was a game-changer. They understood our vision from day one and delivered a top-notch app that not only looks great but functions flawlessly. Our customer engagement has soared since launch, and we’ve received incredible feedback from users. Vollo Inc. truly made our idea a reality",
+},
+{
+id: 1,
+img: testimonialsuserimage,
+starimg: fourstart,
+name: "Aman Sharma",
+position: "CEO, TechPro Solutions",
+says: "Vollo Inc. helped us transform our operations with their AI-driven solutions. Their team not only understood our unique challenges but also delivered a custom solution that seamlessly integrated with our existing systems. We&apos;ve seen a significant boost in efficiency and decision-making since implementing their AI tools. Their expertise and hands-on approach made all the difference!",
+},
+{
+id: 2,
+img: testimonialsuserimage,
+starimg: fullstart,
+name: "Jessica Lee",
+position: "Founder, FitnessHub ",
+says: "Working with Vollo Inc. on our mobile app development was a game-changer. They understood our vision from day one and delivered a top-notch app that not only looks great but functions flawlessly. Our customer engagement has soared since launch, and we’ve received incredible feedback from users. Vollo Inc. truly made our idea a reality",
+},
+{
+id: 1,
+img: testimonialsuserimage,
+starimg: fourstart,
+name: "Aman Sharma",
+position: "CEO, TechPro Solutions",
+says: "Vollo Inc. helped us transform our operations with their AI-driven solutions. Their team not only understood our unique challenges but also delivered a custom solution that seamlessly integrated with our existing systems. We&apos;ve seen a significant boost in efficiency and decision-making since implementing their AI tools. Their expertise and hands-on approach made all the difference!",
+},
+{
+id: 2,
+img: testimonialsuserimage,
+starimg: fullstart,
+name: "Jessica Lee",
+position: "Founder, FitnessHub ",
+says: "Working with Vollo Inc. on our mobile app development was a game-changer. They understood our vision from day one and delivered a top-notch app that not only looks great but functions flawlessly. Our customer engagement has soared since launch, and we’ve received incredible feedback from users. Vollo Inc. truly made our idea a reality",
+},
+];
