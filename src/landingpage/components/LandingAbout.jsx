@@ -1,10 +1,11 @@
 import { Link as ScrollLink } from "react-scroll";
-import { landingpageimages } from "../../constant";
+import { images, landingpageimages } from "../../constant";
 import RoundedHeading from "../../components/RoundedHeading";
 
 const LandingAbout = ({ page }) => {
   const isWebDevelopment = page === "web";
-  const { webLandingAbout, appLandingAbout } = landingpageimages;
+  // const { webLandingAbout, appLandingAbout } = landingpageimages;
+  const { swebdevelopmentimage, smobiledevelopmentimage } = images;
   return (
     <div className="mt-16">
       <section
@@ -59,8 +60,12 @@ const LandingAbout = ({ page }) => {
           </div>
           <div data-aos="fade-left" className="flex justify-center h-full">
             <img
-              src={isWebDevelopment ? webLandingAbout : appLandingAbout}
-              className="object-contain max-h-[30rem]"
+              src={
+                isWebDevelopment
+                  ? swebdevelopmentimage
+                  : smobiledevelopmentimage
+              }
+              className="object-cover max-h-[30rem] rounded-lg"
               alt=""
             />
           </div>

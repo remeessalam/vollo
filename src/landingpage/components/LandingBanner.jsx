@@ -1,16 +1,16 @@
 import { Link } from "react-scroll";
-import { landingpageimages } from "../../constant";
+import { images, landingpageimages } from "../../constant";
 
 const LandingBanner = ({ page }) => {
   const { landingpagebannerapp, landingpagebannerweb } = landingpageimages;
-
+  const { suiuximage } = images;
   return (
     <div
       id="banner"
       className="relative pt-6 lg:pt-0 sm:pb-6 lg-pb-0 pb-0 flex justify-center items-center h-screen text-black w-screen bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage: `url(${
-          page === "web" ? landingpagebannerweb : landingpagebannerapp
+          page === "web" ? landingpagebannerweb : suiuximage
         })`,
       }}
     >

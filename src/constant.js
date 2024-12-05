@@ -50,7 +50,7 @@ import fourstart from "./assets/images/fourstar.png";
 import testimonialsuserimage from "./assets/images/testimonialsuserimage.png";
 import contactuspagebanner from "./assets/images/contactuspagebanner.png";
 import landingpagebannerapp from "./assets/images/landingpagebannerapp.jpg";
-import landingpagebannerweb from "./assets/images/landingpagebannerweb.jpg";
+import landingpagebannerweb from "./assets/images/landingpagebannerweb.png";
 import portfoliwebone from "./assets/images/portfolio/1-min.webp";
 import portfoliwebtwo from "./assets/images/portfolio/2-min.webp";
 import portfoliwebthree from "./assets/images/portfolio/3-min.webp";
@@ -109,6 +109,9 @@ export const images = {
   servicepagebanner,
   aiImage,
   faqbg,
+  swebdevelopmentimage,
+  smobiledevelopmentimage,
+  suiuximage,
 };
 
 export const landingpageimages = {

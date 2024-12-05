@@ -11,6 +11,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import LandingForm from "./components/LandingForm";
 import Footer from "./components/Footer";
+import FAQSection from "../components/Faq";
 const LandingPage = ({ page }) => {
   AOS.init({
     once: true,
@@ -44,6 +45,9 @@ const LandingPage = ({ page }) => {
         </div>
         <div>
           <Testimonials />
+        </div>
+        <div>
+          <FAQSection />
         </div>
         <div
           id="contact"
