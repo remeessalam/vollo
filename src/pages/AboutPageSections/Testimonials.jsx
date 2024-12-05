@@ -136,7 +136,7 @@ const Testimonials = () => {
           className="w-full flex flex-col items-center text-center "
         >
           <h3 className="text-sechead leading-tight text-white mt-10">
-            Clients Feedback Examples You
+            Client Testimonials
           </h3>
           <p className="text-desc text-gray-200 max-w-[95%] sm:max-w-[50%] text-center mt-7">
             At <strong>Vollo Inc</strong> , we take pride in the success of our

@@ -50,7 +50,7 @@ const About = () => {
               <img src={vission} alt="icon" width={40} height={40} />
             </div>
             <div className="flex flex-col pt-3">
-              <h3 className="text-head"> Vission</h3>
+              <h3 className="text-head"> Vision</h3>
               <p className="text-desc">
                 We strive to drive innovation, empowering businesses with
                 scalable technology solutions for growth, collaboration, and
