@@ -162,7 +162,7 @@ const Testimonials = () => {
                 </div>
                 <div className="my-5">
                   {/* <h3 className="text-head">{obj.about}</h3> */}
-                  <p className="text-center sm:text-start text-desc text-primary">
+                  <p className="text-center sm:text-start text-desc text-purple-600">
                     {obj.says}
                   </p>
                 </div>
