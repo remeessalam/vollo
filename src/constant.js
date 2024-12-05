@@ -85,6 +85,7 @@ import Scalableframeworks from "./assets/images/Scalableframeworks.jpg";
 import aboutusbanner from "./assets/images/aboutusbanner.png";
 import servicepagebanner from "./assets/images/servicepagebanner.png";
 import aiImage from "./assets/images/aiimageforcontact.png";
+import landingaboutpc from "./assets/images/landingaboutpc.png";
 import faqbg from "./assets/images/faqbg.png";
 export const images = {
   Logo,
@@ -124,6 +125,7 @@ export const landingpageimages = {
   cogwheel,
   webLandingAbout,
   appLandingAbout,
+  landingaboutpc,
 };
 export const video = { homepagebackgroundvideo };
 

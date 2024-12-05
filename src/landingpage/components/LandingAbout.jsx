@@ -4,7 +4,7 @@ import RoundedHeading from "../../components/RoundedHeading";
 
 const LandingAbout = ({ page }) => {
   const isWebDevelopment = page === "web";
-  // const { webLandingAbout, appLandingAbout } = landingpageimages;
+  const { landingaboutpc, landingpagebannerweb } = landingpageimages;
   const { swebdevelopmentimage, smobiledevelopmentimage } = images;
   return (
     <div className="mt-16">
@@ -62,7 +62,7 @@ const LandingAbout = ({ page }) => {
             <img
               src={
                 isWebDevelopment
-                  ? swebdevelopmentimage
+                  ? landingpagebannerweb
                   : smobiledevelopmentimage
               }
               className="object-cover max-h-[30rem] rounded-lg"
