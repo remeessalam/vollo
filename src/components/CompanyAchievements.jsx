@@ -87,7 +87,7 @@ const CompanyAchievements = () => {
               <h5 className="text-[#D3D3D3] text-shadow text-center text-[17px] sm:text-[21px] font-bold w-full">
                 {obj.title}
               </h5>
-              <p className="text-center text-white">{obj.p} </p>
+              {/* <p className="text-center text-white">{obj.p} </p> */}
             </div>
           ))}
         </div>
