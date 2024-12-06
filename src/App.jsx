@@ -2,6 +2,7 @@ import { Suspense, lazy } from "react";
 import { createBrowserRouter } from "react-router-dom";
 import AppLayout from "./Layout/AppLayout";
 import Loader from "./components/Loader";
+import TawkMessengerReact from "@tawk.to/tawk-messenger-react";
 
 const HomePage = lazy(() => import("./pages/HomePage"));
 const AboutusPage = lazy(() => import("./pages/AboutusPage"));
@@ -23,7 +24,13 @@ const AppRouter = createBrowserRouter([
         path: "/",
         element: (
           // <Suspense fallback={<Loader />}>
-          <HomePage />
+          <>
+            <TawkMessengerReact
+              propertyId="67528a994304e3196aed2726"
+              widgetId="1ied6qqlg"
+            />
+            <HomePage />
+          </>
           // </Suspense>
         ),
       },
