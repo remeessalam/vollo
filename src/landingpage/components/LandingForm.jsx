@@ -1,6 +1,11 @@
 import { useState } from "react";
+import { companyDetails } from "../../constant";
+import toast from "react-hot-toast";
+import { useNavigate } from "react-router-dom";
 
 const LandingForm = () => {
+  const navigate = useNavigate();
+  const [spinner, setSpinner] = useState(false);
   const [formData, setFormData] = useState({
     fullName: "",
     contactNumber: "",
@@ -31,23 +36,53 @@ const LandingForm = () => {
     return newErrors;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setSpinner(true);
     const validationErrors = validate();
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
       return;
     }
-    alert("Form submitted successfully!");
-    // Reset form
-    setFormData({
-      fullName: "",
-      contactNumber: "",
-      email: "",
-      subject: "",
-      message: "",
-    });
-    setErrors({});
+    var emailBody = "Name: " + formData.fullName + "\n\n";
+    emailBody += "Email: " + formData.email + "\n\n";
+    emailBody += "Phone: " + formData.contactNumber + "\n\n";
+    emailBody += "Subject: " + formData.subject + "\n\n";
+    emailBody += "Message:\n" + formData.message;
+    var payload = {
+      to: companyDetails.email,
+      // to: "remeesreme4u@gmail.com",
+      subject: "You have a new message from vollo inc",
+      body: emailBody,
+    };
+    await fetch("https://smtp-api-tawny.vercel.app/send-email", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(payload),
+    })
+      .then((response) => response.json())
+      .then(() => {
+        toast.success("Email sent successfully");
+        navigate("/thank-you");
+      })
+      .catch((error) => {
+        toast.error(error.message);
+      })
+      .finally(() => {
+        // alert("Form submitted successfully!");
+        // Reset form
+        setFormData({
+          fullName: "",
+          contactNumber: "",
+          email: "",
+          subject: "",
+          message: "",
+        });
+        setErrors({});
+        setSpinner(false);
+      });
   };
   return (
     <div className="adjustedwidth mx-auto mt-10  sm:mt-20 sm:px-5  pb-20">
@@ -85,7 +120,7 @@ const LandingForm = () => {
                   value={formData.contactNumber}
                   onChange={handleChange}
                   placeholder="Enter number"
-                  className=" rounded-lg pl-5 m:py-4 py-3 focus:outline-none"
+                  className=" rounded-lg pl-5 sm:py-4 py-3 focus:outline-none"
                 />
                 {errors.contactNumber && (
                   <p className="text-red-500 text-sm">{errors.contactNumber}</p>
@@ -143,9 +178,12 @@ const LandingForm = () => {
 
             <button
               type="submit"
-              className="primary-btn  font-semibold border  px-8 rounded-full text-white  py-4  transition duration-300"
+              className={`primary-btn font-semibold border px-8 rounded-full text-white py-4 transition duration-300 ${
+                spinner ? "opacity-50 cursor-not-allowed" : ""
+              }`}
+              disabled={spinner}
             >
-              SEND
+              {spinner ? "SENDING...." : "SEND"}
             </button>
           </form>
         </div>

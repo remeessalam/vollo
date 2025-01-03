@@ -3,6 +3,8 @@ import { createBrowserRouter } from "react-router-dom";
 import AppLayout from "./Layout/AppLayout";
 import Loader from "./components/Loader";
 import TawkMessengerReact from "@tawk.to/tawk-messenger-react";
+import { Toaster } from "react-hot-toast";
+import ThankYou from "./components/ThankYou";
 
 const HomePage = lazy(() => import("./pages/HomePage"));
 const AboutusPage = lazy(() => import("./pages/AboutusPage"));
@@ -15,6 +17,16 @@ const AppRouter = createBrowserRouter([
     path: "/",
     element: (
       <Suspense fallback={<Loader />}>
+        <Toaster
+          position="top-bottom"
+          toastOptions={{
+            style: {
+              zIndex: "10000",
+              background: "#010C2A",
+              color: "#ffffff",
+            },
+          }}
+        />
         <AppLayout />
         <TawkMessengerReact
           propertyId="67528a994304e3196aed2726"
@@ -55,6 +67,14 @@ const AppRouter = createBrowserRouter([
         element: (
           // <Suspense fallback={<Loader />}>
           <ContactPage />
+          // </Suspense>
+        ),
+      },
+      {
+        path: "/thank-you",
+        element: (
+          // <Suspense fallback={<Loader />}>
+          <ThankYou />
           // </Suspense>
         ),
       },

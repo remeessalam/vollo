@@ -142,7 +142,7 @@ export const companyDetails = {
   phone: "+91-6300021466",
   whatsapp: "6300021466",
   link: "🌐 Website: volloinc.com",
-  email: "example@gmail.com",
+  email: "volloinc@gmail.com",
 };
 export const ourServices = [
   {

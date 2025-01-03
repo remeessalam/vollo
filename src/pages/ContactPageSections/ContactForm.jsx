@@ -1,7 +1,11 @@
 import { useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
+import { companyDetails } from "../../constant";
+import toast from "react-hot-toast";
 
 const ContactForm = () => {
+  const navigate = useNavigate();
+  const [spinner, setSpinner] = useState(false);
   const [formData, setFormData] = useState({
     fullName: "",
     contactNumber: "",
@@ -32,23 +36,54 @@ const ContactForm = () => {
     return newErrors;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setSpinner(true);
+
     const validationErrors = validate();
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
       return;
     }
-    alert("Form submitted successfully!");
-    // Reset form
-    setFormData({
-      fullName: "",
-      contactNumber: "",
-      email: "",
-      subject: "",
-      message: "",
-    });
-    setErrors({});
+    var emailBody = "Name: " + formData.fullName + "\n\n";
+    emailBody += "Email: " + formData.email + "\n\n";
+    emailBody += "Phone: " + formData.contactNumber + "\n\n";
+    emailBody += "Subject: " + formData.subject + "\n\n";
+    emailBody += "Message:\n" + formData.message;
+    var payload = {
+      to: companyDetails.email,
+      // to: "remeesreme4u@gmail.com",
+      subject: "You have a new message from vollo inc",
+      body: emailBody,
+    };
+    await fetch("https://smtp-api-tawny.vercel.app/send-email", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(payload),
+    })
+      .then((response) => response.json())
+      .then(() => {
+        toast.success("Email sent successfully");
+        navigate("/thank-you");
+      })
+      .catch((error) => {
+        toast.error(error.message);
+      })
+      .finally(() => {
+        // alert("Form submitted successfully!");
+        // Reset form
+        setFormData({
+          fullName: "",
+          contactNumber: "",
+          email: "",
+          subject: "",
+          message: "",
+        });
+        setErrors({});
+        setSpinner(false);
+      });
   };
   const { pathname } = useLocation();
   console.log(pathname, "aslkdfjaslkdf");
@@ -155,9 +190,10 @@ const ContactForm = () => {
             <div className="flex justify-center">
               <button
                 type="submit"
-                className="primary-btn shadow-xl border w-full  font-semibold  px-8 rounded-full text-white  py-4  transition duration-300"
+                className="primary-btn shadow-xl border w-full font-semibold px-8 rounded-full text-white py-4 transition duration-300"
+                disabled={spinner}
               >
-                SEND
+                {spinner ? "SENDING...." : "SEND"}
               </button>
             </div>
           </form>
