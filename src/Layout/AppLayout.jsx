@@ -11,7 +11,7 @@ const AppLayout = () => {
     duration: 1000,
   });
   return (
-    <div className="w-screen overflow-hidden">
+    <div className="max-w-screen overflow-hidden">
       <Header />
       {/* className="mt-20 lg:mt-[124px]" */}
       <div>
