@@ -1,14 +1,21 @@
 import { useState, useEffect } from "react";
 import volloceo from "../assets/images/vollo-ceo.png";
 import volloceoaward from "../assets/images/vollo-ceo-award.png";
+import googlenews from "../assets/images/news/googlenews.gif";
+import yahoonews from "../assets/images/news/yahoonews.webp";
+import businerssstandard from "../assets/images/news/businessstandard.png";
+import aninews from "../assets/images/news/aninews.jpg";
+import lokmatnews from "../assets/images/news/lokmatnews.png";
+import latestlynews from "../assets/images/news/latestlynews.jpg";
+import hindustannews from "../assets/images/news/hindustannews.png";
 const logos = [
-  { name: "Google News", size: "large" },
-  { name: "Yahoo News", size: "large" },
-  { name: "Business Standard", size: "large" },
-  { name: "ANI News", size: "large" },
-  { name: "Lokmat Times", size: "large" },
-  { name: "Latestly", size: "large" },
-  { name: "Hindustan Express", size: "large" },
+  { name: "Google News", size: "large", img: googlenews },
+  { name: "Yahoo News", size: "large", img: yahoonews },
+  { name: "Business Standard", size: "large", img: businerssstandard },
+  { name: "ANI News", size: "large", img: aninews },
+  { name: "Lokmat Times", size: "large", img: lokmatnews },
+  { name: "Latestly", size: "large", img: latestlynews },
+  { name: "Hindustan Express", size: "large", img: hindustannews },
 ];
 const logostwo = [
   { name: "123 Men Life", size: "small" },
@@ -119,9 +126,15 @@ const FounderSection = () => {
                   key={index}
                   className="flex-shrink-0 mx-6 w-48 h-32 bg-white rounded-lg shadow-md flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-105"
                 >
-                  <h1 className="text-lg font-medium text-gray-800">
+                  <img
+                    src={logo.img}
+                    alt={`${logo.name} logo`}
+                    className="max-w-full max-h-full p-2"
+                  />
+                  <span className="sr-only">{logo.name}</span>
+                  {/* <h1 className="text-lg font-medium text-gray-800">
                     {logo.name}
-                  </h1>
+                  </h1> */}
                 </div>
               ))}
             </div>
