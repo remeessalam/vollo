@@ -10,7 +10,7 @@ const WhyChooseUs = () => {
       className="relative mt-1 sm:mt-16 py-[4rem]  w-[100vw] bg-cover bg-right bg-no-repeat text-black"
       style={{ backgroundImage: `url(${whychooseusbackground})` }}
     >
-      <div className="absolute top-0 left-0 w-full h-full bg-white/50 lg:bg-transparent" />
+      <div className="absolute top-0 left-0 w-full h-full bg-white/90 lg:bg-white/50" />
       {/* <ReactPlayer
         url={video}
         loop={true}
@@ -76,7 +76,7 @@ const WhyChooseUs = () => {
                       </div>
                       <h5 className="text-head text-black">{obj.heading}</h5>
                     </div>
-                    <p className=" text-black text-desc text-start mt-3 ">
+                    <p className=" !text-black text-desc  text-start mt-3 ">
                       {obj.description}
                     </p>
                   </div>

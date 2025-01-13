@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import volloceo from "../assets/images/vollo-ceo.png";
+import volloceoaward from "../assets/images/vollo-ceo-award.png";
 const logos = [
   { name: "Google News", size: "large" },
   { name: "Yahoo News", size: "large" },
@@ -8,6 +9,8 @@ const logos = [
   { name: "Lokmat Times", size: "large" },
   { name: "Latestly", size: "large" },
   { name: "Hindustan Express", size: "large" },
+];
+const logostwo = [
   { name: "123 Men Life", size: "small" },
   { name: "Daily Gossip Online", size: "small" },
   { name: "Popular Reads", size: "small" },
@@ -37,30 +40,25 @@ const FounderSection = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <section className="pt-24  px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-8">
+        <h2 className="text-sechead mb-10 sm:mb-8 text-center text-black leading-tight">
           Meet Our Founder & CEO
         </h2>
-        <div className="flex flex-col md:flex-row items-center mb-12">
-          <div className="md:w-1/3 mb-6 md:mb-0">
+        <div className="grid md:grid-cols-2 items-center mb-12">
+          <div className=" mb-6 md:mb-0">
             <img
               src={volloceo}
               alt="Krishna Chaitanya Divvela"
-              className="rounded-full w-48 h-48 mx-auto"
+              className="max-h-[500px]  mx-auto object-cover rounded-xl"
             />
           </div>
-          <div className="md:w-2/3 md:pl-8">
-            <h3 className="text-2xl font-semibold mb-2">
-              Krishna Chaitanya Divvela
-            </h3>
+          <div className=" md:pl-8">
+            <h3 className="text-head mb-2">Krishna Chaitanya Divvela</h3>
             <p className="text-xl mb-4">Founder & CEO, Vollo Inc.</p>
             <p className="mb-4">
               At the core of Vollo Inc.&apos;s success is Krishna Chaitanya
@@ -81,21 +79,31 @@ const FounderSection = () => {
           </div>
         </div>
 
-        <div className="mb-12">
-          <h3 className="text-2xl font-semibold mb-4">
-            Building a Legacy of Trust and Innovation
-          </h3>
-          <p className="mb-4">
-            Krishna Chaitanya&apos;s vision and achievements have garnered
-            widespread recognition, with Vollo Inc. featured in over 213
-            esteemed media outlets. This extensive coverage reflects the impact
-            of his work and the trust Vollo Inc. inspires among its clients and
-            partners worldwide.
-          </p>
+        <div className="mb-12 grid md:grid-cols-2">
+          <div>
+            <h3 className="text-head mb-4">
+              Building a Legacy of Trust and Innovation
+            </h3>
+            <p className="mb-4">
+              Krishna Chaitanya&apos;s vision and achievements have garnered
+              widespread recognition, with Vollo Inc. featured in over 213
+              esteemed media outlets. This extensive coverage reflects the
+              impact of his work and the trust Vollo Inc. inspires among its
+              clients and partners worldwide.
+            </p>
+          </div>
+
+          <div className=" mb-6 md:mb-0">
+            <img
+              src={volloceoaward}
+              alt="Krishna Chaitanya Divvela"
+              className="max-h-[500px]  mx-auto object-cover"
+            />
+          </div>
         </div>
 
         <div className="mb-12">
-          <h3 className="text-2xl font-semibold mb-4">As Seen On:</h3>
+          <h3 className="text-head mb-4">As Seen On:</h3>
           <p className="mb-4">
             Below, let your audience explore the media platforms and
             publications that have celebrated Krishna Chaitanya&apos;s journey
@@ -103,26 +111,35 @@ const FounderSection = () => {
           </p>
         </div>
 
-        <div className="mb-12 overflow-hidden">
-          <div className="flex animate-scroll py-4 items-center">
-            {logos.map((logo, index) => (
-              <div
-                key={index}
-                className={`flex-shrink-0 mx-4 ${
-                  logo.size === "large" ? "w-32 h-32" : "w-24 h-24"
-                } bg-white rounded-lg shadow-md flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-110`}
-              >
-                {/* <img
-                  src={`/path-to-${logo.name
-                    .toLowerCase()
-                    .replace(/\s+/g, "-")}-logo.png`}
-                  alt={`${logo.name} logo`}
-                  className="max-w-full max-h-full p-2"
-                /> */}
-                {/* <span className="sr-only">{logo.name}</span> */}
-                <h1 className="text-center">{logo.name}</h1>
-              </div>
-            ))}
+        <div className="w-full overflow-hidden">
+          <div className="mb-8">
+            <div className="flex animate-scroll py-8">
+              {[...logos, ...logos].map((logo, index) => (
+                <div
+                  key={index}
+                  className="flex-shrink-0 mx-6 w-48 h-32 bg-white rounded-lg shadow-md flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-105"
+                >
+                  <h1 className="text-lg font-medium text-gray-800">
+                    {logo.name}
+                  </h1>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <div className="flex animate-scroll2 py-4">
+              {[...logostwo, ...logostwo].map((logo, index) => (
+                <div
+                  key={index}
+                  className="flex-shrink-0 mx-4 w-40 h-24 bg-white rounded-lg shadow-md flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-105"
+                >
+                  <h1 className="text-sm font-medium text-gray-800 text-center px-2">
+                    {logo.name}
+                  </h1>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 
@@ -134,9 +151,7 @@ const FounderSection = () => {
         </p>
 
         <div className="mb-12">
-          <h3 className="text-2xl font-semibold mb-4">
-            Empowering a Smarter Future
-          </h3>
+          <h3 className="text-head mb-4">Empowering a Smarter Future</h3>
           <p className="mb-4">
             Krishna&apos;s leadership extends beyond solving today&apos;s
             challenges—he envisions a smarter, more efficient tomorrow. At Vollo

@@ -15,9 +15,9 @@ const HomePage = () => {
       <CompanyAchievements />
       <Services />
       <MeetCompany />
+      <FounderSection />
       <WhyChooseUs />
       <CompanyApproach />
-      <FounderSection />
     </>
   );
 };
