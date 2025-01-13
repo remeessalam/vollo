@@ -53,21 +53,29 @@ const FounderSection = () => {
   return (
     <section className="pt-24  px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-sechead mb-10 sm:mb-8 text-center text-black leading-tight">
+        <h2
+          data-aos="fade-up"
+          className="text-sechead mb-10 sm:mb-8 text-center text-black leading-tight"
+        >
           Meet Our Founder & CEO
         </h2>
         <div className="grid md:grid-cols-2 items-center mb-12">
           <div className=" mb-6 md:mb-0">
             <img
+              data-aos="fade-right"
               src={volloceo}
               alt="Krishna Chaitanya Divvela"
               className="max-h-[500px]  mx-auto object-cover rounded-xl"
             />
           </div>
           <div className=" md:pl-8">
-            <h3 className="text-head mb-2">Krishna Chaitanya Divvela</h3>
-            <p className="text-xl mb-4">Founder & CEO, Vollo Inc.</p>
-            <p className="mb-4">
+            <h3 className="text-head mb-2" data-aos="fade-left">
+              Krishna Chaitanya Divvela
+            </h3>
+            <p className="text-xl mb-4" data-aos="fade-left">
+              Founder & CEO, Vollo Inc.
+            </p>
+            <p className="mb-4" data-aos="fade-left">
               At the core of Vollo Inc.&apos;s success is Krishna Chaitanya
               Divvela, a visionary leader with an unwavering commitment to
               innovation and excellence. Recognized as the &ldquo;Youngest
@@ -75,7 +83,7 @@ const FounderSection = () => {
               Summit & Awards 2024, Krishna&apos;s transformative leadership is
               redefining the way businesses leverage technology.
             </p>
-            <p className="mb-4">
+            <p className="mb-4" data-aos="fade-left">
               Under his guidance, Vollo Inc. has established itself as a global
               leader in AI-driven solutions, offering expertise in artificial
               intelligence, game development, IoT, and cybersecurity. With a
@@ -88,10 +96,10 @@ const FounderSection = () => {
 
         <div className="mb-12 grid md:grid-cols-2">
           <div>
-            <h3 className="text-head mb-4">
+            <h3 data-aos="fade-right" className="text-head mb-4">
               Building a Legacy of Trust and Innovation
             </h3>
-            <p className="mb-4">
+            <p className="mb-4" data-aos="fade-right">
               Krishna Chaitanya&apos;s vision and achievements have garnered
               widespread recognition, with Vollo Inc. featured in over 213
               esteemed media outlets. This extensive coverage reflects the
@@ -102,6 +110,7 @@ const FounderSection = () => {
 
           <div className=" mb-6 md:mb-0">
             <img
+              data-aos="fade-left"
               src={volloceoaward}
               alt="Krishna Chaitanya Divvela"
               className="max-h-[500px]  mx-auto object-cover"
@@ -109,7 +118,7 @@ const FounderSection = () => {
           </div>
         </div>
 
-        <div className="mb-12">
+        <div className="mb-12" data-aos="fade-up">
           <h3 className="text-head mb-4">As Seen On:</h3>
           <p className="mb-4">
             Below, let your audience explore the media platforms and
@@ -118,9 +127,9 @@ const FounderSection = () => {
           </p>
         </div>
 
-        <div className="w-full overflow-hidden">
+        <div className="w-full overflow-hidden" data-aos="fade-up">
           <div className="mb-8">
-            <div className="flex animate-scroll py-8">
+            <div className="flex animate-scroll py-0">
               {[...logos, ...logos].map((logo, index) => (
                 <div
                   key={index}
@@ -156,16 +165,21 @@ const FounderSection = () => {
           </div>
         </div>
 
-        <p className="text-center text-lg font-semibold mb-8">
+        <p
+          className="text-center text-lg font-semibold my-8"
+          data-aos="fade-up"
+        >
           +188 more esteemed media outlets!
         </p>
-        <p className="text-center text-xl font-bold mb-12">
+        <p className="text-center text-xl font-bold mb-12" data-aos="fade-up">
           Over 213+ companies trust us worldwide!
         </p>
 
         <div className="mb-12">
-          <h3 className="text-head mb-4">Empowering a Smarter Future</h3>
-          <p className="mb-4">
+          <h3 className="text-head mb-4" data-aos="fade-up">
+            Empowering a Smarter Future
+          </h3>
+          <p className="mb-4" data-aos="fade-up">
             Krishna&apos;s leadership extends beyond solving today&apos;s
             challenges—he envisions a smarter, more efficient tomorrow. At Vollo
             Inc., his philosophy combines innovation, precision, and a
@@ -174,7 +188,7 @@ const FounderSection = () => {
             legacy of trust, empowering businesses worldwide to thrive in the
             digital age.
           </p>
-          <p>
+          <p data-aos="fade-up">
             With every solution, Vollo Inc. delivers more than technology—it
             delivers impact, integrity, and the promise of a brighter future.
           </p>
