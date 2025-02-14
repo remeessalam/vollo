@@ -104,6 +104,30 @@ const AppRouter = createBrowserRouter([
       </Suspense>
     ),
   },
+  {
+    path: "/game-development",
+    element: (
+      <Suspense fallback={<Loader />}>
+        <TawkMessengerReact
+          propertyId="67528a994304e3196aed2726"
+          widgetId="1ied6qqlg"
+        />
+        <LandingPage page={"gameDev"} />
+      </Suspense>
+    ),
+  },
+  {
+    path: "/aicalling-development",
+    element: (
+      <Suspense fallback={<Loader />}>
+        <TawkMessengerReact
+          propertyId="67528a994304e3196aed2726"
+          widgetId="1ied6qqlg"
+        />
+        <LandingPage page={"aiCalling"} />
+      </Suspense>
+    ),
+  },
 ]);
 
 export default AppRouter;

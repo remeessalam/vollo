@@ -1,38 +1,58 @@
 import React from "react";
 import {
   appDevelopmentServices,
-  landingpageimages,
   webDevelopmentServices,
+  aiCallingServices,
+  gameDevelopmentServices,
 } from "../../constant";
 import RoundedHeading from "../../components/RoundedHeading";
 
-const LandingServices = ({ page }) => {
-  const services =
-    page === "web" ? webDevelopmentServices : appDevelopmentServices;
+const servicesData = {
+  web: {
+    services: webDevelopmentServices,
+    heading: "Exceptional Web Development to Strengthen Your Digital Presence",
+    description:
+      "Professional web development services tailored to create robust, responsive, and visually appealing websites that reflect your brand and drive growth.",
+  },
+  app: {
+    services: appDevelopmentServices,
+    heading: "Innovative App Development for Engaging Mobile Experiences",
+    description:
+      "Advanced app development solutions focused on building secure, scalable, and intuitive mobile applications that connect with your audience and elevate your brand.",
+  },
+  aiCalling: {
+    services: aiCallingServices,
+    heading: "Transform Communication with AI Calling Solutions",
+    description:
+      "Revolutionizing voice interactions with AI-powered automation, virtual assistants, and advanced speech recognition for seamless communication.",
+  },
+  gameDev: {
+    services: gameDevelopmentServices,
+    heading: "Next-Level Game Development for Immersive Experiences",
+    description:
+      "Creating high-performance games across multiple platforms with cutting-edge technology, AI-driven mechanics, and captivating storytelling.",
+  },
+};
 
-  const { ecommerce } = landingpageimages;
+const LandingServices = ({ page }) => {
+  const { services, heading, description } =
+    servicesData[page] || servicesData.web;
+
   return (
     <div id="services" className="flex justify-center relative">
       <div className="py-10 flex flex-col items-center gap-5 z-10 text-black">
-        <div className="w-full ">
+        <div className="w-full">
           <RoundedHeading
-            text={`Our ${page === "web" ? "Web" : "App"} Development Services`}
+            text={`Our ${
+              servicesData[page]?.title || "Web"
+            } Development Services`}
           />
         </div>
-        {/* <div data-aos="fade-up" className="gradient-rounded-text-box mx-auto">
-          Our {page === "web" ? "Web" : "App"} Development Services
-        </div> */}
         <h1 data-aos="fade-up" className="text-sechead text-center max-w-2xl">
-          {page === "web" &&
-            "Exceptional Web Development to Strengthen Your Digital Presence"}
-          {page === "app" &&
-            "Innovative App Development for Engaging Mobile Experiences"}
+          {heading}
         </h1>
         <p data-aos="fade-up" className="text-center max-w-2xl text-desc">
-          {page === "web" &&
-            "Professional web development services tailored to create robust, responsive, and visually appealing websites that reflect your brand and drive growth."}
-          {page === "app" &&
-            "Advanced app development solutions focused on building secure, scalable, and intuitive mobile applications that connect with your audience and elevate your brand."}
+          {description}
         </p>
         <div
           data-aos="fade-up"
@@ -49,7 +69,7 @@ const LandingServices = ({ page }) => {
                   alt="icon"
                   className="w-[6rem] grayscale-[65%]"
                 />
-                <h6 className=" text-head ">{item.title}</h6>
+                <h6 className="text-head">{item.title}</h6>
                 <p className="text-md text-black/70 text-desc">
                   {item.description}
                 </p>

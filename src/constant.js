@@ -46,7 +46,7 @@ import aboutpageimagethree from "./assets/images/aboutpageimagethree.jpeg";
 import aboutpageimagefour from "./assets/images/aboutpageimagefour.jpeg";
 import aboutpageimagetwo from "./assets/images/aboutpageimagetwo.png";
 import fullstart from "./assets/images/fullstar.png";
-import fourstart from "./assets/images/fourstar.png";
+// import fourstart from "./assets/images/fourstar.png";
 import testimonialsuserimage from "./assets/images/testimonialsuserimage.png";
 import contactuspagebanner from "./assets/images/contactuspagebanner.png";
 import landingpagebannerapp from "./assets/images/landingpagebannerapp.jpg";
@@ -71,6 +71,15 @@ import iosapp from "./assets/images/landingpage/iosapp.png";
 import android from "./assets/images/landingpage/android.png";
 import flutter from "./assets/images/landingpage/flutter.png";
 import hybrid from "./assets/images/landingpage/hybrid.png";
+import aicustomersupport from "./assets/images/landingpage/aicustomersupport.png";
+import aivirtualassistants from "./assets/images/landingpage/aivirtualassistants.png";
+import aisales from "./assets/images/landingpage/aisales.png";
+import aivoicebiometrics from "./assets/images/landingpage/aivoicebiometrics.png";
+import mobilegames from "./assets/images/landingpage/mobilegames.png";
+import pcconsolegames from "./assets/images/landingpage/pcconsolegames.png";
+import vrargames from "./assets/images/landingpage/vrargames.png";
+import multiplayergames from "./assets/images/landingpage/multiplayergames.png";
+
 import mechanical from "./assets/images/landingpage/mechanical.png";
 import expert from "./assets/images/landingpage/expert.png";
 import target from "./assets/images/landingpage/target.png";
@@ -113,6 +122,8 @@ export const images = {
   swebdevelopmentimage,
   smobiledevelopmentimage,
   suiuximage,
+  sgamedevelopmentimage,
+  saiimage,
 };
 
 export const landingpageimages = {
@@ -605,6 +616,69 @@ export const appDevelopmentServices = [
     img: hybrid,
     description:
       "We build feature-rich hybrid apps tailored to your business needs. We create mobile-friendly apps that work seamlessly across iOS and Android devices.",
+  },
+];
+// ai calling development services
+export const aiCallingServices = [
+  {
+    id: 1,
+    title: "Automated Customer Support",
+    img: aicustomersupport,
+    description:
+      "Enhance customer interactions with AI-driven automated support systems, reducing response time and improving customer satisfaction.",
+  },
+  {
+    id: 2,
+    title: "AI-Powered Virtual Assistants",
+    img: aivirtualassistants,
+    description:
+      "Implement smart virtual assistants capable of handling inquiries, scheduling, and providing real-time solutions through voice-based AI.",
+  },
+  {
+    id: 3,
+    title: "Conversational AI for Sales",
+    img: aisales,
+    description:
+      "Boost conversions with AI-driven sales calls that engage prospects, answer queries, and guide them through the buying process efficiently.",
+  },
+  {
+    id: 4,
+    title: "Voice Biometrics & Authentication",
+    img: aivoicebiometrics,
+    description:
+      "Secure your communication channels with AI-powered voice recognition and authentication systems, ensuring safe and seamless interactions.",
+  },
+];
+// game development services
+
+export const gameDevelopmentServices = [
+  {
+    id: 1,
+    title: "Mobile Game Development",
+    img: mobilegames,
+    description:
+      "Create engaging and immersive mobile games for iOS and Android with stunning graphics and smooth gameplay experiences.",
+  },
+  {
+    id: 2,
+    title: "PC & Console Game Development",
+    img: pcconsolegames,
+    description:
+      "Build high-performance games for PC and consoles, leveraging advanced graphics, AI mechanics, and interactive storytelling.",
+  },
+  {
+    id: 3,
+    title: "VR & AR Game Development",
+    img: vrargames,
+    description:
+      "Step into the future of gaming with Virtual and Augmented Reality experiences that redefine immersive entertainment.",
+  },
+  {
+    id: 4,
+    title: "Multiplayer & Online Gaming Solutions",
+    img: multiplayergames,
+    description:
+      "Develop seamless multiplayer gaming experiences with robust networking, cloud integration, and real-time interactions.",
   },
 ];
 
