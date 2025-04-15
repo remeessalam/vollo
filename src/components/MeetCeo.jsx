@@ -120,11 +120,11 @@ const FounderSection = () => {
 
         <div className="mb-12" data-aos="fade-up">
           <h3 className="text-head mb-4">As Seen On:</h3>
-          <p className="mb-4">
+          {/* <p className="mb-4">
             Below, let your audience explore the media platforms and
             publications that have celebrated Krishna Chaitanya&apos;s journey
             and Vollo Inc.&apos;s groundbreaking contributions:
-          </p>
+          </p> */}
         </div>
 
         <div className="w-full overflow-hidden" data-aos="fade-up">
