@@ -21,7 +21,7 @@ const AboutusPage = () => {
       <Aboutus />
       <CompanyAchievements />
       <CompanyExperience />
-      <CompanyTeam />
+      {/* <CompanyTeam /> */}
       <Testimonials />
     </>
   );
